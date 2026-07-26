@@ -1,0 +1,51 @@
+{
+  "app": {
+    "name": "VIDHWAAN News Engine",
+    "version": "1.0.0",
+    "language": "te",
+    "timezone": "Asia/Kolkata"
+  },
+
+  "pipeline": {
+    "parallel": true,
+    "maxConcurrentSources": 5,
+    "maxConcurrentArticles": 3,
+    "requestTimeout": 30000,
+    "retryCount": 3,
+    "retryDelay": 3000,
+    "maxArticlesPerCategory": 30,
+    "maxArticlesPerSource": 10
+  },
+
+  "ai": {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.2,
+    "maxTokens": 2048
+  },
+
+  "article": {
+    "minParagraphs": 3,
+    "maxParagraphs": 6,
+    "minTags": 3,
+    "maxTags": 8,
+    "readingSpeedWPM": 180
+  },
+
+  "output": {
+    "prettyPrint": true,
+    "language": "te",
+    "directory": "dist",
+    "latest": "latest.json",
+    "categories": {
+      "national": "national.json",
+      "international": "international.json",
+      "andhraPradesh": "andhra-pradesh.json"
+    }
+  },
+
+  "logging": {
+    "enabled": true,
+    "level": "INFO"
+  }
+}

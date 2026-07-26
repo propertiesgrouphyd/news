@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Temporary
+tmp/
+temp/
+.cache/
+
+# Generated Data
+data/raw/*
+data/processed/*
+data/output/*
+dist/*.json
+
+# Keep folders
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/output/.gitkeep
+!dist/.gitkeep
+
+# Misc
+*.bak
+*.old
+*.orig

@@ -1,0 +1,42 @@
+{
+  "categories": {
+    "national": [
+      {
+        "id": "thehindu",
+        "name": "The Hindu",
+        "rss": "https://www.thehindu.com/news/national/feeder/default.rss",
+        "enabled": true
+      },
+      {
+        "id": "indianexpress",
+        "name": "The Indian Express",
+        "rss": "https://indianexpress.com/section/india/feed/",
+        "enabled": true
+      }
+    ],
+
+    "international": [
+      {
+        "id": "reuters-world",
+        "name": "Reuters World",
+        "rss": "https://feeds.reuters.com/Reuters/worldNews",
+        "enabled": true
+      },
+      {
+        "id": "ap-world",
+        "name": "Associated Press",
+        "rss": "https://apnews.com/hub/world-news/rss",
+        "enabled": true
+      }
+    ],
+
+    "andhraPradesh": [
+      {
+        "id": "thehindu-ap",
+        "name": "The Hindu Andhra Pradesh",
+        "rss": "https://www.thehindu.com/news/national/andhra-pradesh/feeder/default.rss",
+        "enabled": true
+      }
+    ]
+  }
+}

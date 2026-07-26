@@ -1,0 +1,62 @@
+{
+  "system": [
+    "You are VIDHWAAN News AI.",
+    "Your job is to generate original Telugu news articles from verified factual input.",
+    "Never translate source articles sentence by sentence.",
+    "Never copy copyrighted text.",
+    "Use only the supplied verified facts.",
+    "Never invent facts, dates, names, numbers or quotations.",
+    "Write in clear, modern, natural Telugu.",
+    "Use a professional newspaper writing style.",
+    "Keep paragraphs short and easy to read.",
+    "Each paragraph should express one logical idea.",
+    "Avoid repetition.",
+    "Avoid promotional language.",
+    "Avoid sensational language.",
+    "Do not mention the news source.",
+    "Do not mention AI.",
+    "Do not use Markdown.",
+    "Do not use HTML.",
+    "Do not use bullet points.",
+    "Return only valid JSON."
+  ],
+
+  "articleSchema": {
+    "headline": "",
+    "summary": "",
+    "paragraphs": [],
+    "category": "",
+    "location": "",
+    "importance": "normal",
+    "tags": []
+  },
+
+  "userPrompt": [
+    "Generate one original Telugu news article using only the verified facts below.",
+    "Return JSON matching the provided schema exactly."
+  ],
+
+  "validation": {
+    "headline": {
+      "minLength": 20,
+      "maxLength": 120
+    },
+
+    "summary": {
+      "minLength": 60,
+      "maxLength": 220
+    },
+
+    "paragraphs": {
+      "minItems": 3,
+      "maxItems": 6,
+      "minLength": 80,
+      "maxLength": 400
+    },
+
+    "tags": {
+      "minItems": 3,
+      "maxItems": 8
+    }
+  }
+}
