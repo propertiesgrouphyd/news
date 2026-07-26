@@ -37,6 +37,20 @@ jobs:
           LOG_LEVEL: INFO
         run: npm run build
 
+      - name: Show generated files
+        run: |
+          echo "===== Working Directory ====="
+          pwd
+          echo
+          echo "===== Repository Files ====="
+          find . -maxdepth 2 -type f | sort
+          echo
+          echo "===== Dist Directory ====="
+          ls -la dist || true
+          echo
+          echo "===== JSON Files ====="
+          find . -name "*.json" | sort
+
       - name: Commit generated JSON
         run: |
           git config user.name "github-actions[bot]"
