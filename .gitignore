@@ -27,7 +27,6 @@ temp/
 data/raw/*
 data/processed/*
 data/output/*
-dist/*.json
 
 # Keep folders
 !data/raw/.gitkeep
