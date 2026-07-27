@@ -1,6 +1,29 @@
 {
   "category": "andhraPradesh",
-  "generatedAt": "2026-07-27T21:34:28.322Z",
-  "totalArticles": 0,
-  "articles": []
+  "generatedAt": "2026-07-27T22:48:49.612Z",
+  "totalArticles": 1,
+  "articles": [
+    {
+      "headline": "తూర్పు గోదావరి జిల్లాలో 44 ఇ-ఆటోలు ఆవిష్కరించబడ్డాయి",
+      "summary": "తూర్పు గోదావరి జిల్లా గ్రామ పంచాయతీలకు 44 ఇ-ఆటోలు అందించబడ్డాయి, ఇది పాఠశాల ప్రాంతంలో పారిశుధ్య ప్రయత్నాలను మెరుగుపరుస్తుంది",
+      "paragraphs": [
+        "తూర్పు గోదావరి జిల్లాలోని గ్రామ పంచాయతీలకు 44 ఇ-ఆటోలు అందించబడ్డాయి",
+        "ఈ ఇ-ఆటోలు ద్వారా ఘన వ్యర్థాల సేకరణ మెరుగుపడుతుంది",
+        "పాఠశాల ప్రాంతంలో పారిశుధ్య ప్రయత్నాలు మెరుగవుతాయి"
+      ],
+      "category": "andhraPradesh",
+      "location": "తూర్పు గోదావరి",
+      "importance": "normal",
+      "tags": [
+        "తూర్పు గోదావరి",
+        "గ్రామ పంచాయతీ",
+        "ఇ-ఆటోలు",
+        "పారిశుధ్యం"
+      ],
+      "source": "The Hindu Andhra Pradesh",
+      "published": "Mon, 27 Jul 2026 22:59:21 +0530",
+      "originalUrl": "https://www.thehindu.com/news/national/andhra-pradesh/gram-panchayats-receive-44-e-autos-for-solid-waste-collection-in-east-godavari/article71273364.ece",
+      "generatedAt": "2026-07-27T22:48:47.649Z"
+    }
+  ]
 }
