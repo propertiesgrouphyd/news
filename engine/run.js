@@ -108,10 +108,12 @@ async function main() {
                 file => file.endsWith(".json")
             ).length;
 
-            if (processedCount === 0) {
+            const MIN_PROCESSED_ARTICLES = 10;
+
+            if (processedCount < MIN_PROCESSED_ARTICLES) {
 
                 throw new Error(
-                    "No processed articles generated. Stopping before merge/deploy."
+                    `Only ${processedCount} processed articles generated. Minimum required is ${MIN_PROCESSED_ARTICLES}. Stopping before merge/deploy.`
                 );
 
             }
