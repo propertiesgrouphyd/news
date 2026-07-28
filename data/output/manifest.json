@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-07-28T07:59:24.724Z",
+  "files": [
+    {
+      "file": "andhraPradesh.json",
+      "size": 79,
+      "sha256": "fe46d44265091dd876b56dd94d0b916e2517690f54e5a1fa261c404c8ed6e5c6"
+    },
+    {
+      "file": "international.json",
+      "size": 79,
+      "sha256": "11a7c65d33ab99567d0e3dd774c8ae0068c97613ab4270bb4b2454981d5b2e91"
+    },
+    {
+      "file": "latest.json",
+      "size": 79,
+      "sha256": "54becc8caf01e56b260843476cd209f7a93c8e9dfddf87f47fee6c2c7473bb9e"
+    },
+    {
+      "file": "national.json",
+      "size": 79,
+      "sha256": "69fe51e4ed6fb0ec5e85658aba5d841890fd578b82e07a21c1251e08d77a087c"
+    }
+  ]
+}

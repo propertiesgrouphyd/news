@@ -26,7 +26,6 @@ temp/
 # Generated Data
 data/raw/*
 data/processed/*
-data/output/*
 
 # Keep folders
 !data/raw/.gitkeep

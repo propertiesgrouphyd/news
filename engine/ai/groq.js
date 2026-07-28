@@ -57,6 +57,17 @@ export async function generateArticle({
         const errorText = await response.text();
 
         if (
+          response.status === 429
+        ) {
+
+          throw new Error(
+            `Groq rate limit reached: ${errorText}`
+          );
+
+        }
+
+        if (
+          response.status !== 429 &&
           RETRYABLE_STATUS.has(response.status) &&
           attempt < retryCount
         ) {
@@ -80,16 +91,47 @@ export async function generateArticle({
 
       const result = await response.json();
 
-      const content = result?.choices?.[0]?.message?.content?.trim();
+      let content = result?.choices?.[0]?.message?.content?.trim();
 
       if (!content) {
         throw new Error("Groq returned an empty response.");
       }
 
-      return content;
+      // Remove markdown fences if AI returns ```json ... ```
+      content = content
+        .replace(/^```json\s*/i, "")
+        .replace(/^```\s*/i, "")
+        .replace(/```$/i, "")
+        .trim();
+
+      // Ensure JSON is valid before returning
+      try {
+        JSON.parse(content);
+      } catch {
+        throw new Error(
+          "Groq returned invalid JSON:\\n" + content.slice(0, 500)
+        );
+      }
+
+      return {
+        content,
+        usage: result.usage || {
+          prompt_tokens: 0,
+          completion_tokens: 0,
+          total_tokens: 0
+        }
+      };
 
     } catch (error) {
       lastError = error;
+
+      if (
+        error.message.includes("rate_limit_exceeded") ||
+        error.message.includes("tokens per day") ||
+        error.message.includes("TPD")
+      ) {
+        throw error;
+      }
 
       if (attempt >= retryCount) {
         break;
@@ -98,7 +140,12 @@ export async function generateArticle({
       const delay = retryDelay * (2 ** attempt);
 
       console.log(
-        `[Groq] Network retry ${attempt + 1}/${retryCount} in ${delay} ms`
+        `[Groq] Network error attempt ${attempt + 1}/${retryCount}:`,
+        error.message
+      );
+
+      console.log(
+        `[Groq] Retrying in ${delay} ms`
       );
 
       await sleep(delay);

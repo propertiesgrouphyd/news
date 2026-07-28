@@ -1,42 +1,51 @@
 export function buildPrompt(article) {
-  const facts = [
-    `Title: ${article.title}`,
-    `Summary: ${article.excerpt || article.description || ""}`,
-    `Content: ${(article.text || "").slice(0, 4000)}`,
-    `Published: ${article.published || "Unknown"}`,
-    `Category: ${article.category}`
-  ].join("\n");
 
-  return `
-Generate ONE original Telugu news article.
+    const facts = [
+        `Title: ${article.title}`,
+        `Summary: ${article.excerpt || article.description || ""}`,
+        `Content: ${(article.text || "").slice(0, 1500)}`,
+        `Published: ${article.published || "Unknown"}`,
+        `Category: ${article.category}`
+    ].join("\n");
 
-Requirements:
+    return `
+Generate one original Telugu news article.
 
-- Use ONLY the facts provided.
-- Never invent facts.
-- Never mention the source website.
-- Never translate sentence by sentence.
-- Write natural Telugu.
-- Write like a professional newspaper.
+Rules:
+
+- Use only the verified facts.
+- Never invent information.
+- Never mention source website.
+- Write natural Telugu newspaper style.
+- Do not translate sentence by sentence.
 - Keep paragraphs short.
+- Use clear headings.
+- Return ONLY valid JSON.
 - No markdown.
 - No HTML.
-- Return ONLY valid JSON.
 
-JSON format:
+Required JSON format:
 
 {
   "headline": "",
   "summary": "",
-  "paragraphs": [],
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        ""
+      ]
+    }
+  ],
   "category": "",
   "location": "",
   "importance": "normal",
   "tags": []
 }
 
-Verified Facts:
+Verified facts:
 
 ${facts}
 `.trim();
+
 }
