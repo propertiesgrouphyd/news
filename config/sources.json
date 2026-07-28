@@ -14,22 +14,20 @@
         "enabled": true
       }
     ],
-
     "international": [
       {
-        "id": "reuters-world",
-        "name": "Reuters World",
-        "rss": "https://feeds.reuters.com/Reuters/worldNews",
+        "id": "bbc-world",
+        "name": "BBC World",
+        "rss": "https://feeds.bbci.co.uk/news/world/rss.xml",
         "enabled": true
       },
       {
-        "id": "ap-world",
-        "name": "Associated Press",
-        "rss": "https://apnews.com/hub/world-news/rss",
+        "id": "nyt-world",
+        "name": "New York Times World",
+        "rss": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
         "enabled": true
       }
     ],
-
     "andhraPradesh": [
       {
         "id": "thehindu-ap",

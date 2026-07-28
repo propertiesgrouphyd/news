@@ -2,7 +2,7 @@ export function buildPrompt(article) {
   const facts = [
     `Title: ${article.title}`,
     `Summary: ${article.excerpt || article.description || ""}`,
-    `Content: ${article.text}`,
+    `Content: ${(article.text || "").slice(0, 4000)}`,
     `Published: ${article.published || "Unknown"}`,
     `Category: ${article.category}`
   ].join("\n");

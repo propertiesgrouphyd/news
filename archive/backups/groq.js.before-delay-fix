@@ -61,11 +61,10 @@ export async function generateArticle({
           attempt < retryCount
         ) {
           const retryAfter = Number(response.headers.get("Retry-After"));
-          const MAX_RETRY_DELAY = 30000;
 
           const delay = Number.isFinite(retryAfter) && retryAfter > 0
-            ? Math.min(retryAfter * 1000, MAX_RETRY_DELAY)
-            : Math.min(retryDelay * (2 ** attempt), MAX_RETRY_DELAY);
+            ? retryAfter * 1000
+            : retryDelay * (2 ** attempt);
 
           console.log(
             `[Groq] HTTP ${response.status}. Retry ${attempt + 1}/${retryCount} in ${delay} ms`

@@ -1,0 +1,1199 @@
+====================================================================================================
+.github/workflows/news.yml
+====================================================================================================
+
+name: VIDHWAAN News Engine
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vidhwaan-news-engine
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run News Engine
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          LOG_LEVEL: INFO
+        run: npm run build
+
+      - name: Show generated files
+        run: |
+          echo "===== Working Directory ====="
+          pwd
+          echo
+          echo "===== Repository Files ====="
+          find . -maxdepth 2 -type f | sort
+          echo
+          echo "===== Dist Directory ====="
+          ls -la dist || true
+          echo
+          echo "===== JSON Files ====="
+          find . -name "*.json" | sort
+
+      - name: Commit generated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add dist
+
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+
+          git commit -m "Update generated news JSON"
+          git push
+
+
+====================================================================================================
+.gitignore
+====================================================================================================
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Temporary
+tmp/
+temp/
+.cache/
+
+# Generated Data
+data/raw/*
+data/processed/*
+data/output/*
+
+# Keep folders
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/output/.gitkeep
+!dist/.gitkeep
+
+# Misc
+*.bak
+*.old
+*.orig
+
+
+====================================================================================================
+README.md
+====================================================================================================
+
+# VIDHWAAN News Engine
+
+## Overview
+
+VIDHWAAN News Engine is a fully automated AI-powered news pipeline that collects news from trusted RSS feeds, extracts article content, generates original Telugu news using Groq AI, validates the output, and publishes production-ready JSON files for the VIDHWAAN News PWA.
+
+## Features
+
+- Automatic RSS collection
+- Full article extraction
+- Duplicate removal
+- AI-generated original Telugu news
+- JSON validation
+- Static JSON publishing
+- Fully automated GitHub Actions
+- No database required
+
+## Repository Structure
+
+vidhwaan-news-engine/
+
+├── .github/
+│   └── workflows/
+│       └── news.yml
+│
+├── config/
+│   ├── settings.json
+│   ├── prompts.json
+│   └── sources.json
+│
+├── engine/
+│   ├── index.js
+│   ├── collector/
+│   ├── ai/
+│   ├── publisher/
+│   ├── validator/
+│   └── utils/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── output/
+│
+├── dist/
+│   ├── latest.json
+│   ├── national.json
+│   ├── international.json
+│   └── andhra-pradesh.json
+│
+├── package.json
+├── .gitignore
+├── .env.example
+└── README.md
+
+## Output
+
+The engine generates:
+
+- dist/latest.json
+- dist/national.json
+- dist/international.json
+- dist/andhra-pradesh.json
+
+These files are consumed directly by the VIDHWAAN News frontend.
+
+## License
+
+Copyright © VIDHWAAN.
+All rights reserved.
+
+
+====================================================================================================
+config/prompts.json
+====================================================================================================
+
+{
+  "system": [
+    "You are VIDHWAAN News AI.",
+    "Your job is to generate original Telugu news articles from verified factual input.",
+    "Never translate source articles sentence by sentence.",
+    "Never copy copyrighted text.",
+    "Use only the supplied verified facts.",
+    "Never invent facts, dates, names, numbers or quotations.",
+    "Write in clear, modern, natural Telugu.",
+    "Use a professional newspaper writing style.",
+    "Keep paragraphs short and easy to read.",
+    "Each paragraph should express one logical idea.",
+    "Avoid repetition.",
+    "Avoid promotional language.",
+    "Avoid sensational language.",
+    "Do not mention the news source.",
+    "Do not mention AI.",
+    "Do not use Markdown.",
+    "Do not use HTML.",
+    "Do not use bullet points.",
+    "Return only valid JSON."
+  ],
+
+  "articleSchema": {
+    "headline": "",
+    "summary": "",
+    "paragraphs": [],
+    "category": "",
+    "location": "",
+    "importance": "normal",
+    "tags": []
+  },
+
+  "userPrompt": [
+    "Generate one original Telugu news article using only the verified facts below.",
+    "Return JSON matching the provided schema exactly."
+  ],
+
+  "validation": {
+    "headline": {
+      "minLength": 20,
+      "maxLength": 120
+    },
+
+    "summary": {
+      "minLength": 60,
+      "maxLength": 220
+    },
+
+    "paragraphs": {
+      "minItems": 3,
+      "maxItems": 6,
+      "minLength": 80,
+      "maxLength": 400
+    },
+
+    "tags": {
+      "minItems": 3,
+      "maxItems": 8
+    }
+  }
+}
+
+
+====================================================================================================
+config/settings.json
+====================================================================================================
+
+{
+  "app": {
+    "name": "VIDHWAAN News Engine",
+    "version": "1.0.0",
+    "language": "te",
+    "timezone": "Asia/Kolkata"
+  },
+
+  "pipeline": {
+    "parallel": true,
+    "maxConcurrentSources": 5,
+    "maxConcurrentArticles": 3,
+    "requestTimeout": 30000,
+    "retryCount": 3,
+    "retryDelay": 3000,
+    "maxArticlesPerCategory": 30,
+    "maxArticlesPerSource": 10
+  },
+
+  "ai": {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.2,
+    "maxTokens": 2048
+  },
+
+  "article": {
+    "minParagraphs": 3,
+    "maxParagraphs": 6,
+    "minTags": 3,
+    "maxTags": 8,
+    "readingSpeedWPM": 180
+  },
+
+  "output": {
+    "prettyPrint": true,
+    "language": "te",
+    "directory": "dist",
+    "latest": "latest.json",
+    "categories": {
+      "national": "national.json",
+      "international": "international.json",
+      "andhraPradesh": "andhra-pradesh.json"
+    }
+  },
+
+  "logging": {
+    "enabled": true,
+    "level": "INFO"
+  }
+}
+
+
+====================================================================================================
+config/sources.json
+====================================================================================================
+
+{
+  "categories": {
+    "national": [
+      {
+        "id": "thehindu",
+        "name": "The Hindu",
+        "rss": "https://www.thehindu.com/news/national/feeder/default.rss",
+        "enabled": true
+      },
+      {
+        "id": "indianexpress",
+        "name": "The Indian Express",
+        "rss": "https://indianexpress.com/section/india/feed/",
+        "enabled": true
+      }
+    ],
+
+    "international": [
+      {
+        "id": "reuters-world",
+        "name": "Reuters World",
+        "rss": "https://feeds.reuters.com/Reuters/worldNews",
+        "enabled": true
+      },
+      {
+        "id": "ap-world",
+        "name": "Associated Press",
+        "rss": "https://apnews.com/hub/world-news/rss",
+        "enabled": true
+      }
+    ],
+
+    "andhraPradesh": [
+      {
+        "id": "thehindu-ap",
+        "name": "The Hindu Andhra Pradesh",
+        "rss": "https://www.thehindu.com/news/national/andhra-pradesh/feeder/default.rss",
+        "enabled": true
+      }
+    ]
+  }
+}
+
+
+====================================================================================================
+engine/ai/groq.js
+====================================================================================================
+
+const GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions";
+
+export async function generateArticle({
+  apiKey,
+  model,
+  prompt,
+  temperature = 0.2,
+  maxTokens = 2048
+}) {
+  if (!apiKey) {
+    throw new Error("GROQ_API_KEY is not configured.");
+  }
+
+  const response = await fetch(GROQ_ENDPOINT, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${apiKey}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      model,
+      temperature,
+      max_tokens: maxTokens,
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are VIDHWAAN News AI. Produce only valid JSON. Never include markdown or explanations."
+        },
+        {
+          role: "user",
+          content: prompt
+        }
+      ]
+    })
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`Groq API error (${response.status}): ${errorText}`);
+  }
+
+  const result = await response.json();
+
+  const content = result?.choices?.[0]?.message?.content;
+
+  if (!content) {
+    throw new Error("Groq returned an empty response.");
+  }
+
+  return content.trim();
+}
+
+
+====================================================================================================
+engine/ai/prompt-builder.js
+====================================================================================================
+
+export function buildPrompt(article) {
+  const facts = [
+    `Title: ${article.title}`,
+    `Summary: ${article.excerpt || article.description || ""}`,
+    `Content: ${article.text}`,
+    `Published: ${article.published || "Unknown"}`,
+    `Category: ${article.category}`
+  ].join("\n");
+
+  return `
+Generate ONE original Telugu news article.
+
+Requirements:
+
+- Use ONLY the facts provided.
+- Never invent facts.
+- Never mention the source website.
+- Never translate sentence by sentence.
+- Write natural Telugu.
+- Write like a professional newspaper.
+- Keep paragraphs short.
+- No markdown.
+- No HTML.
+- Return ONLY valid JSON.
+
+JSON format:
+
+{
+  "headline": "",
+  "summary": "",
+  "paragraphs": [],
+  "category": "",
+  "location": "",
+  "importance": "normal",
+  "tags": []
+}
+
+Verified Facts:
+
+${facts}
+`.trim();
+}
+
+
+====================================================================================================
+engine/collector/deduplicator.js
+====================================================================================================
+
+function normalize(value = "") {
+  return String(value)
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s]/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function titleKey(title = "") {
+  return normalize(title);
+}
+
+export function removeDuplicateArticles(articles = []) {
+  const seenUrls = new Set();
+  const seenTitles = new Set();
+
+  const unique = [];
+
+  for (const article of articles) {
+    const url = String(article.url || "").trim().toLowerCase();
+    const title = titleKey(article.title);
+
+    if (!url || !title) {
+      continue;
+    }
+
+    if (seenUrls.has(url)) {
+      continue;
+    }
+
+    if (seenTitles.has(title)) {
+      continue;
+    }
+
+    seenUrls.add(url);
+    seenTitles.add(title);
+
+    unique.push(article);
+  }
+
+  return unique;
+}
+
+
+====================================================================================================
+engine/collector/normalizer.js
+====================================================================================================
+
+import { cleanText, truncate } from "../utils/text.js";
+
+function firstDefined(...values) {
+  for (const value of values) {
+    if (value !== undefined && value !== null && String(value).trim() !== "") {
+      return value;
+    }
+  }
+  return "";
+}
+
+function extractLink(item) {
+  const link = item.link;
+
+  if (typeof link === "string") {
+    return link.trim();
+  }
+
+  if (Array.isArray(link)) {
+    for (const entry of link) {
+      if (typeof entry === "string") {
+        return entry.trim();
+      }
+
+      if (entry?.href) {
+        return String(entry.href).trim();
+      }
+
+      if (entry?.["#text"]) {
+        return String(entry["#text"]).trim();
+      }
+    }
+  }
+
+  if (link?.href) {
+    return String(link.href).trim();
+  }
+
+  if (link?.["#text"]) {
+    return String(link["#text"]).trim();
+  }
+
+  return "";
+}
+
+function extractPublished(item) {
+  return firstDefined(
+    item.pubDate,
+    item.published,
+    item.updated,
+    item["dc:date"],
+    item.isoDate
+  );
+}
+
+function extractDescription(item) {
+  return firstDefined(
+    item.description,
+    item.summary,
+    item.contentSnippet,
+    item.content
+  );
+}
+
+export function normalizeRSSItem(item, category, source) {
+  return {
+    category,
+    sourceId: source.id,
+    sourceName: source.name,
+
+    title: cleanText(firstDefined(item.title)),
+    url: extractLink(item),
+    published: cleanText(extractPublished(item)),
+    description: truncate(cleanText(extractDescription(item)), 600),
+
+    guid: cleanText(firstDefined(item.guid, item.id)),
+    author: cleanText(firstDefined(item.creator, item.author))
+  };
+}
+
+export function normalizeRSSItems(items, category, source) {
+  return items
+    .map(item => normalizeRSSItem(item, category, source))
+    .filter(item => item.title && item.url);
+}
+
+
+====================================================================================================
+engine/collector/parser.js
+====================================================================================================
+
+import { JSDOM } from "jsdom";
+import { Readability } from "@mozilla/readability";
+import { cleanText } from "../utils/text.js";
+
+export async function extractArticle(url, timeout = 30000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "User-Agent": "VIDHWAAN News Engine/1.0"
+      },
+      signal: controller.signal
+    });
+
+    if (!response.ok) {
+      throw new Error(`Article request failed (${response.status})`);
+    }
+
+    const html = await response.text();
+
+    const dom = new JSDOM(html, {
+      url
+    });
+
+    const reader = new Readability(dom.window.document);
+    const article = reader.parse();
+
+    if (!article) {
+      return null;
+    }
+
+    return {
+      url,
+      title: cleanText(article.title || ""),
+      byline: cleanText(article.byline || ""),
+      excerpt: cleanText(article.excerpt || ""),
+      text: cleanText(article.textContent || ""),
+      length: article.length || 0,
+      siteName: cleanText(article.siteName || "")
+    };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+
+====================================================================================================
+engine/collector/rss.js
+====================================================================================================
+
+import { XMLParser } from "fast-xml-parser";
+
+const parser = new XMLParser({
+  ignoreAttributes: false,
+  attributeNamePrefix: "",
+  trimValues: true,
+  parseTagValue: true
+});
+
+export async function fetchRSS(url, timeout = 30000) {
+  const controller = new AbortController();
+
+  const timer = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "User-Agent": "VIDHWAAN News Engine/1.0"
+      },
+      signal: controller.signal
+    });
+
+    if (!response.ok) {
+      throw new Error(`RSS request failed (${response.status})`);
+    }
+
+    const xml = await response.text();
+
+    return parser.parse(xml);
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+export function extractRSSItems(feed) {
+  if (!feed) return [];
+
+  if (feed.rss?.channel?.item) {
+    return Array.isArray(feed.rss.channel.item)
+      ? feed.rss.channel.item
+      : [feed.rss.channel.item];
+  }
+
+  if (feed.feed?.entry) {
+    return Array.isArray(feed.feed.entry)
+      ? feed.feed.entry
+      : [feed.feed.entry];
+  }
+
+  return [];
+}
+
+export async function loadRSS(url, timeout = 30000) {
+  const feed = await fetchRSS(url, timeout);
+  return extractRSSItems(feed);
+}
+
+
+====================================================================================================
+engine/index.js
+====================================================================================================
+
+import "node:process";
+import path from "node:path";
+
+import settings from "../config/settings.json" with { type: "json" };
+import sources from "../config/sources.json" with { type: "json" };
+
+import logger from "./utils/logger.js";
+
+import { loadRSS } from "./collector/rss.js";
+import { normalizeRSSItems } from "./collector/normalizer.js";
+import { removeDuplicateArticles } from "./collector/deduplicator.js";
+import { extractArticle } from "./collector/parser.js";
+
+import { buildPrompt } from "./ai/prompt-builder.js";
+import { generateArticle } from "./ai/groq.js";
+
+import { parseAndValidate } from "./validator/validator.js";
+import { publishOutput } from "./publisher/json-builder.js";
+
+async function processSource(category, source) {
+  logger.info(`Loading RSS: ${source.name}`);
+
+  const rssItems = await loadRSS(
+    source.rss,
+    settings.pipeline.requestTimeout
+  );
+
+  const normalized = normalizeRSSItems(rssItems, category, source);
+
+  return normalized.slice(0, settings.pipeline.maxArticlesPerSource);
+}
+
+async function processArticle(article) {
+  logger.info(`Processing: ${article.title}`);
+
+  const extracted = await extractArticle(
+    article.url,
+    settings.pipeline.requestTimeout
+  );
+
+  if (!extracted?.text) {
+    logger.warn(`Skipping (empty article): ${article.url}`);
+    return null;
+  }
+
+  const prompt = buildPrompt({
+    ...article,
+    ...extracted
+  });
+
+  const aiResponse = await generateArticle({
+    apiKey: process.env.GROQ_API_KEY,
+    model: settings.ai.model,
+    prompt,
+    temperature: settings.ai.temperature,
+    maxTokens: settings.ai.maxTokens
+  });
+
+  const generated = parseAndValidate(aiResponse);
+
+  return {
+    ...generated,
+    source: article.sourceName,
+    published: article.published,
+    originalUrl: article.url,
+    generatedAt: new Date().toISOString()
+  };
+}
+
+async function main() {
+  logger.info("VIDHWAAN News Engine started.");
+
+  const categorized = {};
+
+  for (const [category, sourceList] of Object.entries(sources.categories)) {
+    let articles = [];
+
+    for (const source of sourceList.filter(s => s.enabled)) {
+      try {
+        const result = await processSource(category, source);
+        articles.push(...result);
+      } catch (error) {
+        logger.error(source.name, error.message);
+      }
+    }
+
+    articles = removeDuplicateArticles(articles);
+    articles = articles.slice(0, settings.pipeline.maxArticlesPerCategory);
+
+    const output = [];
+
+    for (const article of articles) {
+      try {
+        const generated = await processArticle(article);
+
+        if (generated) {
+          output.push(generated);
+        }
+      } catch (error) {
+        logger.error(article.title, error.message);
+      }
+    }
+
+    categorized[category] = output;
+  }
+
+  const outputDir = path.resolve(settings.output.directory);
+
+  const summary = await publishOutput(outputDir, categorized);
+
+  logger.info(
+    `Finished. Categories: ${summary.categories}, Articles: ${summary.totalArticles}`
+  );
+}
+
+main().catch(error => {
+  logger.error(error);
+  process.exit(1);
+});
+
+
+====================================================================================================
+engine/publisher/json-builder.js
+====================================================================================================
+
+import path from "node:path";
+import { writeJson } from "../utils/file.js";
+
+export async function writeCategory(categoryName, articles, outputDir) {
+  const fileName = `${categoryName}.json`;
+
+  const payload = {
+    category: categoryName,
+    generatedAt: new Date().toISOString(),
+    totalArticles: articles.length,
+    articles
+  };
+
+  await writeJson(path.join(outputDir, fileName), payload, true);
+}
+
+export async function writeLatest(allArticles, outputDir) {
+  const payload = {
+    generatedAt: new Date().toISOString(),
+    totalArticles: allArticles.length,
+    articles: allArticles
+  };
+
+  await writeJson(path.join(outputDir, "latest.json"), payload, true);
+}
+
+export async function publishOutput(outputDir, categorizedArticles) {
+  const allArticles = [];
+
+  for (const [category, articles] of Object.entries(categorizedArticles)) {
+    await writeCategory(category, articles, outputDir);
+    allArticles.push(...articles);
+  }
+
+  allArticles.sort((a, b) => {
+    const aTime = new Date(a.published || 0).getTime();
+    const bTime = new Date(b.published || 0).getTime();
+    return bTime - aTime;
+  });
+
+  await writeLatest(allArticles, outputDir);
+
+  return {
+    categories: Object.keys(categorizedArticles).length,
+    totalArticles: allArticles.length
+  };
+}
+
+
+====================================================================================================
+engine/utils/file.js
+====================================================================================================
+
+import { promises as fs } from "node:fs";
+import path from "node:path";
+
+export async function ensureDirectory(dir) {
+  await fs.mkdir(dir, { recursive: true });
+}
+
+export async function readJson(filePath) {
+  const data = await fs.readFile(filePath, "utf8");
+  return JSON.parse(data);
+}
+
+export async function writeJson(filePath, data, pretty = true) {
+  await ensureDirectory(path.dirname(filePath));
+
+  const content = pretty
+    ? JSON.stringify(data, null, 2)
+    : JSON.stringify(data);
+
+  await fs.writeFile(filePath, content + "\n", "utf8");
+}
+
+export async function readText(filePath) {
+  return fs.readFile(filePath, "utf8");
+}
+
+export async function writeText(filePath, content) {
+  await ensureDirectory(path.dirname(filePath));
+  await fs.writeFile(filePath, content, "utf8");
+}
+
+export async function fileExists(filePath) {
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+
+====================================================================================================
+engine/utils/logger.js
+====================================================================================================
+
+const LEVELS = {
+  DEBUG: 10,
+  INFO: 20,
+  WARN: 30,
+  ERROR: 40
+};
+
+const currentLevel =
+  LEVELS[(process.env.LOG_LEVEL || "INFO").toUpperCase()] ?? LEVELS.INFO;
+
+function timestamp() {
+  return new Date().toISOString();
+}
+
+function write(level, ...args) {
+  if (LEVELS[level] < currentLevel) return;
+
+  const prefix = `[${timestamp()}] [${level}]`;
+
+  if (level === "ERROR") {
+    console.error(prefix, ...args);
+  } else if (level === "WARN") {
+    console.warn(prefix, ...args);
+  } else {
+    console.log(prefix, ...args);
+  }
+}
+
+export const logger = {
+  debug: (...args) => write("DEBUG", ...args),
+  info: (...args) => write("INFO", ...args),
+  warn: (...args) => write("WARN", ...args),
+  error: (...args) => write("ERROR", ...args)
+};
+
+export default logger;
+
+
+====================================================================================================
+engine/utils/text.js
+====================================================================================================
+
+import he from "he";
+
+export function decodeHtml(text = "") {
+  return he.decode(String(text));
+}
+
+export function stripHtml(html = "") {
+  return String(html)
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function normalizeWhitespace(text = "") {
+  return String(text)
+    .replace(/\r\n/g, "\n")
+    .replace(/\r/g, "\n")
+    .replace(/[ \t]+/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+export function cleanText(text = "") {
+  return normalizeWhitespace(stripHtml(decodeHtml(text)));
+}
+
+export function truncate(text = "", maxLength = 200) {
+  const value = String(text).trim();
+
+  if (value.length <= maxLength) {
+    return value;
+  }
+
+  return value.slice(0, maxLength).trimEnd() + "…";
+}
+
+export function wordCount(text = "") {
+  const words = cleanText(text).split(/\s+/).filter(Boolean);
+  return words.length;
+}
+
+export function readingTime(text = "", wordsPerMinute = 180) {
+  const words = wordCount(text);
+  return Math.max(1, Math.ceil(words / wordsPerMinute));
+}
+
+export function uniqueStrings(values = []) {
+  return [...new Set(values.map(v => String(v).trim()).filter(Boolean))];
+}
+
+export function slugify(text = "") {
+  return String(text)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+
+====================================================================================================
+engine/utils/time.js
+====================================================================================================
+
+export function now() {
+  return new Date();
+}
+
+export function isoNow() {
+  return new Date().toISOString();
+}
+
+export function unixNow() {
+  return Math.floor(Date.now() / 1000);
+}
+
+export function formatIST(date = new Date()) {
+  return new Intl.DateTimeFormat("en-IN", {
+    timeZone: "Asia/Kolkata",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false
+  }).format(date);
+}
+
+export function minutesBetween(start, end) {
+  return Math.round((end.getTime() - start.getTime()) / 60000);
+}
+
+export function secondsBetween(start, end) {
+  return Math.round((end.getTime() - start.getTime()) / 1000);
+}
+
+export function executionTimer() {
+  const started = Date.now();
+
+  return {
+    elapsedMs() {
+      return Date.now() - started;
+    },
+
+    elapsedSeconds() {
+      return Number(((Date.now() - started) / 1000).toFixed(2));
+    }
+  };
+}
+
+
+====================================================================================================
+engine/validator/validator.js
+====================================================================================================
+
+function isNonEmptyString(value) {
+  return typeof value === "string" && value.trim().length > 0;
+}
+
+function isStringArray(value) {
+  return Array.isArray(value) &&
+    value.length > 0 &&
+    value.every(item => isNonEmptyString(item));
+}
+
+export function parseArticle(jsonText) {
+  try {
+    return JSON.parse(jsonText);
+  } catch (error) {
+    throw new Error(`Invalid JSON returned by AI: ${error.message}`);
+  }
+}
+
+export function validateArticle(article) {
+  if (!article || typeof article !== "object") {
+    throw new Error("Article must be a JSON object.");
+  }
+
+  if (!isNonEmptyString(article.headline)) {
+    throw new Error("Missing or invalid 'headline'.");
+  }
+
+  if (!isNonEmptyString(article.summary)) {
+    throw new Error("Missing or invalid 'summary'.");
+  }
+
+  if (!isStringArray(article.paragraphs)) {
+    throw new Error("Missing or invalid 'paragraphs'.");
+  }
+
+  if (!isNonEmptyString(article.category)) {
+    throw new Error("Missing or invalid 'category'.");
+  }
+
+  if (!isNonEmptyString(article.location)) {
+    throw new Error("Missing or invalid 'location'.");
+  }
+
+  if (!isNonEmptyString(article.importance)) {
+    throw new Error("Missing or invalid 'importance'.");
+  }
+
+  if (!isStringArray(article.tags)) {
+    throw new Error("Missing or invalid 'tags'.");
+  }
+
+  return article;
+}
+
+export function parseAndValidate(jsonText) {
+  const article = parseArticle(jsonText);
+  return validateArticle(article);
+}
+
+
+====================================================================================================
+package.json
+====================================================================================================
+
+{
+  "name": "vidhwaan-news-engine",
+  "version": "1.0.0",
+  "description": "AI-powered automated Telugu news engine",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node engine/index.js"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "cheerio": "^1.1.2",
+    "fast-xml-parser": "^5.3.0",
+    "he": "^1.2.0",
+    "html-to-text": "^9.0.5",
+    "jsdom": "^26.1.0"
+  }
+}
+
+

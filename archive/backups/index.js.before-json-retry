@@ -48,41 +48,21 @@ async function processArticle(article) {
     ...extracted
   });
 
-  let generated;
-  let lastResponse = "";
+  const aiResponse = await generateArticle({
+    apiKey: process.env.GROQ_API_KEY,
+    model: settings.ai.model,
+    prompt,
+    temperature: settings.ai.temperature,
+    maxTokens: settings.ai.maxTokens,
+    retryCount: settings.pipeline.retryCount,
+    retryDelay: settings.pipeline.retryDelay
+  });
 
-  for (let attempt = 1; attempt <= 2; attempt++) {
-    const aiResponse = await generateArticle({
-      apiKey: process.env.GROQ_API_KEY,
-      model: settings.ai.model,
-      prompt,
-      temperature: settings.ai.temperature,
-      maxTokens: settings.ai.maxTokens,
-      retryCount: settings.pipeline.retryCount,
-      retryDelay: settings.pipeline.retryDelay
-    });
+  console.log("\n===== AI RESPONSE START =====");
+  console.log(aiResponse);
+  console.log("===== AI RESPONSE END =====\n");
 
-    lastResponse = aiResponse;
-
-    console.log("\n===== AI RESPONSE START =====");
-    console.log(aiResponse);
-    console.log("===== AI RESPONSE END =====\n");
-
-    try {
-      generated = parseAndValidate(aiResponse);
-      break;
-    } catch (error) {
-      if (
-        attempt < 2 &&
-        error.message.startsWith("Invalid JSON returned by AI")
-      ) {
-        logger.warn("Invalid JSON from AI. Regenerating once...");
-        continue;
-      }
-
-      throw error;
-    }
-  }
+  const generated = parseAndValidate(aiResponse);
 
   return {
     ...generated,
