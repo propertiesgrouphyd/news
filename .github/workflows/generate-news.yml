@@ -1,0 +1,58 @@
+name: VIDHWAAN Daily News Generation
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # 04:00 AM IST
+    # 22:30 UTC previous day
+    - cron: "30 22 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 60
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate News JSON
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          LOG_LEVEL: INFO
+        run: node engine/run.js
+
+      - name: Verify generated JSON
+        run: |
+          echo "===== Generated News ====="
+          find data/output/news -type f -name "*.json" | sort
+
+      - name: Commit Daily JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/output/news
+
+          if git diff --cached --quiet; then
+            echo "No JSON changes"
+            exit 0
+          fi
+
+          git commit -m "Update daily news JSON"
+          git push
