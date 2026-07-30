@@ -12,6 +12,8 @@ const RETRYABLE_STATUS = new Set([
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
+const GROQ_REQUEST_DELAY = 5000;
+
 export async function generateArticle({
   apiKey,
   model,
@@ -29,6 +31,8 @@ export async function generateArticle({
 
   for (let attempt = 0; attempt <= retryCount; attempt++) {
     try {
+      await sleep(GROQ_REQUEST_DELAY);
+
       const response = await fetch(GROQ_ENDPOINT, {
         method: "POST",
         headers: {
@@ -56,9 +60,20 @@ export async function generateArticle({
       if (!response.ok) {
         const errorText = await response.text();
 
-        if (
-          response.status === 429
-        ) {
+        if (response.status === 429) {
+
+          if (attempt < retryCount) {
+
+            const delay = 5000 * (attempt + 1);
+
+            console.log(
+              `[Groq] Rate limit reached. Retrying in ${delay} ms`
+            );
+
+            await sleep(delay);
+            continue;
+
+          }
 
           throw new Error(
             `Groq rate limit reached: ${errorText}`
