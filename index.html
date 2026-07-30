@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VIDHWAAN Telugu News - Latest Telugu News</title>
+
+<meta name="description"
+content="VIDHWAAN Telugu News - AI powered Telugu news platform with latest India, world and Andhra Pradesh news.">
+
+<meta name="keywords"
+content="VIDHWAAN Telugu News, Telugu News, India News, Andhra Pradesh News">
+
+<meta name="theme-color" content="#111111">
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="icon" href="icons/logo.png">
+
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+
+<link rel="stylesheet" href="main.css">
+
+</head>
+
+
+<body>
+
+
+<header class="app-header">
+
+    <div class="brand">
+        <h1>VIDHWAAN</h1>
+        <p>తెలుగు న్యూస్</p>
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<section id="feed" class="feed">
+
+    <div class="loading">
+        వార్తలు లోడ్ అవుతున్నాయి...
+    </div>
+
+</section>
+
+
+
+<section id="article-view" class="article-view">
+
+
+<button id="back-button">
+← వెనుకకు
+</button>
+
+
+<article id="article-content">
+
+</article>
+
+
+</section>
+
+
+</main>
+
+
+
+<div id="error-box" class="error-box">
+
+</div>
+
+
+
+<script src="app.js"></script>
+
+
+<script>
+
+if ("serviceWorker" in navigator) {
+
+    navigator.serviceWorker.register(
+        "sw.js"
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
