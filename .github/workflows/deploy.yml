@@ -1,8 +1,6 @@
 name: VIDHWAAN NEWS PWA DEPLOY
 
-
 on:
-
   push:
     branches:
       - main
@@ -10,11 +8,8 @@ on:
   workflow_dispatch:
 
 
-
 permissions:
-
   contents: read
-
 
 
 jobs:
@@ -23,48 +18,27 @@ jobs:
 
     runs-on: ubuntu-latest
 
-
     env:
-
       PROJECT_NAME: vidhwaan-news
-
 
 
     steps:
 
 
-      # =====================================
-      # CHECKOUT
-      # =====================================
-
       - name: Checkout Repository
-
         uses: actions/checkout@v4
 
 
 
-      # =====================================
-      # NODE
-      # =====================================
-
-      - name: Setup Node.js
-
+      - name: Setup Node
         uses: actions/setup-node@v4
-
         with:
-
           node-version: 22
 
 
 
-      # =====================================
-      # INSTALL TOOLS
-      # =====================================
-
-      - name: Install Build Tools
-
+      - name: Install Tools
         run: |
-
           npm install -g wrangler
           npm install -g terser
           npm install -g javascript-obfuscator
@@ -73,18 +47,13 @@ jobs:
 
 
 
-      # =====================================
-      # CREATE DIST
-      # =====================================
-
-      - name: Prepare Production Folder
+      - name: Prepare Dist
 
         run: |
 
           rm -rf dist
 
-          mkdir -p dist
-
+          mkdir dist
 
           cp index.html dist/
           cp main.css dist/
@@ -92,21 +61,13 @@ jobs:
           cp sw.js dist/
           cp manifest.json dist/
 
-
           cp -r icons dist/
 
-
           mkdir -p dist/data/output/news
-
 
           cp -r data/output/news/* dist/data/output/news/ || true
 
 
-
-
-      # =====================================
-      # MINIFY HTML
-      # =====================================
 
       - name: Minify HTML
 
@@ -116,17 +77,10 @@ jobs:
           --collapse-whitespace \
           --remove-comments \
           --remove-redundant-attributes \
-          --remove-tag-whitespace \
-          --use-short-doctype \
           dist/index.html \
           -o dist/index.html
 
 
-
-
-      # =====================================
-      # MINIFY CSS
-      # =====================================
 
       - name: Minify CSS
 
@@ -139,11 +93,6 @@ jobs:
 
 
 
-
-      # =====================================
-      # MINIFY JAVASCRIPT
-      # =====================================
-
       - name: Minify JavaScript
 
         run: |
@@ -154,11 +103,6 @@ jobs:
           -o dist/app.js
 
 
-
-
-      # =====================================
-      # OBFUSCATE JAVASCRIPT
-      # =====================================
 
       - name: Obfuscate JavaScript
 
@@ -176,99 +120,69 @@ jobs:
           --rename-globals false \
           --self-defending true \
           --split-strings true \
-          --split-strings-chunk-length 8 \
           --string-array true \
-          --string-array-encoding base64 \
-          --string-array-threshold 0.75
+          --string-array-encoding base64
 
 
 
-
-      # =====================================
-      # CACHE VERSION
-      # =====================================
-
-      - name: Generate Build Version
+      - name: Cache Busting
 
         run: |
 
-          echo "BUILD_VERSION=$(date +%s)" >> $GITHUB_ENV
+          VERSION=$(date +%s)
+
+          sed -i "s/main.css/main.css?v=$VERSION/g" dist/index.html
+
+          sed -i "s/app.js/app.js?v=$VERSION/g" dist/index.html
+
+          sed -i "s/manifest.json/manifest.json?v=$VERSION/g" dist/index.html
 
 
 
-
-      - name: Inject Cache Busting
-
-        run: |
-
-          sed -i \
-          "s|main.css|main.css?v=${BUILD_VERSION}|g" \
-          dist/index.html
-
-
-          sed -i \
-          "s|app.js|app.js?v=${BUILD_VERSION}|g" \
-          dist/index.html
-
-
-          sed -i \
-          "s|manifest.json|manifest.json?v=${BUILD_VERSION}|g" \
-          dist/index.html
-
-
-
-
-
-      # =====================================
-      # CLOUDFLARE HEADERS
-      # =====================================
-
-      - name: Create Cloudflare Headers
+      - name: Create Headers
 
         run: |
 
-          cat > dist/_headers <<'EOF'
-/*
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: SAMEORIGIN
-  Referrer-Policy: strict-origin-when-cross-origin
+          echo '/*' > dist/_headers
+
+          echo '  X-Content-Type-Options: nosniff' >> dist/_headers
+
+          echo '  X-Frame-Options: SAMEORIGIN' >> dist/_headers
+
+          echo '  Referrer-Policy: strict-origin-when-cross-origin' >> dist/_headers
+
+          echo '' >> dist/_headers
+
+          echo '/data/output/news/*' >> dist/_headers
+
+          echo '  Cache-Control: no-store, max-age=0' >> dist/_headers
+
+          echo '' >> dist/_headers
+
+          echo '/*.js' >> dist/_headers
+
+          echo '  Cache-Control: public, max-age=31536000' >> dist/_headers
+
+          echo '' >> dist/_headers
+
+          echo '/*.css' >> dist/_headers
+
+          echo '  Cache-Control: public, max-age=31536000' >> dist/_headers
 
 
-/data/output/news/*
-  Cache-Control: no-store, max-age=0
 
-
-/*.js
-  Cache-Control: public, max-age=31536000
-
-
-/*.css
-  Cache-Control: public, max-age=31536000
-EOF
-
-
-
-
-
-      # =====================================
-      # CREATE CLOUDFLARE PROJECT
-      # =====================================
-
-      - name: Create Cloudflare Pages Project
+      - name: Create Cloudflare Project
 
         env:
 
-          CLOUDFLARE_API_TOKEN:
-            ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
-          CLOUDFLARE_ACCOUNT_ID:
-            ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
 
         run: |
 
           if ! wrangler pages project list | grep -q "$PROJECT_NAME"
-
           then
 
             wrangler pages project create "$PROJECT_NAME" \
@@ -276,47 +190,30 @@ EOF
 
           else
 
-            echo "Cloudflare project already exists"
+            echo "Project exists"
 
           fi
 
 
 
-
-
-      # =====================================
-      # DEPLOY
-      # =====================================
-
-      - name: Deploy To Cloudflare Pages
+      - name: Deploy Cloudflare Pages
 
         env:
 
-          CLOUDFLARE_API_TOKEN:
-            ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
-          CLOUDFLARE_ACCOUNT_ID:
-            ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
 
         run: |
 
           wrangler pages deploy dist \
-          --project-name="$PROJECT_NAME" \
-          --commit-dirty=true
+          --project-name="$PROJECT_NAME"
 
 
 
-
-
-      # =====================================
-      # SUCCESS
-      # =====================================
-
-      - name: Deployment Complete
+      - name: Success
 
         run: |
 
-          echo "================================="
-          echo "VIDHWAAN Telugu News deployed"
-          echo "================================="
+          echo "VIDHWAAN NEWS DEPLOYED SUCCESSFULLY"
