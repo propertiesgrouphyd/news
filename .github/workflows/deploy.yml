@@ -129,13 +129,16 @@ jobs:
 
         run: |
 
+
           VERSION=$(date +%s)
 
-          sed -i "s/main.css/main.css?v=$VERSION/g" dist/index.html
+          sed -i "s|main.css|main.css?v=$VERSION|g" dist/index.html
 
-          sed -i "s/app.js/app.js?v=$VERSION/g" dist/index.html
+          sed -i "s|app.js|app.js?v=$VERSION|g" dist/index.html
 
-          sed -i "s/manifest.json/manifest.json?v=$VERSION/g" dist/index.html
+          sed -i "s|manifest.json|manifest.json?v=$VERSION|g" dist/index.html
+
+          sed -i "s|sw.js?v=VERSION|sw.js?v=$VERSION|g" dist/index.html
 
 
 
