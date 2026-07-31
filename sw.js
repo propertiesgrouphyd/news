@@ -4,7 +4,7 @@
 ========================================= */
 
 
-const CACHE_NAME = "vidhwaan-news-v2";
+const CACHE_NAME = "vidhwaan-news-v3";
 
 
 const APP_FILES = [
