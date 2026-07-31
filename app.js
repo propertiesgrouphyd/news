@@ -585,3 +585,112 @@ window.addEventListener(
     }
 );
 
+
+
+/* =========================
+   PWA INSTALL MANAGER
+========================= */
+
+let deferredInstallPrompt = null;
+
+
+const installButton =
+    document.getElementById(
+        "install-button"
+    );
+
+
+
+window.addEventListener(
+    "beforeinstallprompt",
+    event => {
+
+
+        event.preventDefault();
+
+
+        deferredInstallPrompt =
+            event;
+
+
+        if (installButton) {
+
+            installButton.style.display =
+                "block";
+
+        }
+
+    }
+);
+
+
+
+if (installButton) {
+
+
+    installButton.addEventListener(
+        "click",
+        async () => {
+
+
+            if (!deferredInstallPrompt) {
+
+                return;
+
+            }
+
+
+            deferredInstallPrompt.prompt();
+
+
+            const result =
+                await deferredInstallPrompt.userChoice;
+
+
+            if (
+                result.outcome === "accepted"
+            ) {
+
+                console.log(
+                    "PWA installed"
+                );
+
+            }
+
+
+            deferredInstallPrompt = null;
+
+
+            installButton.style.display =
+                "none";
+
+
+        }
+    );
+
+
+}
+
+
+
+window.addEventListener(
+    "appinstalled",
+    () => {
+
+
+        if (installButton) {
+
+            installButton.style.display =
+                "none";
+
+        }
+
+
+        console.log(
+            "VIDHWAAN News installed"
+        );
+
+
+    }
+);
+
