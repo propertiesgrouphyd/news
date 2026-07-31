@@ -1,26 +1,17 @@
 /* =========================================
-   VIDHWAAN Telugu News PWA
-   Service Worker
+   VIDHWAAN Telugu News
+   Production Service Worker
 ========================================= */
 
+const CACHE_NAME = "vidhwaan-news-shell";
 
-const CACHE_NAME = "vidhwaan-news-v4";
-
-
-const APP_FILES = [
-
-    "/",
-    "/index.html",
-    "/main.css",
-    "/app.js",
-    "/manifest.json",
+const ICON_CACHE = [
 
     "/icons/logo.png",
     "/icons/icon-192.png",
     "/icons/icon-512.png"
 
 ];
-
 
 
 /* =========================
@@ -31,22 +22,20 @@ self.addEventListener(
     "install",
     event => {
 
+        self.skipWaiting();
+
         event.waitUntil(
 
             caches.open(CACHE_NAME)
                 .then(
                     cache =>
-                        cache.addAll(APP_FILES)
+                        cache.addAll(ICON_CACHE)
                 )
 
         );
 
-
-        self.skipWaiting();
-
     }
 );
-
 
 
 /* =========================
@@ -59,30 +48,33 @@ self.addEventListener(
 
         event.waitUntil(
 
-            caches.keys()
-                .then(
-                    keys =>
-                        Promise.all(
-                            keys
-                                .filter(
-                                    key =>
-                                        key !== CACHE_NAME
-                                )
-                                .map(
-                                    key =>
-                                        caches.delete(key)
-                                )
+            (async () => {
+
+                const keys =
+                    await caches.keys();
+
+                await Promise.all(
+
+                    keys
+                        .filter(
+                            key =>
+                                key !== CACHE_NAME
                         )
-                )
+                        .map(
+                            key =>
+                                caches.delete(key)
+                        )
+
+                );
+
+                await self.clients.claim();
+
+            })()
 
         );
 
-
-        self.clients.claim();
-
     }
 );
-
 
 
 /* =========================
@@ -93,19 +85,26 @@ self.addEventListener(
     "fetch",
     event => {
 
+        if (
+            event.request.method !== "GET"
+        ) {
+
+            return;
+
+        }
+
 
         const url =
             new URL(event.request.url);
 
 
-
-        /*
-          Daily news JSON:
-          Always network fresh
-        */
+        /* =========================
+           DAILY NEWS JSON
+           Always Network
+        ========================= */
 
         if (
-            url.pathname.includes(
+            url.pathname.startsWith(
                 "/data/output/news/"
             )
         ) {
@@ -115,7 +114,7 @@ self.addEventListener(
                 fetch(
                     event.request,
                     {
-                        cache:"no-store"
+                        cache: "no-store"
                     }
                 )
 
@@ -126,27 +125,105 @@ self.addEventListener(
         }
 
 
+        /* =========================
+           ICONS
+           Cache First
+        ========================= */
 
-        /*
-          App shell:
-          Cache first
-        */
+        if (
+            url.pathname.startsWith(
+                "/icons/"
+            )
+        ) {
+
+            event.respondWith(
+
+                caches.match(
+                    event.request
+                )
+                .then(
+                    cached => {
+
+                        if (cached) {
+
+                            return cached;
+
+                        }
+
+                        return fetch(
+                            event.request
+                        )
+                        .then(
+                            response => {
+
+                                const copy =
+                                    response.clone();
+
+                                caches.open(
+                                    CACHE_NAME
+                                )
+                                .then(
+                                    cache =>
+                                        cache.put(
+                                            event.request,
+                                            copy
+                                        )
+                                );
+
+                                return response;
+
+                            }
+                        );
+
+                    }
+                )
+
+            );
+
+            return;
+
+        }
+
+
+        /* =========================
+           APP SHELL
+           Network First
+        ========================= */
 
         event.respondWith(
 
-            caches.match(
+            fetch(
                 event.request
             )
             .then(
-                cached =>
+                response => {
 
-                    cached ||
-                    fetch(event.request)
+                    const copy =
+                        response.clone();
 
+                    caches.open(
+                        CACHE_NAME
+                    )
+                    .then(
+                        cache =>
+                            cache.put(
+                                event.request,
+                                copy
+                            )
+                    );
+
+                    return response;
+
+                }
+            )
+            .catch(
+                () =>
+                    caches.match(
+                        event.request
+                    )
             )
 
         );
-
 
     }
 );
