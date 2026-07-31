@@ -61,14 +61,67 @@ const DOM = {
    DATE MANAGER
 ========================= */
 
-function getISTDate() {
+function getNewsDate() {
 
-    return new Intl.DateTimeFormat(
-        "en-CA",
-        {
-            timeZone: APP_CONFIG.TIMEZONE
-        }
-    ).format(new Date());
+
+    const parts =
+        new Intl.DateTimeFormat(
+            "en-CA",
+            {
+                timeZone: APP_CONFIG.TIMEZONE,
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                hour12: false
+            }
+        )
+        .formatToParts(new Date());
+
+
+    let year = "";
+    let month = "";
+    let day = "";
+    let hour = 0;
+
+
+    parts.forEach(part => {
+
+        if (part.type === "year")
+            year = part.value;
+
+        if (part.type === "month")
+            month = part.value;
+
+        if (part.type === "day")
+            day = part.value;
+
+        if (part.type === "hour")
+            hour = Number(part.value);
+
+    });
+
+
+
+    const date =
+        new Date(
+            `${year}-${month}-${day}T00:00:00`
+        );
+
+
+    if (hour < 5) {
+
+        date.setDate(
+            date.getDate() - 1
+        );
+
+    }
+
+
+    return date
+        .toISOString()
+        .slice(0, 10);
+
 
 }
 
@@ -80,7 +133,7 @@ function getISTDate() {
 
 async function loadNews() {
 
-    const date = getISTDate();
+    const date = getNewsDate();
 
     const url =
         `${APP_CONFIG.NEWS_PATH}${date}.json`;
