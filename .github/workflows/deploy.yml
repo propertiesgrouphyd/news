@@ -1,0 +1,310 @@
+name: VIDHWAAN NEWS DEPLOY
+
+
+on:
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+
+
+jobs:
+
+  deploy:
+
+    runs-on: ubuntu-latest
+
+
+    permissions:
+
+      contents: read
+
+
+    env:
+
+      PROJECT_NAME: vidhwaan-news
+
+
+
+    steps:
+
+
+      # =====================================
+      # CHECKOUT
+      # =====================================
+
+      - name: Checkout Repository
+
+        uses: actions/checkout@v4
+
+
+
+      # =====================================
+      # NODE
+      # =====================================
+
+      - name: Setup Node.js
+
+        uses: actions/setup-node@v4
+
+        with:
+
+          node-version: 22
+
+
+
+      # =====================================
+      # INSTALL TOOLS
+      # =====================================
+
+      - name: Install Build Tools
+
+        run: |
+
+          npm install -g terser
+          npm install -g javascript-obfuscator
+          npm install -g clean-css-cli
+          npm install -g html-minifier-terser
+          npm install -g wrangler
+
+
+
+      # =====================================
+      # CREATE DIST
+      # =====================================
+
+      - name: Prepare Dist Folder
+
+        run: |
+
+          rm -rf dist
+
+          mkdir -p dist
+
+
+          cp index.html dist/
+          cp main.css dist/
+          cp app.js dist/
+          cp sw.js dist/
+          cp manifest.json dist/
+
+
+          cp -r icons dist/
+
+
+          mkdir -p dist/data/output/news
+
+          cp -r data/output/news/* dist/data/output/news/ || true
+
+
+
+      # =====================================
+      # MINIFY HTML
+      # =====================================
+
+      - name: Minify HTML
+
+        run: |
+
+          html-minifier-terser \
+          --collapse-whitespace \
+          --remove-comments \
+          --remove-redundant-attributes \
+          --remove-tag-whitespace \
+          --use-short-doctype \
+          dist/index.html \
+          -o dist/index.html
+
+
+
+      # =====================================
+      # MINIFY CSS
+      # =====================================
+
+      - name: Minify CSS
+
+        run: |
+
+          cleancss \
+          -O2 \
+          dist/main.css \
+          -o dist/main.css
+
+
+
+      # =====================================
+      # MINIFY JAVASCRIPT
+      # =====================================
+
+      - name: Minify JavaScript
+
+        run: |
+
+          terser dist/app.js \
+          --compress \
+          --mangle \
+          -o dist/app.js
+
+
+
+      # =====================================
+      # OBFUSCATE JAVASCRIPT
+      # =====================================
+
+      - name: Obfuscate JavaScript
+
+        run: |
+
+          javascript-obfuscator dist/app.js \
+          --output dist/app.js \
+          --compact true \
+          --control-flow-flattening true \
+          --control-flow-flattening-threshold 0.75 \
+          --dead-code-injection true \
+          --dead-code-injection-threshold 0.2 \
+          --disable-console-output true \
+          --identifier-names-generator hexadecimal \
+          --rename-globals false \
+          --self-defending true \
+          --split-strings true \
+          --split-strings-chunk-length 8 \
+          --string-array true \
+          --string-array-encoding base64 \
+          --string-array-threshold 0.75
+
+
+
+      # =====================================
+      # BUILD VERSION
+      # =====================================
+
+      - name: Generate Build Version
+
+        run: |
+
+          echo "BUILD_VERSION=$(date +%s)" >> $GITHUB_ENV
+
+
+
+      # =====================================
+      # CACHE BUSTING
+      # =====================================
+
+      - name: Inject Cache Busting
+
+        run: |
+
+          sed -i \
+          "s|main.css|main.css?v=${BUILD_VERSION}|g" \
+          dist/index.html
+
+
+          sed -i \
+          "s|app.js|app.js?v=${BUILD_VERSION}|g" \
+          dist/index.html
+
+
+          sed -i \
+          "s|manifest.json|manifest.json?v=${BUILD_VERSION}|g" \
+          dist/index.html
+
+
+
+      # =====================================
+      # CLOUDFLARE HEADERS
+      # =====================================
+
+      - name: Create Security Headers
+
+        run: |
+
+          cat > dist/_headers <<EOF
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+
+/data/output/news/*
+  Cache-Control: no-store, max-age=0
+
+
+/*.js
+  Cache-Control: public, max-age=31536000
+
+
+/*.css
+  Cache-Control: public, max-age=31536000
+
+EOF
+
+
+
+      # =====================================
+      # CREATE CLOUDFLARE PROJECT
+      # =====================================
+
+      - name: Create Cloudflare Pages Project If Missing
+
+        env:
+
+          CLOUDFLARE_API_TOKEN:
+            ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+          CLOUDFLARE_ACCOUNT_ID:
+            ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+
+        run: |
+
+          if ! wrangler pages project list | grep -q "$PROJECT_NAME"
+
+          then
+
+            wrangler pages project create "$PROJECT_NAME" \
+            --production-branch main
+
+          else
+
+            echo "Project already exists"
+
+          fi
+
+
+
+      # =====================================
+      # DEPLOY
+      # =====================================
+
+      - name: Deploy To Cloudflare Pages
+
+        env:
+
+          CLOUDFLARE_API_TOKEN:
+            ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+          CLOUDFLARE_ACCOUNT_ID:
+            ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+
+        run: |
+
+          wrangler pages deploy dist \
+          --project-name="$PROJECT_NAME" \
+          --commit-dirty=true
+
+
+
+      # =====================================
+      # SUCCESS
+      # =====================================
+
+      - name: Deployment Success
+
+        run: |
+
+          echo "VIDHWAAN Telugu News deployed successfully"
