@@ -370,3 +370,24 @@ body {
 
 }
 
+
+
+/* Article Section Formatting */
+
+.section-heading {
+
+    font-size:22px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+
+.article-section p {
+
+    margin-bottom:18px;
+
+}
+

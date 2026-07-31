@@ -468,17 +468,59 @@ function renderSections(sections) {
 
 
     return sections
-        .map(
-            section => `
+        .map(section => {
+
+
+            let html = `
 
             <div class="article-section">
 
-                ${escapeHTML(section)}
+            `;
+
+
+            if (section.heading) {
+
+                html += `
+
+                <h2 class="section-heading">
+                    ${escapeHTML(section.heading)}
+                </h2>
+
+                `;
+
+            }
+
+
+            if (Array.isArray(section.paragraphs)) {
+
+                section.paragraphs.forEach(
+                    paragraph => {
+
+                        html += `
+
+                        <p>
+                            ${escapeHTML(paragraph)}
+                        </p>
+
+                        `;
+
+                    }
+                );
+
+            }
+
+
+            html += `
 
             </div>
 
-            `
-        )
+            `;
+
+
+            return html;
+
+
+        })
         .join("");
 
 }
