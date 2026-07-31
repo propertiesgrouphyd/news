@@ -118,9 +118,7 @@ function getNewsDate() {
     }
 
 
-    return date
-        .toISOString()
-        .slice(0, 10);
+    return `${year}-${month}-${day}`;
 
 
 }
