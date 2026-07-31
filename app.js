@@ -104,9 +104,9 @@ function getNewsDate() {
 
 
     const date =
-        new Date(
-            `${year}-${month}-${day}T00:00:00`
-        );
+    new Date(
+        `${year}-${month}-${day}T00:00:00`
+    );
 
 
     if (hour < 5) {
@@ -118,7 +118,19 @@ function getNewsDate() {
     }
 
 
-    return `${year}-${month}-${day}`;
+    const finalYear =
+    date.getFullYear();
+
+    const finalMonth =
+    String(date.getMonth() + 1)
+        .padStart(2, "0");
+
+    const finalDay =
+    String(date.getDate())
+        .padStart(2, "0");
+
+
+    return `${finalYear}-${finalMonth}-${finalDay}`;
 
 
 }
