@@ -1,0 +1,484 @@
+{
+  "date": "2026-08-03",
+  "generatedAt": "2026-08-02T22:34:08.588Z",
+  "categories": {
+    "national": [
+      {
+        "id": "83c535ce31f14c6f87fc5dd18fd611969d21b2b68d56696f1b1dabe7b34b2230",
+        "sourceName": "The Hindu",
+        "title": "FIR lodged against Jharkhand man for 'threatening to kill' PM Modi, Shah, Adityanath",
+        "url": "https://www.thehindu.com/news/national/jharkhand/fir-lodged-against-jharkhand-man-for-threatening-to-kill-pm-modi-shah-adityanath/article71298890.ece",
+        "published": "Sun, 02 Aug 2026 23:27:37 +0530",
+        "score": 110,
+        "content": {
+          "headline": "ప్రధాని మోదీ, అమిత్ షా, యోగి అదిత్యనాథ్‌లపై మృత్యు బెదిరింపులకు జార్ఖండ్ యువకుడిపై ఎఫ్ఐఆర్",
+          "summary": "ప్రధాని నరేంద్ర మోదీ, కేంద్ర హోంమంత్రి అమిత్ షా, ఉత్తరప్రదేశ్ ముఖ్యమంత్రి యోగి అదిత్యనాథ్‌లపై మృత్యు బెదిరింపులకు సంబంధించి జార్ఖండ్ పోలీసులు ఒక యువకుడిపై ఎఫ్ఐఆర్ నమోదు చేశారు.",
+          "sections": [
+            {
+              "heading": "ఎఫ్ఐఆర్ నమోదు",
+              "paragraphs": [
+                "ఈ ఘటన జార్ఖండ్‌లోని రాంచీ జిల్లాలోని నాగ్రి పోలీస్ స్టేషన్‌లో సంభవించింది. బీజేపీ నాగ్రి మండల అధ్యక్షుడు రితేష్ రాజ్ మహతో ఫిర్యాదు చేయడంతో పోలీసులు ఎఫ్ఐఆర్ నమోదు చేశారు."
+              ]
+            }
+          ],
+          "location": "జార్ఖండ్",
+          "importance": "normal",
+          "tags": []
+        }
+      }
+    ],
+    "international": [
+      {
+        "id": "422f7d673c658d8cdccded836f791b7ddc5171e54803f5d4a7200fe46a5621ae",
+        "sourceName": "New York Times World",
+        "title": "Europe’s Far Right, Once Marginal, Now Sets Tone on Spain Migrant Crisis",
+        "url": "https://www.nytimes.com/2026/08/02/world/europe/europe-migrants-ceuta.html",
+        "published": "Sun, 02 Aug 2026 07:30:02 +0000",
+        "score": 70,
+        "content": {
+          "headline": "స్పెయిన్‌లో వలసదారుల సంక్షోభం: ఐరోపాలో కుడిపక్ష పార్టీల పెరుగుదల",
+          "summary": "2015లో ఐరోపా అనేక శరణార్థులను ఆశ్రయించింది. ఇప్పుడు స్పెయిన్‌లోని స్యూటాలో కొత్త సంక్షోభం ఐరోపా ధోరణిలో మార్పును చూపుతోంది",
+          "sections": [
+            {
+              "heading": "స్పెయిన్‌లో వలసదారుల సంక్షోభం",
+              "paragraphs": [
+                "గత వారం స్పెయిన్‌లోని స్యూటాలో పది వేల మంది వలసదారులు వచ్చిన సంఘటన 2015లో గ్రీస్, ఇటలీ తీరాల్లో జరిగిన సంఘటనలను గుర్తు చేసుకుంటుంది."
+              ]
+            },
+            {
+              "heading": "కుడిపక్ష పార్టీల పెరుగుదల",
+              "paragraphs": [
+                "2015లో ఐరోపాలో వలసదారుల సంక్షోభం కుడిపక్ష పార్టీలను బలపరిచింది. ఇప్పుడు ఆ పార్టీలు అధికారంలోకి రావడానికి అవకాశం ఉంది."
+              ]
+            }
+          ],
+          "location": "స్పెయిన్",
+          "importance": "సాధారణ",
+          "tags": [
+            "వలసదారుల సంక్షోభం",
+            "ఐరోపా",
+            "కుడిపక్ష పార్టీలు"
+          ]
+        }
+      },
+      {
+        "id": "4a734c2e0fd8f557bf749c0fba8dbbf1c8bef4f27ada6f11ed2d9a71181f375d",
+        "sourceName": "New York Times World",
+        "title": "Trump Says He Canceled Strikes on Iran, Claiming Progress on Outlines of a Deal",
+        "url": "https://www.nytimes.com/2026/08/02/world/middleeast/trump-iran-cancels-attack-deal.html",
+        "published": "Sun, 02 Aug 2026 15:27:49 +0000",
+        "score": 90,
+        "content": {
+          "headline": "ఇరాన్‌పై దాడులను నిలిపివేశానని ట్రంప్",
+          "summary": "ఇరాన్‌తో ఒప్పందంపై పురోగతి సాధించామని ట్రంప్ చెప్పారు",
+          "sections": [
+            {
+              "heading": "ఇరాన్‌పై దాడులు",
+              "paragraphs": [
+                "ఇరాన్‌పై దాడులను నిలిపివేశామని అమెరికా అధ్యక్షుడు డోనల్డ్ ట్రంప్ చెప్పారు. ఇరాన్‌తో ఒప్పందంపై పురోగతి సాధించామని ఆయన చెప్పారు."
+              ]
+            }
+          ],
+          "location": "",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "59b40f07179b7f80193b95fc0e3a9853971e3b476379261af7cdae7377e7c713",
+        "sourceName": "BBC World",
+        "title": "At least 13 killed in Israeli strikes on Gaza after Hamas agree disarmament deal",
+        "url": "https://www.bbc.co.uk/news/articles/czjlvvkzj20o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 02 Aug 2026 15:50:59 GMT",
+        "score": 90,
+        "content": {
+          "headline": "గాజాపై దాడుల్లో 13 మంది మృతి",
+          "summary": "ఇజ్రాయెల్ గాజా నగరం, ఖాన్ యూనిస్, దీర్ ఎల్-బలాలపై దాడులు చేసింది",
+          "sections": [
+            {
+              "heading": "దాడుల్లో పిల్లలు మృతి",
+              "paragraphs": [
+                "గాజాపై ఇజ్రాయెల్ దాడుల్లో కనీసం 13 మంది మృతి చెందారని పాలస్తీనా అధికారులు చెప్పారు. గాజా సివిల్ డిఫెన్స్ అథారిటీ ప్రకారం, ఇజ్రాయెల్ సైనిక విమానాలు గాజా నగరం, ఖాన్ యూనిస్, దీర్ ఎల్-బలాలపై దాడులు చేశాయి."
+              ]
+            },
+            {
+              "heading": "హమాస్ ఒప్పందం",
+              "paragraphs": [
+                "హమాస్ సంస్థ ఒక నిష్పాక్షికత ఒప్పందాన్ని అంగీకరించిన కొద్ది రోజుల తర్వాత ఈ దాడులు జరిగాయి. ఈ ఒప్పందం ప్రకారం, హమాస్ తన ఆయుధాలను అమెరికా అధ్యక్షుడు డొనాల్డ్ ట్రంప్ యొక్క శాంతి బోర్డుకు అప్పగించాలి."
+              ]
+            }
+          ],
+          "location": "గాజా",
+          "importance": "నార్మల్",
+          "tags": [
+            "ఇజ్రాయెల్",
+            "పాలస్తీనా",
+            "హమాస్"
+          ]
+        }
+      },
+      {
+        "id": "89db077a8e6239a2e1c26f72b300834e1c66a572d83944e825a80d70d1a7ea59",
+        "sourceName": "BBC World",
+        "title": "Trump cancels Iran strikes subject to deal being made 'rapidly'",
+        "url": "https://www.bbc.co.uk/news/articles/cjwx74qgld2o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 02 Aug 2026 11:12:00 GMT",
+        "score": 90,
+        "content": {
+          "headline": "ఇరాన్‌పై దాడులను రద్దు చేసినట్లు ట్రంప్ ప్రకటన",
+          "summary": "ఇరాన్, ఇతర మధ్యప్రాచ్య దేశాలు ఒప్పందం త్వరగా కుదుర్చుకుంటే దాడులను నిలిపివేస్తామని ట్రంప్ చెప్పారు",
+          "sections": [
+            {
+              "heading": "ట్రంప్ ప్రకటన",
+              "paragraphs": [
+                "ఇరాన్‌పై దాడులను రద్దు చేస్తున్నట్లు అమెరికా అధ్యక్షుడు డోనల్డ్ ట్రంప్ ప్రకటించారు. ఒప్పందం త్వరగా కుదుర్చుకుంటే దాడులను నిలిపివేస్తామని అన్నారు."
+              ]
+            },
+            {
+              "heading": "ఇరాన్ ప్రతిస్పందన",
+              "paragraphs": [
+                "ఇరాన్ అధికారులు ట్రంప్ చేసిన ప్రకటనను ఖండించారు. ఇరాన్ ఎలాంటి దాడులను సహించదని, ప్రతిస్పందిస్తామని చెప్పారు."
+              ]
+            }
+          ],
+          "location": "వాషింగ్టన్",
+          "importance": "normal",
+          "tags": [
+            "ఇరాన్",
+            "అమెరికా",
+            "ట్రంప్"
+          ]
+        }
+      },
+      {
+        "id": "8ac17c21b72ccc644a06c20a6b8cb5d48169ed13579b610db62c9d3c03c7019a",
+        "sourceName": "BBC World",
+        "title": "Ukraine says major Russian oil refinery and airfield hit, as Moscow reports eight deaths",
+        "url": "https://www.bbc.co.uk/news/articles/c998gg5pe09o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 02 Aug 2026 15:48:00 GMT",
+        "score": 90,
+        "content": {
+          "headline": "రష్యాపై ఉక్రెయిన్ దాడి: ముఖ్యమైన ఆయిల్ రిఫైనరీ, ఎయిర్‌ఫీల్డ్ ధ్వంసం",
+          "summary": "రష్యాలోని ముఖ్యమైన ఆయిల్ రిఫైనరీ, ఎయిర్‌ఫీల్డ్‌పై ఉక్రెయిన్ దాడి చేసినట్లు ప్రెసిడెంట్ జెలెన్‌స్కీ ప్రకటించారు.",
+          "sections": [
+            {
+              "heading": "దాడి వివరాలు",
+              "paragraphs": [
+                "రష్యాలోని సరాటోవ్ ప్రాంతంలో ఉన్న ఎంగెల్స్ ఎయిర్‌ఫీల్డ్, ఆయిల్ రిఫైనరీపై ఉక్రెయిన్ దాడి చేసిందని అధ్యక్షుడు వోలోడిమిర్ జెలెన్‌స్కీ ప్రకటించారు. కాలుగా ప్రాంతంలో ఉన్న ఆయిల్ డిపో, బ్రియాన్స్క్ ప్రాంతంలో ఉన్న డ్రోన్ లాంచ్ సైట్‌పై కూడా దాడి జరిగింది."
+              ]
+            },
+            {
+              "heading": "రష్యా ప్రతిస్పందన",
+              "paragraphs": [
+                "రష్యా సైన్యం ఉక్రెయిన్ ఓడరేవులు, నౌకలపై దాడి చేసిందని ప్రకటించింది. ఉక్రెయిన్ దాడిలో ఎనిమిది మంది చనిపోయారని, 635 డ్రోన్లు కూల్చివేయబడ్డాయని రష్యా ప్రకటించింది."
+              ]
+            }
+          ],
+          "location": "ఉక్రెయిన్, రష్యా",
+          "importance": "సాధారణ",
+          "tags": [
+            "ఉక్రెయిన్",
+            "రష్యా",
+            "యుద్ధం"
+          ]
+        }
+      },
+      {
+        "id": "a58ad607d8de0f0d73d77349eea7dbd3b93a20ad17504803e1a42fdf583fa85d",
+        "sourceName": "New York Times World",
+        "title": "Cowboys Fringants Bassist Is Named Quebec’s Chief Scientist",
+        "url": "https://www.nytimes.com/2026/08/02/world/canada/jerome-dupras-quebec-chief-scientist-les-cowboys-fringants.html",
+        "published": "Sun, 02 Aug 2026 09:00:17 +0000",
+        "score": 70,
+        "content": {
+          "headline": "క్వీబెక్‌కు కొత్త ప్రధాన శాస్త్రవేత్త",
+          "summary": "కౌబాయ్స్ ఫ్రింజాంట్స్ బాసిస్ట్ క్వీబెక్ ప్రధాన శాస్త్రవేత్తగా నియమించబడ్డారు",
+          "sections": [
+            {
+              "heading": "క్వీబెక్ ప్రభుత్వ నిర్ణయం",
+              "paragraphs": [
+                "క్వీబెక్ ప్రభుత్వం కౌబాయ్స్ ఫ్రింజాంట్స్ బాసిస్ట్‌ను ప్రధాన శాస్త్రవేత్తగా నియమించింది. ఈ నియామకంతో క్వీబెక్‌లో శాస్త్ర సాంకేతికతల అభివృద్ధికి కొత్త మార్గాలు ఏర్పడవచ్చు."
+              ]
+            }
+          ],
+          "location": "క్వీబెక్",
+          "importance": "normal",
+          "tags": [
+            "క్వీబెక్",
+            "ప్రధాన శాస్త్రవేత్త",
+            "కౌబాయ్స్ ఫ్రింజాంట్స్"
+          ]
+        }
+      },
+      {
+        "id": "ac181aa91132d44e8cc777f71481fde181013de3100599a9ed8d4416652db168",
+        "sourceName": "BBC World",
+        "title": "Five dead and 41 missing after Indonesia ferry catches fire",
+        "url": "https://www.bbc.co.uk/news/articles/c74g0wjvlrxo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 02 Aug 2026 11:49:40 GMT",
+        "score": 90,
+        "content": {
+          "headline": "ఇండోనేషియా ఫెర్రీలో అగ్నిప్రమాదం: 5 మంది మృతి, 41 మంది తప్పిపోయారు",
+          "summary": "మదుర ద్వీపం సమీపంలో సంభవించిన అగ్నిప్రమాదంలో 5 మంది మృతి చెందగా, 41 మంది తప్పిపోయారు",
+          "sections": [
+            {
+              "heading": "అగ్నిప్రమాదం వివరాలు",
+              "paragraphs": [
+                "తూర్పు జావాలోని సురబాయా నుంచి దక్షిణ సులవేసిలోని మకస్సర్‌కు ప్రయాణిస్తున్న ఫెర్రీలో అగ్నిప్రమాదం సంభవించింది. ఈ ఘటనలో 5 మంది మృతి చెందగా, 41 మంది తప్పిపోయారు."
+              ]
+            }
+          ],
+          "location": "ఇండోనేషియా",
+          "importance": "normal",
+          "tags": [
+            "ఇండోనేషియా",
+            "ఫెర్రీ",
+            "అగ్నిప్రమాదం"
+          ]
+        }
+      },
+      {
+        "id": "b4e4930a3250e1d9bd3ff3bde5db39db6a1c90bf2e4afd9f9a79609d5229fad3",
+        "sourceName": "New York Times World",
+        "title": "La Guaira Is Unrecognizable After Venezuela’s Deadly Earthquakes",
+        "url": "https://www.nytimes.com/2026/08/02/world/americas/venezuela-earthquakes-la-guaira.html",
+        "published": "Sun, 02 Aug 2026 11:05:56 +0000",
+        "score": 90,
+        "content": {
+          "headline": "వెనెజులాలో భూకంపాలు: లా గుయిరా పట్టణం పూర్తిగా ధ్వంసమైంది",
+          "summary": "వెనెజులాలోని లా గుయిరా పట్టణం భూకంపాల వల్ల పూర్తిగా ధ్వంసమైంది. ఈ భూకంపాల్లో ఎంతోమంది ప్రాణాలు కోల్పోయారు.",
+          "sections": [
+            {
+              "heading": "భూకంపాల ప్రభావం",
+              "paragraphs": [
+                "వెనెజులాలోని లా గుయిరా పట్టణం భూకంపాల వల్ల పూర్తిగా ధ్వంసమైంది. ఈ భూకంపాల్లో ఎంతోమంది ప్రాణాలు కోల్పోయారు.",
+                "పట్టణంలోని ఎక్కువ భాగం ధ్వంసమైంది. ఇళ్లు, భవనాలు, రహదారులు అన్నీ నాశనమైపోయాయి."
+              ]
+            }
+          ],
+          "location": "వెనెజులా",
+          "importance": "normal",
+          "tags": [
+            "భూకంపాలు",
+            "వెనెజులా",
+            "లా గుయిరా"
+          ]
+        }
+      },
+      {
+        "id": "d322500f382794d3a59ed8c277ac6aadd65cad0e29c061a9f63afc50c6355d95",
+        "sourceName": "New York Times World",
+        "title": "Pakistan Police Station Bombing Kills at Least 14",
+        "url": "https://www.nytimes.com/2026/08/02/world/asia/pakistan-police-station-bombing.html",
+        "published": "Sun, 02 Aug 2026 18:25:12 +0000",
+        "score": 109,
+        "content": {
+          "headline": "పాకిస్తాన్‌లో పోలీస్ స్టేషన్‌పై బాంబు దాడి.. 14 మంది మృతి",
+          "summary": "పాకిస్తాన్‌లోని బలూచిస్తాన్ ప్రాంతంలో పోలీస్ స్టేషన్‌పై బాంబు పేలుడు సంభవించింది. ఈ దాడిలో 14 మంది మృతి చెందగా, అనేక మంది గాయపడ్డారు.",
+          "sections": [
+            {
+              "heading": "దాడి వివరాలు",
+              "paragraphs": [
+                "పాకిస్తాన్‌లోని బలూచిస్తాన్ ప్రాంతంలోని కెచ్ జిల్లాలో ఈ దాడి జరిగింది. పోలీస్ స్టేషన్‌లో ఉన్న అధికారులు, సిబ్బందిపై బాంబు పేలుడు జరిగింది."
+              ]
+            }
+          ],
+          "location": "పాకిస్తాన్",
+          "importance": "normal",
+          "tags": [
+            "పాకిస్తాన్",
+            "బాంబు దాడి",
+            "పోలీస్ స్టేషన్"
+          ]
+        }
+      },
+      {
+        "id": "d58e07f96cc14311a20018edf93c6b71abd939296a30f406578cd96b2a4daf85",
+        "sourceName": "BBC World",
+        "title": "How Spain's migrant crisis created a political storm - whipped up by social media",
+        "url": "https://www.bbc.co.uk/news/articles/c62vl925dqdo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 02 Aug 2026 10:32:28 GMT",
+        "score": 90,
+        "content": {
+          "headline": "స్పెయిన్‌లో వలసదారుల సంక్షోభం - రాజకీయ తుఫాను",
+          "summary": "సెయుటా దాటిన వలసదారులు ఐరోపాలో రాజకీయంగా కుదిరిన విభేదాలను బహిర్గతం చేశారు",
+          "sections": [
+            {
+              "heading": "స్పెయిన్ ప్రధాని ఆగ్రహం",
+              "paragraphs": [
+                "ఈ సంక్షోభంపై స్పెయిన్ సోషలిస్ట్ ప్రధాని పెడ్రో సాంచెజ్ ఆగ్రహం వ్యక్తం చేశారు. ఐరోపా సమాఖ్యలోని కొందరు స్పెయిన్‌పై రాజకీయం ఆడుతున్నారని, మద్దతు ఇవ్వడం కంటే దూషిస్తున్నారని ఆయన అన్నారు."
+              ]
+            },
+            {
+              "heading": "ఇటలీ ప్రధాని చర్యలు",
+              "paragraphs": [
+                "ఇటలీ ప్రధాని జియోర్జియా మెలోని స్పెయిన్‌పై విమర్శలు గుప్పించారు. ఆమె పార్టీ సెయుటాలోని వలసదారుల దృశ్యాలను సోషల్ మీడియాలో పోస్ట్ చేసింది."
+              ]
+            }
+          ],
+          "location": "స్పెయిన్",
+          "importance": "సాధారణం",
+          "tags": [
+            "వలసదారుల సంక్షోభం",
+            "స్పెయిన్",
+            "ఐరోపా"
+          ]
+        }
+      }
+    ],
+    "andhraPradesh": [
+      {
+        "id": "316a9fd458857cad2851d60bb37f01e2c64ed5a27a571903511830d0d6c5f2ad",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Skills, not degrees, will shape future, says APSCHE Chairman at Vignan convocation",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/skills-not-degrees-will-shape-future-says-apsche-chairman-at-vignan-convocation/article71298130.ece",
+        "published": "Sun, 02 Aug 2026 23:34:22 +0530",
+        "score": 110,
+        "content": {
+          "headline": "డిగ్రీలు కాదు.. నైపుణ్యాలే భవిష్యత్తును తీర్చిదిద్దుతాయి: ఏపీఎస్‌సీహె ఛైర్మన్",
+          "summary": "విగ్నాన్ యూనివర్సిటీలో జరిగిన కన్వోకేషన్ లో ఏపీఎస్‌సీహె ఛైర్మన్ ప్రొఫెసర్ కె. మధు మూర్తి మాట్లాడుతూ.. ఉద్యోగ అవకాశాలు ఇకపై డిగ్రీలపై కాకుండా నైపుణ్యాలపై ఆధారపడి ఉంటాయని పేర్కొన్నారు.",
+          "sections": [
+            {
+              "heading": "కన్వోకేషన్ వివరాలు",
+              "paragraphs": [
+                "గుంటూరు జిల్లా వడ్లమూడిలోని విగ్నాన్ యూనివర్సిటీలో సందర్భంగా ప్రొఫెసర్ మధు మూర్తి మాట్లాడుతూ.. డిగ్రీ అందుకోవడం ఒక అవకాశానికి తాళం వేస్తుంది. కానీ, దీర్ఘకాలిక విజయం నైపుణ్యాలు, చరిత్ర, సరైన తీర్పు, అనుకూలతపై ఆధారపడి ఉంటుందని పేర్కొన్నారు."
+              ]
+            }
+          ],
+          "location": "గుంటూరు",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "430f0b0997a6d27da373394dee8947b22863c07868429b305d949dd588ad8d12",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "AP JAC warns of Statewide stir over pending employees’ demands",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-jac-warns-of-statewide-stir-over-pending-employees-demands/article71297567.ece",
+        "published": "Sun, 02 Aug 2026 23:22:20 +0530",
+        "score": 110,
+        "content": {
+          "headline": "ఉద్యోగుల డిమాండ్లపై ప్రభుత్వం చర్యలు తీసుకోకపోతే రాష్ట్రవ్యాప్తంగా ఉద్యమం: ఏపీ జెఎసీ",
+          "summary": "ఉద్యోగుల విద్యుత్తు, సేవా సంబంధిత డిమాండ్లపై ప్రభుత్వం నిర్ణయాలు ప్రకటించాలని ఏపీ జెఎసీ డిమాండ్ చేసింది.",
+          "sections": [
+            {
+              "heading": "ఉద్యోగుల డిమాండ్లు",
+              "paragraphs": [
+                "ఏపీ జెఎసీ అధ్యక్షుడు బొప్పరాజు వెంకటేశ్వర్లు, ప్రధాన కార్యదర్శి పాలిశెట్టి దామోదరరావు సంతకం చేసిన ప్రకటనలో ఈ విషయాన్ని తెలిపారు."
+              ]
+            },
+            {
+              "heading": "ప్రభుత్వ వైఖరి",
+              "paragraphs": [
+                "ప్రభుత్వం చర్చలు జరిపినప్పటికీ నిర్ణయాలు తీసుకోవడంలో ఆలస్యం చేస్తోందని, దీంతో ఉద్యోగుల్లో అనిశ్చితి నెలకొందని ఏపీ జెఎసీ విమర్శించింది."
+              ]
+            }
+          ],
+          "location": "ఆంధ్రప్రదేశ్",
+          "importance": "normal",
+          "tags": [
+            "AP JAC",
+            "ఉద్యోగుల డిమాండ్లు",
+            "ప్రభుత్వం"
+          ]
+        }
+      },
+      {
+        "id": "8c3782968e1ddf916dc0dbc9cbfd26515e883ada9028c8cde7467f717aae9707",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "A.P. government constitutes high-power committee to boost tiger conservation",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-government-constitutes-high-power-committee-to-boost-tiger-conservation/article71298734.ece",
+        "published": "Sun, 02 Aug 2026 23:14:16 +0530",
+        "score": 110,
+        "content": {
+          "headline": "ఏపీలో పులుల సంరక్షణకు హైపవర్ కమిటీ",
+          "summary": "నల్లమల అడవిలో పులి మృతదేహం దొరికిన తర్వాత ఏపీ ప్రభుత్వం పులుల సంరక్షణను బలోపేతం చేయడానికి హైపవర్ కమిటీని ఏర్పాటు చేసింది",
+          "sections": [
+            {
+              "heading": "పులుల సంరక్షణకు కమిటీ",
+              "paragraphs": [
+                "ఉప ముఖ్యమంత్రి, పర్యావరణ, అటవీ శాఖ మంత్రి కె. పవన్ కళ్యాణ్ దర్శకత్వంలో ఐదుగురు సభ్యులతో హైపవర్ కమిటీని ఏర్పాటు చేసింది. ఈ కమిటీలో రాష్ట్ర అటవీ శాఖ సలహాదారు పి. మల్లికార్జున రావు, అదనపు ప్రధాన అటవీ సంరక్షకుడు రాహుల్ పాండే, ప్రపంచ ప్రకృతి సంరక్షణ సంఘం సభ్యుడు బి. రాజశేఖర్, హైదరాబాద్ టైగర్ సొసైటీ ప్రతినిధి ఇమ్రాన్ సిద్దికి, ప్రముఖ వన్యప్రాణి శాస్త్రవేత్త ఎం. నవీన్ కుమార్ ఉన్నారు."
+              ]
+            }
+          ],
+          "location": "నల్లమల",
+          "importance": "normal",
+          "tags": [
+            "పులుల సంరక్షణ",
+            "హైపవర్ కమిటీ",
+            "ఏపీ ప్రభుత్వం"
+          ]
+        }
+      },
+      {
+        "id": "cc60c71aba05b43bc620a127a670990f6b07215b86550e7a605b86a96e54bd33",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Over 1,200 children take part in SIP Regional Prodigy 2026 competition",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/over1200-children-take-part-in-sip-regional-prodigy-2026-competition/article71298682.ece",
+        "published": "Sun, 02 Aug 2026 23:26:36 +0530",
+        "score": 110,
+        "content": {
+          "headline": "SIP రీజినల్ ప్రొడిజీ 2026: 1200 మంది పిల్లలు పాల్గొన్నారు",
+          "summary": "SIP రీజినల్ ప్రొడిజీ 2026లో 1200 మంది పిల్లలు తమ నైపుణ్యాలను ప్రదర్శించారు, జాతీయ పోటీలో కొచ్చిలో పాల్గొనేందుకు అర్హత సాధించారు",
+          "sections": [
+            {
+              "heading": "పోటీ వివరాలు",
+              "paragraphs": [
+                "మంగళగిరిలోని సికే కన్వెన్షన్స్‌లో ఆదివారం నిర్వహించిన SIP రీజినల్ ప్రొడిజీ 2026 పోటీలో 1200 మంది పిల్లలు తమ మెంటల్ అరిథ్‌మెటిక్ నైపుణ్యాలను ప్రదర్శించారు."
+              ]
+            },
+            {
+              "heading": "ప్రముఖుల సందేశాలు",
+              "paragraphs": [
+                "ఈ సందర్భంగా ఎయిమ్స్ మంగళగిరి డైరెక్టర్ కర్నల్ శశికాంత్ తుమ్మ మాట్లాడుతూ, పాల్గొన్న పిల్లలను 'లైవ్ సూపర్ కంప్యూటర్లు'గా అభివర్ణించారు."
+              ]
+            }
+          ],
+          "location": "మంగళగిరి",
+          "importance": "normal",
+          "tags": [
+            "SIP రీజినల్ ప్రొడిజీ 2026",
+            "మెంటల్ అరిథ్‌మెటిక్ పోటీ"
+          ]
+        }
+      },
+      {
+        "id": "f8b15eb104b9dbe3dcfae1afffbd8d7fe2d859d2a8254df0812d06b341593807",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Jagan condemns Alur MLA’s arrest, alleges political vendetta",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/jagan-condemns-alur-mlas-arrest-alleges-political-vendetta/article71298335.ece",
+        "published": "Sun, 02 Aug 2026 23:21:16 +0530",
+        "score": 110,
+        "content": {
+          "headline": "అలూరు ఎమ్మెల్యే అరెస్టుపై జగన్ ఖండన",
+          "summary": "తెలుగుదేశం పార్టీ నేతలు దాడిచేసినప్పటికీ, బాధితులపైనే కేసులు పెట్టడం అన్యాయం అని వైఎస్ జగన్ అన్నారు",
+          "sections": [
+            {
+              "heading": "అలూరు ఎమ్మెల్యే అరెస్టు",
+              "paragraphs": [
+                "అలూరు ఎమ్మెల్యే బి. విరూపాక్షి అరెస్టుపై వైఎస్ జగన్ తీవ్రంగా ఖండించారు. రాజకీయ ప్రతీకారంగా పోలీసులను దుర్వినియోగం చేస్తున్నారని ఆయన అన్నారు."
+              ]
+            },
+            {
+              "heading": "వివరాలు",
+              "paragraphs": [
+                "చిప్పగిరి మండలం నెమకల్లు గ్రామంలో వైఎస్సార్సీపీ నేతపై జరిగిన దాడి తర్వాత ఈ అరెస్టు జరిగిందని జగన్ చెప్పారు. దాడిలో గాయపడిన వ్యక్తులకు రక్షణ కోరడం నేరమా అని జగన్ ప్రశ్నించారు."
+              ]
+            }
+          ],
+          "location": "ఆంధ్రప్రదేశ్",
+          "importance": "normal",
+          "tags": [
+            "జగన్",
+            "అలూరు ఎమ్మెల్యే",
+            "అరెస్టు",
+            "రాజకీయ ప్రతీకారం"
+          ]
+        }
+      }
+    ]
+  },
+  "meta": {
+    "totalArticles": 16
+  }
+}
