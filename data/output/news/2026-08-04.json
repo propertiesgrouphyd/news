@@ -1,0 +1,607 @@
+{
+  "date": "2026-08-04",
+  "generatedAt": "2026-08-03T22:34:10.751Z",
+  "categories": {
+    "national": [
+      {
+        "id": "1e9f1cc17745e048cd51fd5150c42dfd858a80d00741eba63dfcbc833fc846ed",
+        "sourceName": "The Hindu",
+        "title": "Thirupparankundram row: Supreme Court agrees to hear T.N. government plea, but gives the State no interim relief",
+        "url": "https://www.thehindu.com/news/national/thirupparankundram-row-supreme-court-agrees-to-hear-tn-government-plea-but-gives-the-state-no-interim-relief/article71300072.ece",
+        "published": "Mon, 03 Aug 2026 23:48:35 +0530",
+        "score": 110,
+        "content": {
+          "headline": "తిరుప్పరంకుండ్రం వివాదం: సుప్రీంకోర్టు తమిళనాడు ప్రభుత్వ విన్నపం విచారించడానికి అంగీకరించింది",
+          "summary": "తిరుప్పరంకుండ్రంలో దివ్వె వెలిగించడానికి సంబంధించి తమిళనాడు ప్రభుత్వం విన్నపం విచారించడానికి సుప్రీంకోర్టు అంగీకరించింది, అయితే ఇంటరిమ్ రాహతు ఇవ్వలేదు",
+          "sections": [
+            {
+              "heading": "నేపథ్యం",
+              "paragraphs": [
+                "తిరుప్పరంకుండ్రంలోని సుబ్రమణ్యస్వామి ఆలయం వద్ద ఒక రాతి స్తంభం వద్ద దివ్వె వెలిగించడానికి సంబంధించి మద్రాస్ హైకోర్టు ఇచ్చిన ఉత్తర్వులను సవాల్ చేస్తూ తమిళనాడు ప్రభుత్వం సుప్రీంకోర్టులో పిటిషన్ వేసింది."
+              ]
+            },
+            {
+              "heading": "సుప్రీంకోర్టు తీర్పు",
+              "paragraphs": [
+                "జస్టిస్ అరవింద్ కుమార్ నేతృత్వంలోని ధర్మాసనం ఈ పిటిషన్‌పై పరిశీలన చేపట్టింది. అయితే, తమిళనాడు ప్రభుత్వానికి ఇంటరిమ్ రాహతు ఇవ్వలేదు."
+              ]
+            }
+          ],
+          "location": "తమిళనాడు",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "3fc6e7bf8b7da18f0277dd7c89d6360c84cf9489d725aea08598523de50fc13d",
+        "sourceName": "The Hindu",
+        "title": "SC summons top Arunachal officials to explain ‘non-cooperation’ with CBI probe",
+        "url": "https://www.thehindu.com/news/national/sc-summons-top-arunachal-officials-to-explain-non-cooperation-with-cbi-probe/article71300783.ece",
+        "published": "Mon, 03 Aug 2026 23:58:34 +0530",
+        "score": 110,
+        "content": {
+          "headline": "అరుణాచల్ ప్రదేశ్ అధికారులను సుప్రీంకోర్టు సమ్మన్",
+          "summary": "అరుణాచల్ ప్రదేశ్ ప్రభుత్వం సీబీఐ దర్యాప్తులో సహకరించడంలో వైఫల్యం చూపిందని ఆరోపించిన సందర్భంగా సుప్రీంకోర్టు అరుణాచల్ ప్రదేశ్ అధికారులను సమ్మన్ చేసింది.",
+          "sections": [
+            {
+              "heading": "సుప్రీంకోర్టు ఉత్తర్వులు",
+              "paragraphs": [
+                "అరుణాచల్ ప్రదేశ్ ముఖ్యమంత్రి పేమా ఖాండు కుటుంబ సభ్యులకు చెందిన సంస్థలకు ప్రభుత్వ ఒప్పందాలను ఇచ్చినట్లు ఆరోపణలు వచ్చాయి. దీనిపై సీబీఐ దర్యాప్తు చేస్తోంది."
+              ]
+            },
+            {
+              "heading": "అధికారుల సమాధానం",
+              "paragraphs": [
+                "ఈ విషయంలో అరుణాచల్ ప్రదేశ్ ప్రభుత్వం సహకరించడంలో వైఫలమైందని సీబీఐ ఆరోపించింది. దీనిపై సుప్రీంకోర్టు అరుణాచల్ ప్రదేశ్ ముఖ్య కార్యదర్శి, హోం శాఖ ప్రధాన కార్యదర్శిని సమ్మన్ చేసింది."
+              ]
+            }
+          ],
+          "location": "అరుణాచల్ ప్రదేశ్",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "5d282f93f27a36a8f64b32eedec19a27a0f797cce6baa11ce7a649957e7fdcae",
+        "sourceName": "The Hindu",
+        "title": "Local held with anti-India posters, grenade in Kashmir’s Pulwama: officials",
+        "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/local-held-with-anti-india-posters-grenade-in-kashmirs-pulwama-officials/article71300844.ece",
+        "published": "Mon, 03 Aug 2026 23:55:26 +0530",
+        "score": 110,
+        "content": {
+          "headline": "కశ్మీర్‌లో భారత వ్యతిరేక పోస్టర్లు, గ్రెనేడ్ ఉన్న వ్యక్తిని అరెస్ట్ చేశారు",
+          "summary": "పుల్వామాలో భారత వ్యతిరేక పోస్టర్లు, గ్రెనేడ్ ఉన్న వ్యక్తిని భద్రతా దళాలు అరెస్ట్ చేశాయి",
+          "sections": [
+            {
+              "heading": "పుల్వామాలో భద్రతా దళాల చర్య",
+              "paragraphs": [
+                "పుల్వామా పోలీసులు, 44 రాష్ట్రీయ రైఫిల్స్ (సైన్యం), 183 బెటాలియన్ సిఆర్పిఎఫ్‌తో కలిసి చేసిన కంబైన్డ్ ఆపరేషన్‌లో డ్రాబ్‌గామ్-పచార్ రోడ్‌లో నాకా చెకింగ్ సమయంలో ఒక అనుమానితుణ్ణి అరెస్ట్ చేశారు. అతని వద్ద నుంచి ఒక హాండ్ గ్రెనేడ్, మూడు భారత వ్యతిరేక పోస్టర్లు, ఒక మొబైల్ ఫోన్ స్వాధీనం చేసుకున్నారు."
+              ]
+            }
+          ],
+          "location": "పుల్వామా, కశ్మీర్",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "9525043bf25da5b9164bf7a488701cda66f080a7f8d74715de84073124ed532f",
+        "sourceName": "The Hindu",
+        "title": "IAF Chief begins three-day visit to Vietnam to boost defence cooperation",
+        "url": "https://www.thehindu.com/news/national/iaf-chief-begins-three-day-visit-to-vietnam-to-boost-defence-cooperation/article71301947.ece",
+        "published": "Mon, 03 Aug 2026 23:49:02 +0530",
+        "score": 110,
+        "content": {
+          "headline": "వియత్నాంలో ఇండియన్ ఎయిర్ ఫోర్స్ చీఫ్ పర్యటన",
+          "summary": "భారత వైమానిక దళాధిపతి వియత్నాంలో మూడు రోజుల అధికారిక పర్యటనకు వెళ్లారు, రెండు దేశాల మధ్య రక్షణ సహకారాన్ని పెంచడం లక్ష్యం",
+          "sections": [
+            {
+              "heading": "పర్యటన వివరాలు",
+              "paragraphs": [
+                "ఎయిర్ చీఫ్ మార్షల్ ఎ.పి. సింగ్ సోమవారం వియత్నాం రాజధాని హనోయిలో చేరుకున్నారు. అక్కడ భారత రాయబారి త్షేరింగ్ డబ్ల్యు. షెర్పా వారికి స్వాగతం పలికారు."
+              ]
+            },
+            {
+              "heading": "రెండు దేశాల మధ్య సంబంధాలు",
+              "paragraphs": [
+                "వియత్నాం వైమానిక దళాధిపతి లెఫ్టినెంట్ జనరల్ వు హాంగ్ సన్‌తో కలిసి రెండు దేశాల మధ్య రక్షణ సహకారం గురించి చర్చించారు."
+              ]
+            }
+          ],
+          "location": "వియత్నాం",
+          "importance": "సాధారణ",
+          "tags": []
+        }
+      },
+      {
+        "id": "d09f31eed04f76104785c33a735030fb0c2c2c1864944a58f6306cbdbd5c631f",
+        "sourceName": "The Hindu",
+        "title": "Computer science, ECE still the most preferred subjects after first round of TNEA 2026 counselling",
+        "url": "https://www.thehindu.com/news/national/tamil-nadu/computer-science-ece-still-the-most-preferred-subjects-after-first-round-of-tnea-2026-counselling/article71302414.ece",
+        "published": "Mon, 03 Aug 2026 23:45:27 +0530",
+        "score": 110,
+        "content": {
+          "headline": "TNEA 2026 కౌన్సెలింగ్ మొదటి రౌండు: కంప్యూటర్ సైన్స్, ECE అభ్యర్థులకు ఇంకా టాప్ ఎంపికలు",
+          "summary": "TNEA 2026 కౌన్సెలింగ్ మొదటి రౌండు ముగిసింది. ఈ రౌండులో కంప్యూటర్ సైన్స్, ఎలక్ట్రానిక్స్ అండ్ కమ్యూనికేషన్స్ ఇంజనీరింగ్ అభ్యర్థులకు టాప్ ఎంపికలుగా నిలిచాయి.",
+          "sections": [
+            {
+              "heading": "కౌన్సెలింగ్ వివరాలు",
+              "paragraphs": [
+                "TNEA 2026 కౌన్సెలింగ్ మొదటి రౌండు ముగిసింది. ఈ రౌండులో 140 కళాశాలల్లో ఒక్క సీటు కూడా భర్తీ కాలేదు. వీటిలో 30 స్వయంప్రతిపత్తి సంస్థలు."
+              ]
+            },
+            {
+              "heading": "అభ్యర్థుల ఎంపికలు",
+              "paragraphs": [
+                "కంప్యూటర్ సైన్స్, ఎలక్ట్రానిక్స్ అండ్ కమ్యూనికేషన్స్ ఇంజనీరింగ్ అభ్యర్థులకు టాప్ ఎంపికలుగా నిలిచాయి. ఎలక్ట్రికల్ అండ్ ఎలక్ట్రానిక్స్ ఇంజనీరింగ్ కూడా కొంత పెరుగుదలను చూపింది."
+              ]
+            }
+          ],
+          "location": "తమిళనాడు",
+          "importance": "సాధారణ",
+          "tags": [
+            "TNEA 2026",
+            "కంప్యూటర్ సైన్స్",
+            "ECE"
+          ]
+        }
+      }
+    ],
+    "international": [
+      {
+        "id": "0899ee8764d1d0a4325bc4c01120d7705dea7507655cd765672c2229c5eeae93",
+        "sourceName": "New York Times World",
+        "title": "As France’s Elders Swelter in the Heat, Postal Workers Come to the Rescue",
+        "url": "https://www.nytimes.com/2026/08/03/world/europe/france-postal-workers-older-people-heat.html",
+        "published": "Mon, 03 Aug 2026 04:01:09 +0000",
+        "score": 70,
+        "content": {
+          "headline": "ఫ్రాన్స్‌లో వృద్ధులకు వేడికి పరిహారంగా తపాలా ఉద్యోగులు",
+          "summary": "ఫ్రాన్స్‌లో ఎంతోకాలంగా వేడితనం కొనసాగుతోంది. ఈ వేడికి వృద్ధులు ఎక్కువగా బాధపడుతున్నారు. వారికి సహాయం చేయడానికి తపాలా ఉద్యోగులు ముందుకొచ్చారు.",
+          "sections": [
+            {
+              "heading": "వేడికి వృద్ధుల బాధ",
+              "paragraphs": [
+                "ఫ్రాన్స్‌లో వేడి తన పరాకాష్టను చూపిస్తోంది. ఈ వేడికి వృద్ధులు ఎక్కువగా బాధపడుతున్నారు. వారికి సహాయం చేయడానికి తపాలా ఉద్యోగులు ముందుకొచ్చారు."
+              ]
+            }
+          ],
+          "location": "ఫ్రాన్స్",
+          "importance": "normal",
+          "tags": [
+            "ఫ్రాన్స్",
+            "వేడి",
+            "వృద్ధులు",
+            "తపాలా ఉద్యోగులు"
+          ]
+        }
+      },
+      {
+        "id": "1e9d1ffc244a501a70f0ccc3cd450608586c11f0956f24a6cea742149dd0f077",
+        "sourceName": "New York Times World",
+        "title": "Myanmar Junta Allows Aung San Suu Kyi Rare Contact With an Outsider",
+        "url": "https://www.nytimes.com/2026/08/03/world/asia/myanmar-aung-san-suu-kyi-photos-icrc.html",
+        "published": "Mon, 03 Aug 2026 13:02:01 +0000",
+        "score": 90,
+        "content": {
+          "headline": "మయన్మార్ జంటా ఆంగ్ సాన్ సూకీకి అరుదైన బహిరంగ సంప్రదింపులు అనుమతించింది",
+          "summary": "మయన్మార్‌లోని జంటా ప్రభుత్వం ఆంగ్ సాన్ సూకీకి అరుదైన బహిరంగ సంప్రదింపులను అనుమతించింది",
+          "sections": [
+            {
+              "heading": "ఆంగ్ సాన్ సూకీ పరిస్థితి",
+              "paragraphs": [
+                "మయన్మార్‌లోని జంటా ప్రభుత్వం ఆంగ్ సాన్ సూకీకి అరుదైన బహిరంగ సంప్రదింపులను అనుమతించింది. ఆమె ఇప్పటికీ నిర్బంధంలో ఉన్నారు."
+              ]
+            }
+          ],
+          "location": "మయన్మార్",
+          "importance": "normal",
+          "tags": [
+            "మయన్మార్",
+            "ఆంగ్ సాన్ సూకీ",
+            "జంటా ప్రభుత్వం"
+          ]
+        }
+      },
+      {
+        "id": "23c702603f4288591238d15a052555453ee0855255fed17f1f9ed85ca443328d",
+        "sourceName": "New York Times World",
+        "title": "Ceuta Migration Crisis Exposes Despair Among Morocco’s Young People",
+        "url": "https://www.nytimes.com/2026/08/03/world/middleeast/morocco-ceuta-spain-migrants.html",
+        "published": "Mon, 03 Aug 2026 09:05:12 +0000",
+        "score": 70,
+        "content": {
+          "headline": "మొరాకో యువత నుంచి వలసల సంక్షోభం",
+          "summary": "స్పెయిన్ సరిహద్దుల్లోని సీయుటా ప్రాంతంలో వలసదారుల సంక్షోభం మొరాకో యువత నుంచి వలసలు పెరుగుతున్నాయని వెల్లడించింది",
+          "sections": [
+            {
+              "heading": "పరిస్థితి",
+              "paragraphs": [
+                "మొరాకో యువత తమ దేశంలో ఉద్యోగావకాశాలు లేకపోవడంతో వలసలు పెరుగుతున్నాయి. స్పెయిన్ సరిహద్దుల్లోని సీయుటా ప్రాంతంలో వలసదారుల సంక్షోభం ఈ పరిస్థితిని వెల్లడించింది."
+              ]
+            }
+          ],
+          "location": "సీయుటా, మొరాకో",
+          "importance": "normal",
+          "tags": [
+            "మొరాకో",
+            "సీయుటా",
+            "వలసలు"
+          ]
+        }
+      },
+      {
+        "id": "4be9b32f4065e768cfb4d3507726abe7787d25c4c5b81bce89345df8019473f0",
+        "sourceName": "New York Times World",
+        "title": "Spain’s Leader Is Seen as Soft on Migrants, but He Acted Fast on Ceuta",
+        "url": "https://www.nytimes.com/2026/08/03/world/europe/spain-ceuta-migrants-sanchez.html",
+        "published": "Mon, 03 Aug 2026 11:43:19 +0000",
+        "score": 90,
+        "content": {
+          "headline": "స్పెయిన్ ప్రధానిపై వలసదారుల పట్ల సానుభూతి లేదన్న ఆరోపణలు",
+          "summary": "స్పెయిన్ ప్రధాని వలసదారుల పట్ల సానుభూతి చూపిస్తున్నారని ఆయనపై విమర్శలు వస్తున్నాయి. కానీ సెయుటాలో వలసదారుల సమస్యపై ఆయన వేగంగా చర్యలు తీసుకున్నారు.",
+          "sections": [
+            {
+              "heading": "వలసదారుల సమస్య",
+              "paragraphs": [
+                "సెయుటాలో వలసదారుల సమస్య పెరిగిపోవడంతో స్పెయిన్ ప్రభుత్వం వేగంగా చర్యలు తీసుకుంది. వలసదారులను తిరిగి పంపించడానికి చర్యలు తీసుకుంది."
+              ]
+            }
+          ],
+          "location": "స్పెయిన్",
+          "importance": "normal",
+          "tags": [
+            "స్పెయిన్",
+            "వలసదారులు",
+            "సెయుటా"
+          ]
+        }
+      },
+      {
+        "id": "9f0ab5ba150698fb030f043572be414145bd184492d824141499ed5da880f944",
+        "sourceName": "New York Times World",
+        "title": "For Iran, Trump’s Reversal on Escalation Shows Who Has the Upper Hand",
+        "url": "https://www.nytimes.com/2026/08/03/world/middleeast/iran-trump-escalation.html",
+        "published": "Mon, 03 Aug 2026 08:50:11 +0000",
+        "score": 70,
+        "content": {
+          "headline": "ఇరాన్‌పై ట్రంప్ వైఖరిలో మార్పు",
+          "summary": "ఇరాన్‌పై ట్రంప్ వైఖరిలో మార్పు ఏమి సూచిస్తుంది",
+          "sections": [
+            {
+              "heading": "పరిస్థితి",
+              "paragraphs": [
+                "ఇరాన్‌పై అమెరికా అధ్యక్షుడు డోనల్డ్ ట్రంప్ వైఖరిలో మార్పు వచ్చింది. ఇది ఎవరి పక్షాన ఉందనేది స్పష్టంగా కనిపిస్తోంది."
+              ]
+            }
+          ],
+          "location": "ఇరాన్",
+          "importance": "normal",
+          "tags": [
+            "ఇరాన్",
+            "ట్రంప్",
+            "అమెరికా"
+          ]
+        }
+      },
+      {
+        "id": "dd0233fa5b55a9acb66ebd1a1aff76d772085d8904120be13e897b2ed7cea9eb",
+        "sourceName": "BBC World",
+        "title": "Threat to oil tankers in Middle East worst since start of Iran war, analysts say",
+        "url": "https://www.bbc.co.uk/news/articles/cjrv0dy2e90o?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 03 Aug 2026 15:57:27 GMT",
+        "score": 90,
+        "content": {
+          "headline": "మధ్యప్రాచ్యంలో నౌకాయాన భద్రత ఇరాన్ యుద్ధం మొదలైనప్పటి నుంచి అత్యంత క్లిష్టంగా ఉంది",
+          "summary": "మధ్యప్రాచ్యంలో నౌకాయానం పై ముప్పు ఇరాన్ యుద్ధం మొదలైనప్పటి నుంచి అత్యంత క్లిష్టంగా ఉందని విశ్లేషకులు చెబుతున్నారు",
+          "sections": [
+            {
+              "heading": "పరిస్థితి",
+              "paragraphs": [
+                "ఇరాన్ యుద్ధం మొదలైనప్పటి నుంచి మధ్యప్రాచ్యంలో నౌకాయానం పై ముప్పు అత్యంత క్లిష్టంగా ఉందని విశ్లేషకులు చెబుతున్నారు. ఎర్ర సముద్రంలో జరిగిన దాడులు నౌకాయానానికి మరింత సవాళ్లను సృష్టిస్తున్నాయి."
+              ]
+            },
+            {
+              "heading": "ప్రభావం",
+              "paragraphs": [
+                "ఈ పరిస్థితి ప్రపంచ నౌకాయానంపై ప్రభావం చూపుతోంది. ఇరాన్ యుద్ధం మొదలైనప్పటి నుంచి ఎర్ర సముద్రం ద్వారా వెళ్ళే నౌకల సంఖ్య తగ్గింది."
+              ]
+            }
+          ],
+          "location": "మధ్యప్రాచ్యం",
+          "importance": "సాధారణ",
+          "tags": []
+        }
+      },
+      {
+        "id": "e020f65133b9d1ef95511a7ce7d8bce243df5cc209913c827829d65cbffef39e",
+        "sourceName": "BBC World",
+        "title": "Rhine falls to record low levels as drought strains Europe's rivers",
+        "url": "https://www.bbc.co.uk/news/articles/c78gn8zvrx4o?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 03 Aug 2026 16:27:43 GMT",
+        "score": 90,
+        "content": {
+          "headline": "ఐరోపా నదుల్లో కరువు: రైన్ నది వరద కంటే ఎండబెట్టుకుంది",
+          "summary": "రైన్, డాన్యూబ్, పో నదుల్లో నీటి మట్టాలు పడిపోవడంతో వస్తువుల రవాణా ప్రభావితమైంది, విద్యుత్ ఉత్పత్తి తగ్గింది",
+          "sections": [
+            {
+              "heading": "రైన్ నది పరిస్థితి",
+              "paragraphs": [
+                "జర్మనీలోని కాబ్ సమీపంలోని కౌబ్ వద్ద రైన్ నది నీటి మట్టం 25 సెం.మీ.కి పడిపోయింది, తర్వాత కొంచెం పెరిగింది. రైన్ నదిపై నావిగేషన్ కోసం ఇది కీలకమైన సూచిక."
+              ]
+            },
+            {
+              "heading": "డాన్యూబ్ నది పరిస్థితి",
+              "paragraphs": [
+                "డాన్యూబ్ నది నీటి మట్టం కూడా పడిపోయింది, దీనివల్ల హంగేరీలోని అణుశక్తి కర్మాగారం మూతపడే పరిస్థితి ఏర్పడింది."
+              ]
+            }
+          ],
+          "location": "ఐరోపా",
+          "importance": "normal",
+          "tags": [
+            "రైన్ నది",
+            "డాన్యూబ్ నది",
+            "కరువు"
+          ]
+        }
+      },
+      {
+        "id": "ee9b24e9d01d4b714ea3563d81db158ddb83efe9d96533c9492139204f1a5045",
+        "sourceName": "BBC World",
+        "title": "Infantino opponents threaten 'non co-operation' with Fifa",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cp30vg829nxo?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 03 Aug 2026 07:49:33 GMT",
+        "score": 70,
+        "content": {
+          "headline": "ఫిఫా అధ్యక్షుడు గియాన్ని ఇన్ఫాంటినోపై వ్యతిరేకుల బహిష్కరణ బెదిరింపు",
+          "summary": "ఫిఫా అధ్యక్షుడు గియాన్ని ఇన్ఫాంటినోపై వ్యతిరేకులు బహిష్కరణ బెదిరింపులు చేస్తున్నారు. అతను రాజీనామా చేయకపోతే సహకరించడంలో నిరాకరిస్తామని చెబుతున్నారు.",
+          "sections": [
+            {
+              "heading": "ఫిఫా సంక్షోభం",
+              "paragraphs": [
+                "ఫిఫా అధ్యక్షుడు గియాన్ని ఇన్ఫాంటినో పదవీ విరమణ కోసం వ్యతిరేకులు ఒత్తిడి తీస్తున్నారు. అతని పదవీకాలంలో జరిగిన వివాదాలపై అసంతృప్తి వ్యక్తం చేస్తున్నారు."
+              ]
+            }
+          ],
+          "location": "జ్యూరిచ్, స్విట్జర్లాండ్",
+          "importance": "సాధారణ",
+          "tags": [
+            "ఫిఫా",
+            "గియాన్ని ఇన్ఫాంటినో",
+            "యూఎఫా"
+          ]
+        }
+      },
+      {
+        "id": "f65e8084b1deb154221ecf4cf60da0b1e16331d465f3e0e4572a3871fad7bd80",
+        "sourceName": "BBC World",
+        "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
+        "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 03 Aug 2026 18:04:30 GMT",
+        "score": 110,
+        "content": {
+          "headline": "రష్యాలో డ్రోన్ దాడి: 7 మంది మృతి, 40 మంది గాయపడ్డారు",
+          "summary": "రష్యాలోని బ్లాక్ సీ తీరంలో ఉన్న ఒక రిసార్ట్ వద్ద ఉక్రెయిన్ డ్రోన్ దాడి జరిగినట్లు రష్యా అధికారులు చెప్పారు. ఈ దాడిలో 7 మంది మృతి చెందగా, 40 మంది గాయపడ్డారు.",
+          "sections": [
+            {
+              "heading": "దాడి వివరాలు",
+              "paragraphs": [
+                "రష్యాలోని క్రాస్నోడార్ ప్రాంతంలోని ఆర్కిపో-ఒసిపోవ్కా గ్రామం సమీపంలో ఈ దాడి జరిగింది. ఈ ప్రాంతం రష్యన్లకు ప్రసిద్ధి చెందిన వారాంతపు ప్రదేశం."
+              ]
+            },
+            {
+              "heading": "ప్రతిస్పందన",
+              "paragraphs": [
+                "ఈ దాడిపై ఉక్రెయిన్ ఇంకా ఏమీ వ్యాఖ్యానించలేదు. రష్యా అధికారులు ఉక్రెయిన్‌పై పౌరులపై దాడి చేసినట్లు ఆరోపించారు."
+              ]
+            }
+          ],
+          "location": "రష్యా",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "fe5a7b4615df8612855749066b5da869a044eb44d349885099f037b49acef159",
+        "sourceName": "BBC World",
+        "title": "Aung San Suu Kyi appears healthy in first confirmed outside contact for 2.5 years",
+        "url": "https://www.bbc.co.uk/news/articles/c1e1d5j6660o?at_medium=RSS&at_campaign=rss",
+        "published": "Mon, 03 Aug 2026 14:20:56 GMT",
+        "score": 90,
+        "content": {
+          "headline": "మియాన్మార్‌లో నిర్బంధంలో ఉన్న ఆంగ్ సాన్ సూకీ: సైన్యం ఫోటోలు విడుదల",
+          "summary": "మియాన్మార్ సైనిక ప్రభుత్వం విడుదల చేసిన కొత్త ఫోటోలు సూకీ ఐసీఆర్సీ అధికారితో సమావేశం నిర్వహిస్తున్నట్లు చూపిస్తున్నాయి",
+          "sections": [
+            {
+              "heading": "నిర్బంధంలో ఉన్న సూకీ",
+              "paragraphs": [
+                "మియాన్మార్‌లో నిర్బంధంలో ఉన్న ఆంగ్ సాన్ సూకీని అంతర్జాతీయ రెడ్‌క్రాస్ సంస్థ ప్రతినిధులు కలిశారు. దీంతో రెండున్నర సంవత్సరాల తర్వాత ఆమెకు బయటి ప్రపంచంతో సంపర్కం ఏర్పడింది."
+              ]
+            },
+            {
+              "heading": "ఆరోగ్యం బాగుందని ఫోటోలు చూపిస్తున్నాయి",
+              "paragraphs": [
+                "సూకీ ఆరోగ్యం బాగుందని విడుదలైన ఫోటోలు చూపిస్తున్నాయి. ఆమె 2021లో సైన్యం తన ప్రభుత్వాన్ని పడగొట్టిన తర్వాత నిర్బంధంలోకి వెళ్లారు."
+              ]
+            }
+          ],
+          "location": "మియాన్మార్",
+          "importance": "normal",
+          "tags": []
+        }
+      }
+    ],
+    "andhraPradesh": [
+      {
+        "id": "17584bf9a95d6c4489263e14aa67b16baae26329d265eed5601916a52821d575",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Continue commercial flight operations at Vizag airport: CPI to govt.",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/continue-commercial-flight-operations-at-vizag-airport-cpi-to-govt/article71301297.ece",
+        "published": "Mon, 03 Aug 2026 23:01:39 +0530",
+        "score": 110,
+        "content": {
+          "headline": "విశాఖపట్నం విమానాశ్రయంలో వాణిజ్య విమాన కార్యకలాపాలు కొనసాగించాలి: సిపిఐ",
+          "summary": "భోగాపురంలో కొత్త అంతర్జాతీయ విమానాశ్రయం ప్రారంభం కావడంతో, విశాఖపట్నం విమానాశ్రయంలో వాణిజ్య విమాన సేవలు కొనసాగాలని సిపిఐ ప్రభుత్వాన్ని కోరింది.",
+          "sections": [
+            {
+              "heading": "సిపిఐ సమర్థన",
+              "paragraphs": [
+                "విశాఖపట్నం నార్త్ అసెంబ్లీ నియోజకవర్గ ప్రతినిధులు విశాఖపట్నం జిల్లా కలెక్టర్‌కు సోమవారం సమర్పించిన మెమోరాండంలో, విశాఖపట్నం విమానాశ్రయంలో వాణిజ్య విమాన సేవలు కొనసాగాలని పేర్కొన్నారు."
+              ]
+            },
+            {
+              "heading": "ప్రభుత్వానికి విజ్ఞప్తి",
+              "paragraphs": [
+                "సిపిఐ విశాఖపట్నం జిల్లా అసిస్టెంట్ సెక్రటరీ పత్రపల్లి చంద్రశేఖర్ భోగాపురంలో అల్లూరి సీతారామరాజు అంతర్జాతీయ విమానాశ్రయం ప్రారంభాన్ని స్వాగతించారు. అయితే, విశాఖపట్నం విమానాశ్రయం మూసివేయడం వల్ల ప్రయాణికులకు, ఐటి కంపెనీలకు, పరిశ్రమలకు, విద్యాసంస్థలకు, వ్యాపారాలకు ఇబ్బంది కలుగుతుందని పేర్కొన్నారు."
+              ]
+            }
+          ],
+          "location": "విశాఖపట్నం",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "242dcb0c38635cef095f9fd11a0265f5a55542c371924e62d31ef8ce6d875d75",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Tadoba tiger ‘Explorer’ returns to Andhra Pradesh in search of mate, territory",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/tadoba-tiger-explorer-returns-to-andhra-pradesh-in-search-of-mate-territory/article71301758.ece",
+        "published": "Mon, 03 Aug 2026 22:35:10 +0530",
+        "score": 110,
+        "content": {
+          "headline": "తడోబా టైగర్ ‘ఎక్స్‌ప్లోరర్’ ఆంధ్రప్రదేశ్‌లోకి తిరిగి వచ్చింది",
+          "summary": "తడోబా టైగర్ ‘ఎక్స్‌ప్లోరర్’ ఆంధ్రప్రదేశ్‌లోకి తిరిగి వచ్చింది, జంటను వెతుకుతోంది, భూభాగాన్ని కొనసాగిస్తోంది, ఆడ టైగర్‌ను తరలించడానికి ప్రణాళికలు చేస్తోంది",
+          "sections": [
+            {
+              "heading": "టైగర్ రాక",
+              "paragraphs": [
+                "మహారాష్ట్ర నుండి ఆంధ్రప్రదేశ్‌కు అసాధారణమైన ప్రయాణంతో వన్యప్రాణుల నిపుణులను ఆశ్చర్యపరిచిన తర్వాత, ‘ఎక్స్‌ప్లోరర్’ అనే టైగర్ మళ్లీ జంగరెడ్డిగూడెం రిజర్వ్ అడవి ప్రాంతానికి తిరిగి వచ్చింది, మళ్లీ అధికారులు వ్యాపకమైన శోధన కార్యకలాపాలను ప్రారంభించారు."
+              ]
+            },
+            {
+              "heading": "టైగర్ ఉద్దేశం",
+              "paragraphs": [
+                "ఈ టైగర్ తన జన్మస్థలాన్ని విడిచిపెట్టినప్పుడు ఒక సబ్-అడల్ట్‌గా ఉంది, ఇప్పుడు పూర్తిగా పెరిగిన మగ టైగర్‌గా తిరిగి వచ్చింది, దాని భూభాగాన్ని స్థాపించడానికి, జంటను కనుగొనడానికి ప్రయత్నిస్తున్నట్లు కనిపిస్తోంది."
+              ]
+            }
+          ],
+          "location": "ఆంధ్రప్రదేశ్",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "b9eb94e54c18384fd6da367f0a641853842034de3274ed555168d4a5e37da804",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Minister challenges former MLA to development debate",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/minister-challenges-former-mla-to-development-debate/article71301069.ece",
+        "published": "Mon, 03 Aug 2026 22:00:12 +0530",
+        "score": 90,
+        "content": {
+          "headline": "మంత్రి సవాల్: అభివృద్ధి విషయంలో చర్చకు సిద్ధం",
+          "summary": "బనగానపల్లెలో పట్టాదారు పాస్‌బుక్‌లు పంచిపెట్టిన రోడ్లు, భవనాల శాఖ మంత్రి బిసి జనార్ధనరెడ్డి",
+          "sections": [
+            {
+              "heading": "అభివృద్ధి విషయంలో చర్చ",
+              "paragraphs": [
+                "బనగానపల్లె నియోజకవర్గంలో తను ఏడు సంవత్సరాలు ఎమ్మెల్యేగా ఉన్నప్పుడు చేసిన అభివృద్ధి పనులపై మాజీ ఎమ్మెల్యే కటాసాని రామిరెడ్డితో చర్చకు సిద్ధమని మంత్రి బిసి జనార్ధనరెడ్డి అన్నారు."
+              ]
+            },
+            {
+              "heading": "పట్టాదారు పాస్‌బుక్‌ల పంపిణీ",
+              "paragraphs": [
+                "పోట్టిపాడు గ్రామంలో 575 మంది రైతులకు పట్టాదారు పాస్‌బుక్‌లు పంచిపెట్టారు."
+              ]
+            }
+          ],
+          "location": "బనగానపల్లె",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "bffd3765aa7593e7a9e0f71f6e19c037bcaed07a5e7b50df261059d1099e029f",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Lok Satta leaders oppose proposal to set up RRB in Amaravati",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/lok-satta-leaders-oppose-proposal-to-set-up-rrb-in-amaravati/article71301328.ece",
+        "published": "Mon, 03 Aug 2026 23:43:04 +0530",
+        "score": 110,
+        "content": {
+          "headline": "అమరావతిలో ఆర్ఆర్బీ ఏర్పాటుకు వ్యతిరేకం",
+          "summary": "లోక్ సత్తా నేతలు, మిత్రపక్షాలు అమరావతిలో రైల్వే రిక్రూట్మెంట్ బోర్డు (ఆర్ఆర్బీ) ఏర్పాటుకు వ్యతిరేకంగా ఉన్నారు. విశాఖపట్నంలో దీనిని ఏర్పాటు చేయాలని వారు వాదిస్తున్నారు.",
+          "sections": [
+            {
+              "heading": "విశాఖపట్నంలో ఆర్ఆర్బీ ఏర్పాటుకు డిమాండ్",
+              "paragraphs": [
+                "సోమవారం విశాఖపట్నంలో జరిగిన రౌండ్ టేబుల్ సమావేశంలో లోక్ సత్తా నేతలు, అనేక సంస్థల ప్రతినిధులు ఆర్ఆర్బీని అమరావతిలో ఏర్పాటు చేయాలనే ప్రతిపాదనకు వ్యతిరేకంగా మాట్లాడారు."
+              ]
+            },
+            {
+              "heading": "ఉత్తరాంధ్ర యువతకు నష్టం",
+              "paragraphs": [
+                "ఏపీ లోక్ సత్తా అధ్యక్షుడు భీషెట్టి బాబ్జీ ముఖ్యమంత్రి ఎన్ చంద్రబాబు నాయుడు కేంద్రానికి రాసిన ఉత్తరం ఉత్తరాంధ్ర నిరుద్యోగ యువతకు నష్టం కలిగిస్తుందని చెప్పారు. ఆర్ఆర్బీ విశాఖపట్నంలోనే ఉండాలని, ఇక్కడే సౌత్ కోస్ట్ రైల్వే జోన్ పనిచేస్తోందని వాదించారు."
+              ]
+            },
+            {
+              "heading": "సీపీఐ మద్దతు",
+              "paragraphs": [
+                "సీపీఐ నేత జెవి సత్యనారాయణ మూర్తి, ఇతరులు ఈ డిమాండ్‌కు మద్దతు తెలిపారు. రాష్ట్ర ప్రభుత్వం తన వైఖరిని పునః పరిశీలించాలని కోరారు."
+              ]
+            }
+          ],
+          "location": "విశాఖపట్నం",
+          "importance": "normal",
+          "tags": [
+            "లోక్ సత్తా",
+            "ఆర్ఆర్బీ",
+            "విశాఖపట్నం",
+            "అమరావతి"
+          ]
+        }
+      },
+      {
+        "id": "fa70116c5a398c4ec62961564fce53b059e381a93bd0eeebf22c10013387f8cc",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Statues of the Buddha, N.T. Rama Rao unveiled at Parasam village",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/statues-of-the-buddha-and-nt-rama-rao-unveiled-at-parasam-village/article71300023.ece",
+        "published": "Mon, 03 Aug 2026 22:57:03 +0530",
+        "score": 110,
+        "content": {
+          "headline": "పారసం గ్రామంలో బుద్ధ, ఎన్టీఆర్ విగ్రహాల ఆవిష్కరణ",
+          "summary": "విజయనగరం జిల్లా నెల్లిమర్ల నియోజకవర్గంలోని పారసం గ్రామంలో బుద్ధ, మాజీ ముఖ్యమంత్రి ఎన్టీఆర్ విగ్రహాలను ఎంఎస్‌ఎంఈ మంత్రి కొండపల్లి శ్రీనివాస్ ఆవిష్కరించారు.",
+          "sections": [
+            {
+              "heading": "ఆవిష్కరణ కార్యక్రమం",
+              "paragraphs": [
+                "నెల్లిమర్ల ఎమ్మెల్యే లోకం నాగమాధవితో కలిసి ఎంఎస్‌ఎంఈ మంత్రి కొండపల్లి శ్రీనివాస్ ఈ విగ్రహాలను ఆవిష్కరించారు. గౌతమ బుద్ధుని బోధనలు తరతరాలకు స్ఫూర్తినిస్తాయని శ్రీనివాస్ అన్నారు."
+              ]
+            },
+            {
+              "heading": "బుద్ధ బోధనలు",
+              "paragraphs": [
+                "బుద్ధుని బోధనలు ఆనందాన్ని పంచుకోవడం, వర్తమానంలో జీవించడం, మనసును సానుకూల ఆలోచనల వైపు మళ్లించడం, అసంగత్వం వంటివి జీవితాన్ని సరళంగా, ఆనందంగా మారుస్తాయని లోకం నాగమాధవి అన్నారు."
+              ]
+            },
+            {
+              "heading": "అభివృద్ధి పనులు",
+              "paragraphs": [
+                "రెండు రోడ్లను 20 లక్షల రూపాయలతో అభివృద్ధి చేస్తానని, శ్రీవాణి ట్రస్ట్ సహకారంతో స్థానిక దేవాలయాలను అభివృద్ధి చేయడంతోపాటు ఇతర అభివృద్ధి పనులు చేపడతానని లోకం నాగమాధవి తెలిపారు."
+              ]
+            }
+          ],
+          "location": "విజయనగరం",
+          "importance": "normal",
+          "tags": [
+            "బుద్ధ విగ్రహం",
+            "ఎన్టీఆర్ విగ్రహం",
+            "పారసం గ్రామం"
+          ]
+        }
+      }
+    ]
+  },
+  "meta": {
+    "totalArticles": 20
+  }
+}
