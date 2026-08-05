@@ -1,0 +1,596 @@
+{
+  "date": "2026-08-06",
+  "generatedAt": "2026-08-05T22:34:16.820Z",
+  "categories": {
+    "national": [
+      {
+        "id": "25c06b3919f13cc180e4ac09ac30778e4613dfd3619039e826f8c9a81a33098b",
+        "sourceName": "The Hindu",
+        "title": "Bihar Governor appoints Upendra Kushwaha’s son Deepak Prakash as MLC",
+        "url": "https://www.thehindu.com/news/national/bihar/bihar-governor-appoints-upendra-kushwahas-son-deepak-prakash-as-mlc/article71310651.ece",
+        "published": "Wed, 05 Aug 2026 23:44:07 +0530",
+        "score": 110,
+        "content": {
+          "headline": "బీహార్ గవర్నర్ నియామకం: ఉపేంద్ర కుష్వాహా కుమారుడు దీపక్ ప్రకాష్ MLCగా నియమితుడు",
+          "summary": "బీహార్ గవర్నర్ లెఫ్టినెంట్ జనరల్ (రిటైర్డ్) సైయద్ అతా హస్నైన్ దీపక్ ప్రకాష్‌ను MLCగా నియమించారు.",
+          "sections": [
+            {
+              "heading": "నియామకం నేపథ్యం",
+              "paragraphs": [
+                "దీపక్ ప్రకాష్ నియామకానికి కారణం దేవేష్ కుమార్ రాజీనామా. సుప్రీంకోర్టు పరిశీలనలో ఉన్న మంత్రి హోదాపై ఆయన రాజీనామా చేశారు."
+              ]
+            },
+            {
+              "heading": "దీపక్ ప్రకాష్ విశేషాలు",
+              "paragraphs": [
+                "దీపక్ ప్రకాష్ రాష్ట్రీయ లోక్ మోర్చా (RLM) అధ్యక్షుడు, రాజ్యసభ సభ్యుడు ఉపేంద్ర కుష్వాహా కుమారుడు. ఆయన 36 ఏళ్లు. నవంబర్ 20, 2025 నుంచి రాష్ట్ర పంచాయతీరాజ్ మంత్రిగా ఉన్నారు."
+              ]
+            }
+          ],
+          "location": "బీహార్",
+          "importance": "సాధారణ",
+          "tags": []
+        }
+      },
+      {
+        "id": "4c76fe58052e75dfa6634a78455a120c220ed060f1dbcfcba50409edd8ddc854",
+        "sourceName": "The Hindu",
+        "title": "Road rage controversy: Karnataka High Court transfers Malur judge to Humnabad",
+        "url": "https://www.thehindu.com/news/national/karnataka/road-rage-controversy-karnataka-high-court-transfers-malur-judge-to-humnabad/article71310883.ece",
+        "published": "Wed, 05 Aug 2026 23:37:22 +0530",
+        "score": 110,
+        "content": {
+          "headline": "రోడ్డు కోపం వివాదం: కర్ణాటక హైకోర్టు మాలూరు న్యాయమూర్తిని హుమ్నాబాద్‌కు బదిలీ చేసింది",
+          "summary": "కర్ణాటక హైకోర్టు బుధవారం మాలూరులోని ప్రధాన సివిల్ జడ్జి, జెఎంఎఫ్‌సీ గాయత్రిని పరిపాలనా కారణాల వల్ల, ప్రజా సేవ ప్రయోజనం కోసం బీదర్ జిల్లాలోని హుమ్నాబాద్‌కు బదిలీ చేసింది.",
+          "sections": [
+            {
+              "heading": "వివాదం నేపథ్యం",
+              "paragraphs": [
+                "మాలూరులో ఆమె ప్రైవేటు కారుతో సంబంధం ఉన్న రోడ్డు కోపం కేసులో ఆమె చేసిన ప్రవర్తనపై వైరల్ అయిన వీడియోల నేపథ్యంలో ఈ బదిలీ జరిగింది."
+              ]
+            },
+            {
+              "heading": "హైకోర్టు చర్య",
+              "paragraphs": [
+                "యువకుడు, అతని కుటుంబ సభ్యులు ఫిర్యాదు చేసిన తర్వాత, హైకోర్టు ఒకే న్యాయమూర్తి ధర్మాసనం ఎఫ్‌ఐఆర్‌ను స్టే చేసింది. ఆమెపై చర్య తీసుకోవాలని ప్రధాన న్యాయమూర్తికి సిఫార్సు చేసింది."
+              ]
+            }
+          ],
+          "location": "కర్ణాటక",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "83538261a0d988a2547359c2e82e204d09e0c356c24f2d25ff4f1acf4a53d80b",
+        "sourceName": "The Hindu",
+        "title": "Life sentence for three in IUML councillor murder case in Kerala",
+        "url": "https://www.thehindu.com/news/national/kerala/life-sentence-for-three-in-iuml-councillor-murder-case-in-kerala/article71310170.ece",
+        "published": "Wed, 05 Aug 2026 23:23:27 +0530",
+        "score": 110,
+        "content": {
+          "headline": "కేరళలో ఐయూఎంఎల్ కౌన్సిలర్ హత్య కేసులో ముగ్గురికి ఉరిశిక్ష",
+          "summary": "కేరళలో ఐయూఎంఎల్ కౌన్సిలర్ అబ్దుల్ జలీల్ హత్య కేసులో మూడుగురు వ్యక్తులకు జీవిత ఖైదు విధించారు",
+          "sections": [
+            {
+              "heading": "విచారణ",
+              "paragraphs": [
+                "మంజేరిలోని అడిషనల్ డిస్ట్రిక్ట్ మరియు సెషన్స్ కోర్టు-III ఈ వరకు మూడుగురు వ్యక్తులకు జీవిత ఖైదు విధించింది. దీనితో పాటు ఒక్కొక్కరికి రూ.1 లక్ష జరిమానా కూడా విధించారు."
+              ]
+            },
+            {
+              "heading": "హత్య వివరాలు",
+              "paragraphs": [
+                "2022 మార్చి 29న కుట్టిప్పార సమీపంలో ఈ హత్య జరిగింది. మోటార్‌సైకిల్‌కు దారి ఇవ్వడంలో వివాదం తలెత్తిన తర్వాత అబ్దుల్ జలీల్‌పై దాడి జరిగింది."
+              ]
+            }
+          ],
+          "location": "కేరళ",
+          "importance": "నార్మల్",
+          "tags": [
+            "ఐయూఎంఎల్",
+            "కౌన్సిలర్ హత్య",
+            "జీవిత ఖైదు"
+          ]
+        }
+      },
+      {
+        "id": "df32b19876e9b4757da81763e901b1dc1fd63f696af28999c0f81ab87471ee4d",
+        "sourceName": "The Hindu",
+        "title": "Meghalaya launches mission to protect clouded leopards",
+        "url": "https://www.thehindu.com/news/national/meghalaya/meghalaya-launches-mission-to-protect-clouded-leopards/article71309607.ece",
+        "published": "Wed, 05 Aug 2026 23:21:58 +0530",
+        "score": 110,
+        "content": {
+          "headline": "మేఘాలయ ప్రభుత్వం మెరుపు పులి పరిరక్షణకు మిషన్ ప్రారంభించింది",
+          "summary": "మెరుపు పులిని రక్షించడానికి, దాని పరిరక్షణ ప్రయత్నాలను పెంచడానికి మేఘాలయ ప్రభుత్వం మిషన్ క్లౌడెడ్ లెపర్డ్‌ను ప్రారంభించింది.",
+          "sections": [
+            {
+              "heading": "మెరుపు పులి పరిరక్షణ",
+              "paragraphs": [
+                "మెరుపు పులి మేఘాలయ రాష్ట్ర జంతువు. ఈ జంతువు రక్షణ కోసం మేఘాలయ ప్రభుత్వం ఒక ప్రత్యేక కార్యక్రమాన్ని ప్రారంభించింది. ఈ కార్యక్రమం ద్వారా మెరుపు పులి ఆవాసాల రక్షణ, పునరుద్ధరణ, శాస్త్రీయ పరిశోధన, దీర్ఘకాలిక పర్యవేక్షణ మరియు బలమైన రక్షణ చర్యలు చేపట్టబడతాయి."
+              ]
+            }
+          ],
+          "location": "మేఘాలయ",
+          "importance": "సాధారణ",
+          "tags": []
+        }
+      },
+      {
+        "id": "ecbf558269847c4396baf686827052f74ed2abbc8683513be22e4e9554db0782",
+        "sourceName": "The Hindu",
+        "title": "DGMA warns of cyber threats as ports automate operations",
+        "url": "https://www.thehindu.com/news/national/dgma-warns-of-cyber-threats-as-ports-automate-operations/article71309200.ece",
+        "published": "Wed, 05 Aug 2026 23:16:00 +0530",
+        "score": 110,
+        "content": {
+          "headline": "ఓడరేవుల్లో సైబర్ ముప్పు: డీజీఎంఏ హెచ్చరిక",
+          "summary": "ఓడరేవుల కార్యకలాపాలు ఆటోమేషన్ అయినందున సైబర్ ముప్పు పెరిగిందని, భద్రతా చర్యలు తీసుకోవాలని డీజీఎంఏ హెచ్చరించింది",
+          "sections": [
+            {
+              "heading": "సైబర్ ముప్పు గురించి డీజీఎంఏ హెచ్చరిక",
+              "paragraphs": [
+                "ఓడరేవులు డిజిటల్ సాంకేతికతలను అవలంబిస్తున్నందున, సైబర్ ముప్పులు ఓడరేవు భద్రతకు, కార్యకలాపాలకు ముప్పుగా మారాయని డీజీఎంఏ అధికారులు చెప్పారు."
+              ]
+            },
+            {
+              "heading": "సైబర్ ముప్పులకు గల కారణాలు",
+              "paragraphs": [
+                "అనధికార ప్రవేశం, మాల్వేర్, రాన్సమ్వేర్ దాడులు, అసురక్షిత దూర ప్రవేశ ఏర్పాట్లు, మూడవ పార్టీ ప్రవేశం, అనుసంధానిత వ్యవస్థల రాజీ వంటివి సైబర్ దాడులకు కారణమవుతున్నాయని డీజీఎంఏ తెలిపింది."
+              ]
+            }
+          ],
+          "location": "",
+          "importance": "సాధారణ",
+          "tags": []
+        }
+      }
+    ],
+    "international": [
+      {
+        "id": "0e19f498b2157712befe7527de7fd591cf9768432e0140f6417e872eb2055ca3",
+        "sourceName": "New York Times World",
+        "title": "Migrant Crisis Reveals Vast Differences Between Ceuta and Its Moroccan Neighbor",
+        "url": "https://www.nytimes.com/2026/08/05/world/europe/ceuta-spain-fnideq-morocco-migration.html",
+        "published": "Wed, 05 Aug 2026 13:09:18 +0000",
+        "score": 90,
+        "content": {
+          "headline": "స్పెయిన్ సరిహద్దులో శరణార్థుల సంక్షోభం",
+          "summary": "స్పెయిన్‌లోని స్వయం పాలన కలిగిన ప్రాంతం స్యూటాలో శరణార్థుల సంక్షోభం తీవ్రతరం అవుతోంది",
+          "sections": [
+            {
+              "heading": "శరణార్థుల సంక్షోభం",
+              "paragraphs": [
+                "స్పెయిన్, మొరాకో సరిహద్దులో ఉన్న స్యూటాలో వేలాది మంది శరణార్థులు చిక్కుకుపోయారు. వారిలో ఎక్కువ మంది ఆఫ్రికా నుంచి వచ్చినవారు."
+              ]
+            }
+          ],
+          "location": "స్పెయిన్",
+          "importance": "normal",
+          "tags": [
+            "శరణార్థులు",
+            "స్పెయిన్",
+            "మొరాకో"
+          ]
+        }
+      },
+      {
+        "id": "28cbab24711cddbc7ee06de9102b00d9c089a6f94c3981a6cb3f898b5e8508e2",
+        "sourceName": "New York Times World",
+        "title": "China’s Nonsmokers Try to Clear the Air, One Confrontation at a Time",
+        "url": "https://www.nytimes.com/2026/08/05/world/asia/china-cigarette-smoking.html",
+        "published": "Wed, 05 Aug 2026 04:00:05 +0000",
+        "score": 70,
+        "content": {
+          "headline": "చైనాలో పొగాకు వినియోగంపై పోరాటం",
+          "summary": "చైనాలో పొగాకు వినియోగం గణనీయంగా ఉంది. దీనిపై పోరాటం చేస్తున్నారు.",
+          "sections": [
+            {
+              "heading": "పొగాకు వినియోగం వల్ల సమస్యలు",
+              "paragraphs": [
+                "చైనాలో పొగాకు వినియోగం వల్ల ఆరోగ్య సమస్యలు పెరిగిపోతున్నాయి. దీనిపై అవగాహన కల్పిస్తున్నారు."
+              ]
+            },
+            {
+              "heading": "పొగాకు వినియోగాన్ని అరికట్టే చర్యలు",
+              "paragraphs": [
+                "చైనా ప్రభుత్వం పొగాకు వినియోగాన్ని అరికట్టేందుకు చర్యలు తీసుకుంటోంది. పొగాకు వినియోగం గల ప్రదేశాల్లో నిషేధం విధిస్తోంది."
+              ]
+            }
+          ],
+          "location": "చైనా",
+          "importance": "normal",
+          "tags": [
+            "చైనా",
+            "పొగాకు వినియోగం"
+          ]
+        }
+      },
+      {
+        "id": "43b208aec8835071dcf9379f3629dc8859ff463ef139d851d75fe8eb9961b223",
+        "sourceName": "New York Times World",
+        "title": "Israeli Strikes May Undermine Trump’s Peace Plan for Gaza",
+        "url": "https://www.nytimes.com/2026/08/05/world/middleeast/israel-strikes-gaza-peace-deal.html",
+        "published": "Wed, 05 Aug 2026 12:05:18 +0000",
+        "score": 90,
+        "content": {
+          "headline": "గాజాపై ఇజ్రాయెల్ దాడులు ట్రంప్ శాంతి ప్రణాళికను దెబ్బతీస్తాయా",
+          "summary": "గాజాపై ఇజ్రాయెల్ దాడులు ట్రంప్ ప్రతిపాదించిన శాంతి ప్రణాళికను దెబ్బతీస్తాయని అంటున్నారు.",
+          "sections": [
+            {
+              "heading": "ప్రస్తుత పరిస్థితి",
+              "paragraphs": [
+                "గాజాపై ఇజ్రాయెల్ దాడులు తీవ్రంగా కొనసాగుతున్నాయి. ఈ దాడులు ప్రాంతీయ శాంతిని దెబ్బతీస్తున్నాయి."
+              ]
+            },
+            {
+              "heading": "ట్రంప్ శాంతి ప్రణాళిక",
+              "paragraphs": [
+                "అమెరికా అధ్యక్షుడు ట్రంప్ ప్రతిపాదించిన శాంతి ప్రణాళిక గాజాలోని పరిస్థితిని మెరుగుపరచడానికి ఉద్దేశించింది. అయితే, ఇజ్రాయెల్ దాడులు ఈ ప్రణాళికను విఫలం చేస్తున్నాయని విమర్శకులు అంటున్నారు."
+              ]
+            }
+          ],
+          "location": "గాజా",
+          "importance": "సాధారణ",
+          "tags": [
+            "ఇజ్రాయెల్",
+            "గాజా",
+            "ట్రంప్",
+            "శాంతి ప్రణాళిక"
+          ]
+        }
+      },
+      {
+        "id": "4ff6847f87a2e3441057cab8a011414ab1d40c6c79515900f5e2e3d08c4eb9de",
+        "sourceName": "BBC World",
+        "title": "After deadly Kyiv strike, Ukraine warns interceptor shortage is costing lives",
+        "url": "https://www.bbc.co.uk/news/articles/cyvlgq2gp2eo?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 05 Aug 2026 18:19:51 GMT",
+        "score": 110,
+        "content": {
+          "headline": "కీవ్‌పై దాడి తర్వాత, యుక్రెయిన్ ఇంటర్‌సెప్టర్ కొరత ప్రాణాలను ధ్వంసం చేస్తోందని హెచ్చరించింది",
+          "summary": "పేట్రియాట్ ఇంటర్‌సెప్టర్‌లు లేకుండా, యుక్రెయిన్ ఆకాశాలు విశాలంగా తెరిచి ఉన్నాయి మరియు ప్రజలు రష్యా యొక్క క్షిపణి దాడులకు పూర్తిగా బహిర్గతమవుతున్నారు",
+          "sections": [
+            {
+              "heading": "కీవ్‌లో దాడి",
+              "paragraphs": [
+                "కీవ్‌లోని క్విట్నేవా రైల్వే స్టేషన్ సమీపంలో, కార్మికులు తెల్లటి శవపేటికలను ప్లాట్‌ఫారమ్ నుండి ఎత్తి వేసి వేచి ఉన్న అంబులెన్సులకు తీసుకెళ్లారు. ఎనిమిది మంది చనిపోయిన ప్రదేశంలో బూట్లు, స్పెక్టాకిల్స్ మరియు కొన్ని దుస్తులు ఉన్నాయి."
+              ]
+            }
+          ],
+          "location": "కీవ్, యుక్రెయిన్",
+          "importance": "నార్మల్",
+          "tags": [
+            "యుక్రెయిన్",
+            "రష్యా",
+            "కీవ్",
+            "క్షిపణి దాడి"
+          ]
+        }
+      },
+      {
+        "id": "56aef62a3aa0c4e670b5bb6711c53c0580b372a1b7ec898ef5127ff71a3732c0",
+        "sourceName": "BBC World",
+        "title": "Waste workers help winner find binned €1m lottery ticket in Italy",
+        "url": "https://www.bbc.co.uk/news/articles/c62qvll0z94o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 05 Aug 2026 12:33:43 GMT",
+        "score": 90,
+        "content": {
+          "headline": "ఇటలీలో జరిగిన అద్భుతమైన సంఘటన",
+          "summary": "ఒక లాటరీ ఆటగాడు తన గెలుపొందిన టిక్కెట్‌ను పారవేశాడు, కానీ చివరికి అది బయటపడింది",
+          "sections": [
+            {
+              "heading": "సంఘటన",
+              "paragraphs": [
+                "ఇటలీలోని బిటోంటోలో ఒక షాపులో ఒక లాటరీ ఆటగాడు తన టిక్కెట్‌ను పారవేశాడు. ఆ టిక్కెట్ విలువ దాదాపు 857,158 పౌండ్లు."
+              ]
+            },
+            {
+              "heading": "టిక్కెట్ కనుగొనబడింది",
+              "paragraphs": [
+                "ఆ ఆటగాడు తన టిక్కెట్‌ను పారవేసిన తర్వాత, అతని కుటుంబం అతని సంఖ్యలు గెలిచాయని చెప్పింది. దీంతో ఆటగాడు తన టిక్కెట్‌ను వెతకడం ప్రారంభించాడు."
+              ]
+            }
+          ],
+          "location": "ఇటలీ",
+          "importance": "సాధారణం",
+          "tags": [
+            "లాటరీ",
+            "ఇటలీ",
+            "విజయం"
+          ]
+        }
+      },
+      {
+        "id": "930057892cb678e948ce8248025ac4bc2918a2526a3c2210682dcaaea760efaa",
+        "sourceName": "BBC World",
+        "title": "Why some scientists are thrilled that a SpaceX rocket has crashed into the Moon",
+        "url": "https://www.bbc.co.uk/news/articles/c62q0xerzrno?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 05 Aug 2026 11:19:24 GMT",
+        "score": 90,
+        "content": {
+          "headline": "స్పేస్‌ఎక్స్ రాకెట్ చంద్రునిపై ఢీకొట్టడం: శాస్త్రవేత్తలకు ఏమి నేర్చుకోవచ్చు?",
+          "summary": "ఈ ఢీకొట్టడం ప్రమాదం అయినప్పటికీ, ఇది గ్రహాంతర భూగోళశాస్త్రవేత్తలకు ఒక ప్రత్యేక శాస్త్రీయ బహుమతి, ఇది భవిష్యత్తు అంతరిక్ష మిషన్లకు ముఖ్యమైన డేటాను అందించగలదు.",
+          "sections": [
+            {
+              "heading": "ప్రమాదం",
+              "paragraphs": [
+                "స్పేస్‌ఎక్స్ యొక్క ఫాల్కన్ 9 రాకెట్ చంద్రునిపై ఢీకొట్టినట్లు భావిస్తున్నారు, ఇది ప్రసిద్ధ చంద్రుని మైలురాయి సమీపంలో ఒక గుంటను ఏర్పరచింది, శాస్త్రవేత్తలకు ఒక ప్రత్యేక పరిశోధన అవకాశాన్ని అందించింది."
+              ]
+            },
+            {
+              "heading": "పరిశోధన",
+              "paragraphs": [
+                "ఈ ప్రమాదం నుండి ఏమి నేర్చుకోవచ్చో తెలుసుకోవడానికి రోజులు లేదా వారాలు పడుతుంది, కానీ గ్రహాంతర భూగోళశాస్త్రవేత్తల కోసం, ఈ ప్రమాద ఢీకొట్టడం ఒక శాస్త్రీయ బహుమతి."
+              ]
+            }
+          ],
+          "location": "",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "babad20630679658dcfbd71a617950ea8724bc27ec314f041be8ee3c8ff4d94d",
+        "sourceName": "New York Times World",
+        "title": "The War That’s Happening Above Russia and Ukraine",
+        "url": "https://www.nytimes.com/2026/08/05/world/europe/russia-ukraine-air-war.html",
+        "published": "Wed, 05 Aug 2026 17:28:32 +0000",
+        "score": 109,
+        "content": {
+          "headline": "రష్యా, ఉక్రెయిన్‌ల మధ్య జరుగుతున్న యుద్ధం",
+          "summary": "రష్యా, ఉక్రెయిన్‌ల మధ్య జరుగుతున్న యుద్ధం ప్రపంచాన్ని ఆందోళనకు గురిచేస్తోంది.",
+          "sections": [
+            {
+              "heading": "ప్రస్తుత పరిస్థితి",
+              "paragraphs": [
+                "రష్యా, ఉక్రెయిన్‌ల మధ్య జరుగుతున్న యుద్ధం వివిధ దేశాల మధ్య ఉద్రిక్తతలకు దారితీస్తోంది. ఈ యుద్ధం ప్రపంచ శాంతిని దెబ్బతీస్తోంది."
+              ]
+            }
+          ],
+          "location": "రష్యా, ఉక్రెయిన్",
+          "importance": "సాధారణ",
+          "tags": [
+            "రష్యా",
+            "ఉక్రెయిన్",
+            "యుద్ధం"
+          ]
+        }
+      },
+      {
+        "id": "c85e4886dec1a35bc64285e3c2c4a28636d9be360c4917fe67fc1b3d9ba1ea3a",
+        "sourceName": "BBC World",
+        "title": "South Africa plans new rules on ex-leaders' foreign trips after Zuma's visit to India",
+        "url": "https://www.bbc.co.uk/news/articles/c1e14lj7vg7o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 05 Aug 2026 14:58:41 GMT",
+        "score": 90,
+        "content": {
+          "headline": "జుమా భారత పర్యటనపై దక్షిణాఫ్రికాలో వివాదం",
+          "summary": "దక్షిణాఫ్రికా మాజీ అధ్యక్షుడు జేకబ్ జుమా భారత పర్యటన వివాదాస్పదమైంది",
+          "sections": [
+            {
+              "heading": "జుమా పర్యటన నేపథ్యం",
+              "paragraphs": [
+                "దక్షిణాఫ్రికా మాజీ అధ్యక్షుడు జేకబ్ జుమా భారత పర్యటనలో గుప్తా కుటుంబానికి చెందిన అజయ్ గుప్తాతో కలిసి ఫొటో తీసుకున్నారు. దీనిపై దక్షిణాఫ్రికాలో వివాదం రేగింది."
+              ]
+            },
+            {
+              "heading": "కొత్త నిబంధనలు",
+              "paragraphs": [
+                "ఈ సందర్భంగా దక్షిణాఫ్రికా ప్రభుత్వం మాజీ అధ్యక్షుల విదేశీ పర్యటనలపై కొత్త నిబంధనలను రూపొందించాలని నిర్ణయించింది. మాజీ అధ్యక్షులు విదేశీ పర్యటనల గురించి పూర్తి వివరాలను అందించాలని నిర్ణయించారు."
+              ]
+            }
+          ],
+          "location": "దక్షిణాఫ్రికా",
+          "importance": "సాధారణం",
+          "tags": []
+        }
+      },
+      {
+        "id": "ef997b1d33a21dd4c780ec5a201a0bd4b384acc41e3da99f83a208a60db7afaa",
+        "sourceName": "New York Times World",
+        "title": "Pope Leo Will Visit Peru, Where He Lived for Years, in November",
+        "url": "https://www.nytimes.com/2026/08/05/world/americas/pope-leo-peru-uruguay-argentina.html",
+        "published": "Wed, 05 Aug 2026 12:50:30 +0000",
+        "score": 90,
+        "content": {
+          "headline": "పోప్ లియో నవంబర్‌లో పెరూ పర్యటన",
+          "summary": "పోప్ లియో నవంబర్‌లో పెరూను సందర్శించనున్నారు. ఆయన చాలా సంవత్సరాలు పెరూలో నివసించారు.",
+          "sections": [
+            {
+              "heading": "పోప్ లియో పర్యటన",
+              "paragraphs": [
+                "పోప్ లియో నవంబర్‌లో పెరూను సందర్శించనున్నారని అధికారికంగా ప్రకటించారు. పెరూలో ఆయన చాలా సంవత్సరాలు నివసించారు."
+              ]
+            }
+          ],
+          "location": "పెరూ",
+          "importance": "normal",
+          "tags": [
+            "పోప్ లియో",
+            "పెరూ",
+            "అంతర్జాతీయ"
+          ]
+        }
+      },
+      {
+        "id": "f8b8778587642a26397eafe59e9a2691fe3f4cbe1fbf77c1e084b8abb2699365",
+        "sourceName": "BBC World",
+        "title": "UN rights chief alarmed by rise in Iran executions since March",
+        "url": "https://www.bbc.co.uk/news/articles/c75gvzxrz49o?at_medium=RSS&at_campaign=rss",
+        "published": "Wed, 05 Aug 2026 14:04:09 GMT",
+        "score": 90,
+        "content": {
+          "headline": "ఇరాన్‌లో ఉత్పన్నమయ్యే మరణశిక్షలు పెరుగుతున్నాయి",
+          "summary": "మార్చి నుండి ఇరాన్‌లో 56 మందికి మరణశిక్ష అమలైందని, వారిలో 27 మంది జనవరి నెలలో జరిగిన నిరసనలకు సంబంధించిన కేసుల్లో శిక్ష అనుభవించారని ఐక్యరాజ్యసమితి మానవ హక్కుల ప్రధాన కార్యదర్శి వోల్కర్ టర్క్ పేర్కొన్నారు",
+          "sections": [
+            {
+              "heading": "మరణశిక్షల పెరుగుదల",
+              "paragraphs": [
+                "ఇరాన్‌లో మరణశిక్షల సంఖ్య పెరుగుతుండడంపై ఐక్యరాజ్యసమితి మానవ హక్కుల ప్రధాన కార్యదర్శి వోల్కర్ టర్క్ ఆందోళన వ్యక్తం చేశారు. జాతీయ భద్రతకు సంబంధించిన కేసుల్లో 56 మందికి మరణశిక్ష అమలైందని, వారిలో 27 మంది జనవరి నెలలో జరిగిన నిరసనలకు సంబంధించిన కేసుల్లో శిక్ష అనుభవించారని ఆయన పేర్కొన్నారు."
+              ]
+            },
+            {
+              "heading": "మరణశిక్షల వివరాలు",
+              "paragraphs": [
+                "ఇరాన్‌లో గత సంవత్సరం 2,159 మందికి మరణశిక్ష అమలైందని అమ్నెస్టీ ఇంటర్నేషనల్ నివేదించింది. ఇది 1981 తర్వాత అత్యధిక సంఖ్యగా రికార్డు అయ్యింది. ఇందులో 45 మంది జాతీయ భద్రతకు సంబంధించిన కేసుల్లో శిక్ష అనుభవించారు."
+              ]
+            }
+          ],
+          "location": "ఇరాన్",
+          "importance": "సాధారణ",
+          "tags": []
+        }
+      }
+    ],
+    "andhraPradesh": [
+      {
+        "id": "165e983c9f1b39fcc1bf102a8d5fe8983a946303fc2aeb7ca2cf5e3846a3acdd",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Top official reviews Independence Day arrangements at Parade Grounds in Amaravati",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/top-official-reviews-independence-day-arrangements-at-parade-grounds-in-amaravati/article71309131.ece",
+        "published": "Wed, 05 Aug 2026 23:02:59 +0530",
+        "score": 110,
+        "content": {
+          "headline": "ఆగస్టు 15న స్వాతంత్ర్య దినోత్సవ ఏర్పాట్లు సమీక్షించిన అధికారులు",
+          "summary": "ఆగస్టు 15న అమరావతిలో జరుగనున్న స్వాతంత్ర్య దినోత్సవ ఏర్పాట్లను ప్రభుత్వ ప్రధాన కార్యదర్శి జె. శ్యామల రావు సమీక్షించారు.",
+          "sections": [
+            {
+              "heading": "ఏర్పాట్ల సమీక్ష",
+              "paragraphs": [
+                "పరేడ్ గ్రౌండ్స్‌లో జరుగనున్న స్వాతంత్ర్య దినోత్సవ ఏర్పాట్లను ప్రభుత్వ ప్రధాన కార్యదర్శి జె. శ్యామల రావు సమీక్షించారు. ఈ కార్యక్రమానికి సంబంధించిన అన్ని ఏర్పాట్లు పూర్తి చేయాలని అధికారులను ఆయన ఆదేశించారు."
+              ]
+            },
+            {
+              "heading": "అవసరమైన ఏర్పాట్లు",
+              "paragraphs": [
+                "వేదికపై సరియైన సీటింగ్, త్రాగునీరు, సానిటరీ సౌకర్యాలు కల్పించాలని అధికారులను శ్యామల రావు కోరారు. ట్రాఫిక్, పార్కింగ్ ఏర్పాట్లు కూడా సక్రమంగా చేయాలని సూచించారు."
+              ]
+            }
+          ],
+          "location": "Amaravati",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "1d76f6c2cd50857a763f8025e06fdafd444eff8e1856a224b23ad510e55f1853",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "IBM Consulting FutureNow Centre now in Visakhapatnam",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/ibms-consulting-futurenow-centre-now-in-visakhapatnam/article71309129.ece",
+        "published": "Wed, 05 Aug 2026 22:51:18 +0530",
+        "score": 110,
+        "content": {
+          "headline": "విశాఖపట్నంలో ఐబిఎం కన్సల్టింగ్ ఫ్యూచర్‌నో సెంటర్",
+          "summary": "ఐబిఎం విశాఖపట్నంలో కన్సల్టింగ్ ఫ్యూచర్‌నో సెంటర్‌ను ప్రారంభించింది, ప్రపంచ క్లయింట్లకు ఎయిఐ, సాంకేతికత సేవలను మెరుగుపరుస్తోంది",
+          "sections": [
+            {
+              "heading": "ప్రారంభోత్సవం",
+              "paragraphs": [
+                "ఐటి, హెచ్‌ఆర్‌డి మంత్రి నారా లోకేష్, ఐబిఎం ఇండియా, సౌత్ ఆసియా మేనేజింగ్ డైరెక్టర్ సందీప్ పటేల్ సంయుక్తంగా ఈ కేంద్రాన్ని ప్రారంభించారు."
+              ]
+            },
+            {
+              "heading": "సేవలు",
+              "paragraphs": [
+                "ఈ కేంద్రం ప్రపంచ స్థాయి క్లయింట్లకు ఎయిఐ, డిజిటల్ మార్పులకు సంబంధించిన సేవలను అందిస్తుంది. ఎయిఐ, హైబ్రిడ్ క్లౌడ్, సాఫ్ట్‌వేర్ ఇంజనీరింగ్, డేటా, అనాలిటిక్స్, సైబర్ భద్రత, ఎంటర్‌ప్రైజ్ మార్పు వంటి సేవలు ఇక్కడ అందుబాటులో ఉంటాయి."
+              ]
+            }
+          ],
+          "location": "విశాఖపట్నం",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "6a0f45c46abe52ee705a41e8e77f2ff34cba2c5f507ba8e79bc9994c3b64b009",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Code on Social Security-2020 is a boon for employees covered under ESCI scheme: Official",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/code-on-social-security-2020-is-a-boon-for-employees-covered-under-esci-scheme-official/article71309339.ece",
+        "published": "Wed, 05 Aug 2026 21:01:33 +0530",
+        "score": 90,
+        "content": {
+          "headline": "కోడ్ ఆన్ సోషల్ సెక్యూరిటీ-2020: ఉద్యోగులకు ఆశ్రయం",
+          "summary": "కోడ్ ఆన్ సోషల్ సెక్యూరిటీ-2020 ఉద్యోగులు, వారి కుటుంబాలకు ఆర్థిక భద్రత, వైద్య సదుపాయాలను అందిస్తోంది",
+          "sections": [
+            {
+              "heading": "ఉద్యోగులకు ప్రయోజనం",
+              "paragraphs": [
+                "కోడ్ ఆన్ సోషల్ సెక్యూరిటీ-2020 అమలులోకి వచ్చినందువల్ల ఉద్యోగులు, కాంట్రాక్ట్ కార్మికులు, వారి కుటుంబాలకు పెన్షన్, వైద్య సదుపాయాలు, ఇతర సామాజిక భద్రతా చర్యలు లభిస్తున్నాయి."
+              ]
+            },
+            {
+              "heading": "పెన్షన్ సర్టిఫికెట్ అందజేత",
+              "paragraphs": [
+                "శ్రీకాకుళం జిల్లా పైడిభీమవరంలోని అపిటోరియా ఫార్మా లిమిటెడ్‌లో ఉద్యోగం చేస్తున్న కాంట్రాక్ట్ కార్మికుడు మట్స లక్ష్మునాయుడు మరణించినందుకు అతని కుటుంబానికి పెన్షన్ సర్టిఫికెట్ అందించారు."
+              ]
+            }
+          ],
+          "location": "శ్రీకాకుళం",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "768d4d721e78f5a543f50ddf3f427fed21fde3ace4b02fd32a8f86817f146582",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Ongole SP urges public to safeguard newly-planted saplings",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/ongole-sp-urges-public-to-safeguard-newly-planted-saplings/article71309982.ece",
+        "published": "Wed, 05 Aug 2026 20:55:48 +0530",
+        "score": 90,
+        "content": {
+          "headline": "ఓంగోలు ఎస్పీ స్పందించండి - కొత్తగా నాటిన చెట్లను కాపాడండి",
+          "summary": "ప్రకాశం జిల్లా ఎస్పీ వి.హర్షవర్ధన్ రాజు పౌరులందరినీ చెట్లను నాటడంతోపాటు వాటిని కాపాడాలని కోరారు.",
+          "sections": [
+            {
+              "heading": "మిషన్ హరితాంధ్ర",
+              "paragraphs": [
+                "మిషన్ హరితాంధ్ర కార్యక్రమంలో భాగంగా జిల్లా పోలీస్ కార్యాలయం ప్రాంగణంలో ఎస్పీ వి.హర్షవర్ధన్ రాజు చెట్లను నాటారు."
+              ]
+            },
+            {
+              "heading": "ప్రజలకు సూచన",
+              "paragraphs": [
+                "చెట్లను నాటడంతోపాటు వాటిని కాపాడాలని, ప్రత్యేకించి మొదటి దశలో వాటికి శ్రద్ధ వహించాలని ప్రజలకు సూచించారు."
+              ]
+            }
+          ],
+          "location": "ఓంగోలు",
+          "importance": "normal",
+          "tags": [
+            "మిషన్ హరితాంధ్ర",
+            "చెట్లు నాటడం",
+            "పర్యావరణం"
+          ]
+        }
+      },
+      {
+        "id": "a0c5533ec6203c2b3ce7550e299c0b102eae0d42a6f536365a6c9761bc8eb19a",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Dr. NTRUHS invites applications for admissions to MBBS, dental courses",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/dr-ntruhs-invites-applications-for-admissions-to-mbbs-dental-courses/article71310488.ece",
+        "published": "Wed, 05 Aug 2026 22:42:37 +0530",
+        "score": 110,
+        "content": {
+          "headline": "డాక్టర్ ఎన్టీఆర్ యూనివర్సిటీ ఆఫ్ హెల్త్ సైన్సెస్‌లో ఎంబిబిఎస్, డెంటల్ కోర్సులకు దరఖాస్తులు",
+          "summary": "డాక్టర్ ఎన్టీఆర్ యూనివర్సిటీ ఆఫ్ హెల్త్ సైన్సెస్ ఎంబిబిఎస్, డెంటల్ కోర్సులకు ఆగస్టు 12 వరకు దరఖాస్తు చేసుకోవచ్చు",
+          "sections": [
+            {
+              "heading": "ఎంబిబిఎస్, డెంటల్ కోర్సులకు దరఖాస్తులు",
+              "paragraphs": [
+                "డాక్టర్ ఎన్టీఆర్ యూనివర్సిటీ ఆఫ్ హెల్త్ సైన్సెస్ ఎంబిబిఎస్, డెంటల్ కోర్సులకు ఆన్‌లైన్ దరఖాస్తులను ఆహ్వానించింది. యూనివర్సిటీ అనుబంధంగా ఉన్న కళాశాలల్లోని సీట్లకు, శ్రీ పద్మావతి మెడికల్ కళాశాల కోసం కూడా దరఖాస్తులు ఆహ్వానించబడుతున్నాయి."
+              ]
+            }
+          ],
+          "location": "",
+          "importance": "normal",
+          "tags": []
+        }
+      }
+    ]
+  },
+  "meta": {
+    "totalArticles": 20
+  }
+}
