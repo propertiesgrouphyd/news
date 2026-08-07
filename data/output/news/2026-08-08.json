@@ -1,0 +1,476 @@
+{
+  "date": "2026-08-08",
+  "generatedAt": "2026-08-07T22:33:17.456Z",
+  "categories": {
+    "national": [],
+    "international": [
+      {
+        "id": "0ed4f9f49da6c3326f9be376b3a3fc0f7b9b6cfb183b75f4b475e5883873cae5",
+        "sourceName": "New York Times World",
+        "title": "Foreigners Behaving Badly in Vietnam Challenge Its Communist Justice System",
+        "url": "https://www.nytimes.com/2026/08/07/world/asia/vietnam-tourism-foreigners-crime-law.html",
+        "published": "Fri, 07 Aug 2026 10:54:13 +0000",
+        "score": 90,
+        "content": {
+          "headline": "వియత్నాంలో విదేశీయుల అనుచిత ప్రవర్తన",
+          "summary": "వియత్నాంలో విదేశీయుల అనుచిత ప్రవర్తన దేశ కమ్యూనిస్ట్ న్యాయ వ్యవస్థను సవాలు చేస్తోంది",
+          "sections": [
+            {
+              "heading": "పరిచయం",
+              "paragraphs": [
+                "వియత్నాంలో విదేశీయుల అనుచిత ప్రవర్తన గత కొన్ని నెలలుగా పెరిగిపోతోంది. దీనితో దేశ కమ్యూనిస్ట్ న్యాయ వ్యవస్థ సవాలును ఎదుర్కొంటోంది."
+              ]
+            },
+            {
+              "heading": "పరిస్థితి",
+              "paragraphs": [
+                "వియత్నాంలోని పర్యాటక ప్రాంతాల్లో విదేశీయులు చాలా అనుచిత ప్రవర్తనలో పాల్గొంటున్నారు. దీనితో స్థానిక ప్రజలు ఆందోళన చెందుతున్నారు."
+              ]
+            }
+          ],
+          "location": "వియత్నాం",
+          "importance": "సాధారణ",
+          "tags": [
+            "వియత్నాం",
+            "విదేశీయులు",
+            "అనుచిత ప్రవర్తన"
+          ]
+        }
+      },
+      {
+        "id": "55601e8a339464df93809631b149eb13204f7fa635617b5ab5e9036ed5fd3809",
+        "sourceName": "New York Times World",
+        "title": "Seized on Their Way to Gaza, Activists Tell of Abuse in Israeli Custody",
+        "url": "https://www.nytimes.com/2026/08/07/world/middleeast/gaza-flotilla-israel-abuse.html",
+        "published": "Fri, 07 Aug 2026 09:00:14 +0000",
+        "score": 70,
+        "content": {
+          "headline": "ఇజ్రాయెల్ అధికారుల చేతిలో హింస: గాజాకు వెళ్తున్న కార్యకర్తలు",
+          "summary": "గాజాకు వెళ్తున్న కార్యకర్తలను ఇజ్రాయెల్ అధికారులు అపహరించారు. వారికి అన్యాయంగా హింస చేశారు.",
+          "sections": [
+            {
+              "heading": "అపహరణ",
+              "paragraphs": [
+                "గాజాలోని పిల్లలకు సహాయం అందించడానికి వెళ్తున్న కార్యకర్తలను ఇజ్రాయెల్ అధికారులు అపహరించారు."
+              ]
+            },
+            {
+              "heading": "హింస",
+              "paragraphs": [
+                "ఇజ్రాయెల్ అధికారుల చేతిలో కార్యకర్తలు అనేక బాధలు పడ్డారు. వారికి ఆహారం, నీరు కూడా ఇవ్వలేదు."
+              ]
+            }
+          ],
+          "location": "ఇజ్రాయెల్",
+          "importance": "normal",
+          "tags": [
+            "ఇజ్రాయెల్",
+            "గాజా",
+            "కార్యకర్తలు"
+          ]
+        }
+      },
+      {
+        "id": "6348c0c3a96d11b6543540bd4029f926986e3142bdcb6c7f651b06c71b6b31a3",
+        "sourceName": "New York Times World",
+        "title": "Boy Kills Grandparents and Then Five Teachers, Thai Authorities Say",
+        "url": "https://www.nytimes.com/2026/08/07/world/asia/thailand-school-shooting.html",
+        "published": "Fri, 07 Aug 2026 13:47:17 +0000",
+        "score": 90,
+        "content": {
+          "headline": "థాయ్‌లాండ్‌లో ఘోరం: మనుమడు తన తాతయ్య, నాయనమ్మలను చంపి, ఆపై 5 మంది ఉపాధ్యాయులను హతమార్చాడు",
+          "summary": "థాయ్‌లాండ్‌లో జరిగిన ఈ ఘటనకు సంబంధించి అధికారులు విచారణ జరుపుతున్నారు.",
+          "sections": [
+            {
+              "heading": "ఘటన వివరాలు",
+              "paragraphs": [
+                "థాయ్‌లాండ్‌లోని ఒక పాఠశాలలో ఈ ఘటన జరిగింది. ఒక బాలుడు తన తాతయ్య, నాయనమ్మలను చంపి, ఆపై 5 మంది ఉపాధ్యాయులను హతమార్చాడు."
+              ]
+            }
+          ],
+          "location": "థాయ్‌లాండ్",
+          "importance": "normal",
+          "tags": [
+            "థాయ్‌లాండ్",
+            "హత్య"
+          ]
+        }
+      },
+      {
+        "id": "6d108701ea5dcb67e1af9a0f854bb659b54da50e32d897c938d4002ec97a274b",
+        "sourceName": "BBC World",
+        "title": "Saudi Arabia, Turkey and Pakistan sign defence pact",
+        "url": "https://www.bbc.co.uk/news/articles/c30418m4mj4o?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 07 Aug 2026 17:42:54 GMT",
+        "score": 110,
+        "content": {
+          "headline": "సౌదీ, టర్కీ, పాకిస్తాన్‌లు రక్షణ ఒప్పందంపై సంతకాలు",
+          "summary": "మధ్యప్రాచ్యంలో ఉద్రిక్తతల నేపథ్యంలో మూడు దేశాలు ఒకదానిపై దాడి మూడింటిపై దాడిగా పరిగణించబడుతుందని పాకిస్తాన్ ప్రకటించింది",
+          "sections": [
+            {
+              "heading": "రక్షణ ఒప్పందం",
+              "paragraphs": [
+                "సౌదీ అరేబియా, టర్కీ, పాకిస్తాన్‌ల మధ్య జరిగిన ఒప్పందంలో ఒకదానిపై దాడి జరిగితే అది మూడింటిపై దాడిగా పరిగణించబడుతుందని పేర్కొన్నారు."
+              ]
+            },
+            {
+              "heading": "ప్రతిస్పందన",
+              "paragraphs": [
+                "ఈ ఒప్పందానికి ఇరాన్ నుంచి తీవ్ర ప్రతిస్పందన వచ్చింది. సౌదీలకు భద్రత లభించదని ఇరాన్ పార్లమెంటు సభ్యుడు పేర్కొన్నారు."
+              ]
+            }
+          ],
+          "location": "మెక్కా",
+          "importance": "normal",
+          "tags": [
+            "సౌదీ అరేబియా",
+            "టర్కీ",
+            "పాకిస్తాన్",
+            "ఇరాన్"
+          ]
+        }
+      },
+      {
+        "id": "815af78f5f0f654d26d70e890432ca9be731b991e242123685902f253842c185",
+        "sourceName": "BBC World",
+        "title": "Spanish police arrest 78 people in bust of 'one of largest' smuggling networks",
+        "url": "https://www.bbc.co.uk/news/articles/clylejzkkx4o?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 07 Aug 2026 16:13:45 GMT",
+        "score": 90,
+        "content": {
+          "headline": "స్పెయిన్‌లో అతిపెద్ద మాదకద్రవ్యాల కలిగి ఉన్న మాఫియా నెట్‌వర్క్‌ను పోలీసులు వేరుచేశారు",
+          "summary": "స్పెయిన్, పోర్చుగల్ నుండి అల్జీరియాకు సింథటిక్ మాదకద్రవ్యాలను రవాణా చేసి, తిరుగు ప్రయాణంలో వలసదారులను, ఆయుధాలను స్పెయిన్ ప్రధాన భూభాగానికి, ఐబిజా ద్వీపానికి చేర్చారు.",
+          "sections": [
+            {
+              "heading": "మాఫియా నెట్‌వర్క్",
+              "paragraphs": [
+                "పశ్చిమ మధ్యధరా ప్రాంతంలో మాదకద్రవ్యాలు, వ్యక్తుల కలిగి ఉన్న అతిపెద్ద నేర నెట్‌వర్క్‌లలో ఒకదాన్ని అధికారులు వేరుచేశారు."
+              ]
+            },
+            {
+              "heading": "అరెస్టులు, స్వాధీనం",
+              "paragraphs": [
+                "ఈ నెట్‌వర్క్‌లో భాగంగా 78 మందిని స్పెయిన్, అల్జీరియాల్లో అరెస్టు చేశారు. ఈ నెట్‌వర్క్ హింసాత్మక దొంగతనాలు, బలవంతంగా డబ్బు తీసుకోవడం, చట్టవిరుద్ధమైన నిర్బంధాలు, డబ్బు కల్పనతో సహా ఇతర నేర కార్యకలాపాలకు కూడా పాల్పడింది."
+              ]
+            }
+          ],
+          "location": "స్పెయిన్",
+          "importance": "సాధారణం",
+          "tags": []
+        }
+      },
+      {
+        "id": "8abf8795e5a7ceeb6821fa88c000d37a885cbaac08caca9e1c4c2a888256e537",
+        "sourceName": "BBC World",
+        "title": "A new youth agitation grips an Indian state after 'cockroach' protests",
+        "url": "https://www.bbc.co.uk/news/articles/c5ywv6egvx8o?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 07 Aug 2026 08:32:57 GMT",
+        "score": 70,
+        "content": {
+          "headline": "జార్ఖండ్‌లో పరీక్షల వివాదం: యువత నిరసనలు",
+          "summary": "ఢిల్లీలో సిజేపి నిరసనల తర్వాత ఇప్పుడు జార్ఖండ్‌లో యువత ఉద్యోగాలు, రిక్రూట్‌మెంట్ విషయంలో నిరసనలు చేస్తున్నారు",
+          "sections": [
+            {
+              "heading": "నిరసనల నేపథ్యం",
+              "paragraphs": [
+                "జార్ఖండ్ రాష్ట్ర రాజధాని రాంచీలో వేలమంది యువకులు పరీక్షల వ్యవస్థను సంస్కరించాలని డిమాండ్ చేస్తూ నిరసన ప్రదర్శనలు చేస్తున్నారు. వీరిలో కొందరు ఆహారం తీసుకోకుండా నిరాహార దీక్ష చేస్తున్నారు."
+              ]
+            },
+            {
+              "heading": "నిరసనకారుల డిమాండ్లు",
+              "paragraphs": [
+                "ఈ నిరసనలకు కారణం ఏప్రిల్‌లో జరిగిన ప్రభుత్వ ఉద్యోగాల పరీక్ష. ఫలితాలు వెలువడ్డాక, కొందరు అభ్యర్థులు సాధించిన మార్కులు చాలా తక్కువగా ఉన్నాయని, అందుకే పరీక్షలో మోసం జరిగి ఉండవచ్చని అంటున్నారు. నిరసనకారులు ఈ పరీక్షను రద్దు చేసి, మళ్లీ పరీక్ష నిర్వహించాలని డిమాండ్ చేస్తున్నారు."
+              ]
+            }
+          ],
+          "location": "జార్ఖండ్",
+          "importance": "normal",
+          "tags": [
+            "జార్ఖండ్",
+            "పరీక్షలు",
+            "నిరసనలు"
+          ]
+        }
+      },
+      {
+        "id": "c8f405fed9189251b5070c010a4780f5560c7c6593cf31a77651f737d0d38ad2",
+        "sourceName": "BBC World",
+        "title": "Mexico and Peru restore diplomatic relations after asylum row",
+        "url": "https://www.bbc.co.uk/news/articles/cz7dy1l3e77o?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 07 Aug 2026 15:38:28 GMT",
+        "score": 90,
+        "content": {
+          "headline": "మెక్సికో, పెరూ మధ్య దౌత్య సంబంధాలు పునరుద్ధరించబడ్డాయి",
+          "summary": "మెక్సికో రాయబార కార్యాలయంలో అసైలం కోరిన పెరూ మాజీ ప్రధానమంత్రి బెట్సీ చావెజ్ తర్వాత రెండు దేశాల మధ్య దౌత్య సంబంధాలు విచ్ఛిన్నమైనందున ఈ నిర్ణయం తీసుకున్నారు.",
+          "sections": [
+            {
+              "heading": "నేపథ్యం",
+              "paragraphs": [
+                "పెరూ మాజీ ప్రధానమంత్రి బెట్సీ చావెజ్‌కు మెక్సికో రాయబార కార్యాలయంలో అసైలం ఇవ్వబడింది. ఆమె ఇప్పటికే పెరూను విడిచిపెట్టిందని పెరూ విదేశాంగ మంత్రి కార్లోస్ ఎస్పా తెలిపారు."
+              ]
+            },
+            {
+              "heading": "పెరూ వైఖరి",
+              "paragraphs": [
+                "చావెజ్‌ను మెక్సికోకు పంపించినప్పటికీ, ఆమెను తిరిగి పెరూకు పంపించేందుకు పెరూ హక్కును కలిగి ఉందని పెరూ విదేశాంగ మంత్రిత్వ శాఖ పేర్కొంది."
+              ]
+            },
+            {
+              "heading": "మెక్సికో వైఖరి",
+              "paragraphs": [
+                "మెక్సికో అధ్యక్షురాలు క్లాడియా షైన్‌బామ్ చావెజ్‌ను స్వాగతించారు. పెరూ మాజీ అధ్యక్షుడు పెడ్రో కాస్టిల్లోకు మద్దతు ఇవ్వడం కొనసాగిస్తామని తెలిపారు."
+              ]
+            }
+          ],
+          "location": "మెక్సికో, పెరూ",
+          "importance": "normal",
+          "tags": [
+            "మెక్సికో",
+            "పెరూ",
+            "దౌత్య సంబంధాలు",
+            "బెట్సీ చావెజ్"
+          ]
+        }
+      },
+      {
+        "id": "ce46435a7b508fef9eb67d09d2fca691e732dba9c23926f8f9d9677f50dba0a0",
+        "sourceName": "BBC World",
+        "title": "I was standing in front of my teacher when she was shot, Thai pupil says",
+        "url": "https://www.bbc.co.uk/news/articles/c07rxz03034o?at_medium=RSS&at_campaign=rss",
+        "published": "Fri, 07 Aug 2026 14:20:27 GMT",
+        "score": 90,
+        "content": {
+          "headline": "థాయ్‌లాండ్‌లో పాఠశాలలో కాల్పులు: ఉపాధ్యాయురాలి ముందే కాల్పులు జరిగాయని విద్యార్థిని చెప్పింది",
+          "summary": "దాడిలో ఐదుగురు ఉపాధ్యాయులు మరణించగా, 23 మంది గాయపడ్డారు",
+          "sections": [
+            {
+              "heading": "దాడి వివరాలు",
+              "paragraphs": [
+                "బ్యాంకాక్‌కు సమీపంలోని ఒక ప్రతిష్టాత్మక పాఠశాలలో శనివారం ఉదయం చివరి తరగతులు జరుగుతుండగా పాఠశాల విద్యార్థులు పాఠశాల నుంచి పారిపోయారు. పాఠశాలలోని ఒక 14 ఏళ్ల విద్యార్థి తుపాకీతో కాల్పులు జరిపాడని పోలీసులు చెప్పారు."
+              ]
+            },
+            {
+              "heading": "విద్యార్థిని మాటలు",
+              "paragraphs": [
+                "నా ఉపాధ్యాయురాలు నా ముందే కాల్పులు తిన్నారు, ఆమె నన్ను మాట్లాడుతుండగానే దాడి చేశారు, అని ఒక విద్యార్థిని బీబీసీతో చెప్పింది."
+              ]
+            }
+          ],
+          "location": "థాయ్‌లాండ్",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "d5c1bb1b66edf7e8431a6bfdbdbf5c0326a67a619d37bce4b6863b61466424d2",
+        "sourceName": "New York Times World",
+        "title": "Trump Administration Fast-Tracks Military Partnership With Colombia to Target Drug Traffickers",
+        "url": "https://www.nytimes.com/2026/08/07/world/americas/trump-administration-military-partnership-colombia.html",
+        "published": "Fri, 07 Aug 2026 16:13:49 +0000",
+        "score": 90,
+        "content": {
+          "headline": "కొలంబియాతో మిలిటరీ భాగస్వామ్యాన్ని ట్రంప్ పరిపాలన వేగవంతం చేసింది",
+          "summary": "మాదకద్రవ్యాల చెల్లాచెదురుకు వ్యతిరేకంగా పోరాడటానికి కొలంబియాతో మిలిటరీ భాగస్వామ్యాన్ని ట్రంప్ పరిపాలన వేగవంతం చేసింది",
+          "sections": [
+            {
+              "heading": "నేపథ్యం",
+              "paragraphs": [
+                "అమెరికా అధ్యక్షుడు ట్రంప్ పరిపాలన కొలంబియాతో మిలిటరీ భాగస్వామ్యాన్ని వేగవంతం చేసింది. మాదకద్రవ్యాల చెల్లాచెదురుకు వ్యతిరేకంగా పోరాడటానికి ఈ భాగస్వామ్యం ఉపయోగపడుతుందని అధికారులు చెబుతున్నారు."
+              ]
+            }
+          ],
+          "location": "కొలంబియా",
+          "importance": "సాధారణం",
+          "tags": [
+            "ట్రంప్",
+            "కొలంబియా",
+            "మాదకద్రవ్యాలు"
+          ]
+        }
+      },
+      {
+        "id": "f51c586da98f319ff9cd014b67e158e294678b82715ff6b4e510f8c8cba01ad6",
+        "sourceName": "New York Times World",
+        "title": "Saudi Arabia, Turkey and Pakistan Sign Joint Defense Pact",
+        "url": "https://www.nytimes.com/2026/08/07/world/middleeast/saudi-turkey-pakistan-joint-defense-pact.html",
+        "published": "Fri, 07 Aug 2026 16:29:25 +0000",
+        "score": 90,
+        "content": {
+          "headline": "సౌదీ అరేబియా, టర్కీ, పాకిస్తాన్‌లు సంయుక్త రక్షణ ఒప్పందంపై సంతకాలు చేశాయి",
+          "summary": "సౌదీ అరేబియా, టర్కీ, పాకిస్తాన్‌లు సంయుక్త రక్షణ ఒప్పందంపై సంతకాలు చేశాయి. ఈ ఒప్పందంతో మూడు దేశాల మధ్య సైనిక సహకారం పెరుగుతుంది.",
+          "sections": [
+            {
+              "heading": "ఒప్పందం వివరాలు",
+              "paragraphs": [
+                "సౌదీ అరేబియా, టర్కీ, పాకిస్తాన్‌ల మధ్య సంయుక్త రక్షణ ఒప్పందం కుదిరింది. ఈ ఒప్పందం ప్రకారం మూడు దేశాలు సైనిక సహకారాన్ని పెంచుతాయి."
+              ]
+            }
+          ],
+          "location": "సౌదీ అరేబియా",
+          "importance": "normal",
+          "tags": [
+            "సౌదీ అరేబియా",
+            "టర్కీ",
+            "పాకిస్తాన్",
+            "సంయుక్త రక్షణ ఒప్పందం"
+          ]
+        }
+      }
+    ],
+    "andhraPradesh": [
+      {
+        "id": "11ec534f1ca91f9e184f5def9bd1691ae47bed3ff4834aed010e8f6668c25a95",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Srisailam temple to celebrate Guru Purnima and Sakambari Utsavam on July 29",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/srisailam-temple-to-celebrate-guru-purnima-and-sakambari-utsavam-on-july-29/article71277547.ece",
+        "published": "Fri, 07 Aug 2026 23:40:07 +0530",
+        "score": 110,
+        "content": {
+          "headline": "జూలై 29న శ్రీశైలం దేవాలయంలో గురు పూర్ణిమ, సకాంబరి ఉత్సవాలు",
+          "summary": "శ్రీశైలం దేవాలయంలో జూలై 29న గురు పూర్ణిమ, సకాంబరి ఉత్సవాలు బ్రహ్మాండంగా జరుగనున్నాయి.",
+          "sections": [
+            {
+              "heading": "గురు పూర్ణిమ ప్రత్యేక పూజలు",
+              "paragraphs": [
+                "శ్రీశైలం దేవాలయంలో గురు పూర్ణిమ, సకాంబరి ఉత్సవాల సందర్భంగా జూలై 29న ప్రత్యేక పూజలు జరుగనున్నాయి. గురు పూర్ణిమ సందర్భంగా ఆక్క మహాదేవి - హేమారెడ్డి మల్లమ్మ ఆలయంలో లోర్డ్ దక్షిణామూర్తి, వేదవ్యాస స్వామికి ప్రత్యేక పూజలు జరుగనున్నాయి."
+              ]
+            },
+            {
+              "heading": "సకాంబరి ఉత్సవాలు",
+              "paragraphs": [
+                "అదేవిధంగా ఆషాఢ పూర్ణిమ సందర్భంగా శ్రీ భ్రమరాంబ దేవికి సకాంబరి ఉత్సవాలు జరుగనున్నాయి. ఈ ఉత్సవాల కోసం 3,000 కిలోల కూరగాయలు, 100 పుచ్చకాయలు, 2,000 పసుపుకాయలు, వివిధ రకాల ఆకుకూరలు, పండ్లు సమకూర్చారు."
+              ]
+            }
+          ],
+          "location": "శ్రీశైలం",
+          "importance": "normal",
+          "tags": [
+            "గురు పూర్ణిమ",
+            "సకాంబరి ఉత్సవాలు",
+            "శ్రీశైలం దేవాలయం"
+          ]
+        }
+      },
+      {
+        "id": "5550acdcb9a7ec6cc46a2a3102c88c778b8f3fd9af89e21c73f10eafa7f3ed33",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "TTD plans village-level rollout of Srivari Seva in Telugu States",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/ttd-plans-village-level-rollout-of-srivari-seva-in-telugu-states/article71278098.ece",
+        "published": "Fri, 07 Aug 2026 23:41:27 +0530",
+        "score": 110,
+        "content": {
+          "headline": "తిరుమల తిరుపతి దేవస్థానం వారు గ్రామీణ ప్రాంతాల్లో శ్రీవారి సేవ ప్రారంభించనున్నారు",
+          "summary": "తిరుమల తిరుపతి దేవస్థానం వారు ఆంధ్రప్రదేశ్, తెలంగాణ రాష్ట్రాల్లోని గ్రామీణ ప్రాంతాల్లో శ్రీవారి సేవను ప్రారంభించనున్నారు",
+          "sections": [
+            {
+              "heading": "శ్రీవారి సేవ విస్తరణ",
+              "paragraphs": [
+                "తిరుమల తిరుపతి దేవస్థానం వారు తమ శ్రీవారి సేవ కార్యక్రమాన్ని ఆంధ్రప్రదేశ్, తెలంగాణ రాష్ట్రాల్లోని గ్రామీణ ప్రాంతాల్లో విస్తరించనున్నారు. ఈ కార్యక్రమం ద్వారా గ్రామీణ ప్రాంతాల్లోని దేవాలయాల్లో స్వచ్ఛంద సేవలు అందించడానికి అవకాశం ఉంటుంది."
+              ]
+            }
+          ],
+          "location": "తిరుపతి",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "6d331bc2e9450f67879686d10d14f4d647b017644b80d4e177d7ecb1fa9bcabf",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Andhra Pradesh to draw up action plan against zoonotic diseases",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-to-draw-up-action-plan-against-zoonotic-diseases/article71278072.ece",
+        "published": "Fri, 07 Aug 2026 23:43:32 +0530",
+        "score": 110,
+        "content": {
+          "headline": "ఆంధ్రప్రదేశ్‌లో జూనోటిక్ వ్యాధులపై చర్యాపథకం",
+          "summary": "జూనోటిక్ వ్యాధులను అరికట్టేందుకు ఆంధ్రప్రదేశ్ ప్రభుత్వం చర్యాపథకాన్ని రూపొందిస్తోంది",
+          "sections": [
+            {
+              "heading": "చర్యాపథకం వివరాలు",
+              "paragraphs": [
+                "జూనోటిక్ వ్యాధులను నివారించడానికి ఆంధ్రప్రదేశ్ ప్రభుత్వం చర్యాపథకాన్ని రూపొందిస్తోంది. ఈ చర్యాపథకం ద్వారా జూనోటిక్ వ్యాధులను గుర్తించి, వాటి వ్యాప్తిని నిరోధించేందుకు చర్యలు తీసుకోవాలని భావిస్తున్నారు."
+              ]
+            },
+            {
+              "heading": "వర్క్‌షాప్ వివరాలు",
+              "paragraphs": [
+                "ఈ సందర్భంగా విజయవాడలో మూడు రోజుల వర్క్‌షాప్ నిర్వహించబడింది. ఈ వర్క్‌షాప్‌లో అధికారులు జూనోటిక్ వ్యాధుల గురించి చర్చించారు."
+              ]
+            }
+          ],
+          "location": "ఆంధ్రప్రదేశ్",
+          "importance": "normal",
+          "tags": [
+            "జూనోటిక్ వ్యాధులు",
+            "ఆంధ్రప్రదేశ్ ప్రభుత్వం"
+          ]
+        }
+      },
+      {
+        "id": "83274d9eba9917183e05c8e40985fa2a07b6d75889be59c8dbe7563ac3e53f0a",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Nellore district targets 50% green cover by 2047",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/nellore-district-targets-50-green-cover-by-2047/article71277563.ece",
+        "published": "Fri, 07 Aug 2026 23:36:29 +0530",
+        "score": 108,
+        "content": {
+          "headline": "2047 నాటికి 50% పచ్చదనం సాధించాలని నెల్లూరు జిల్లా లక్ష్యం",
+          "summary": "2047 నాటికి నెల్లూరు జిల్లాలో 50% పచ్చదనాన్ని సాధించాలని లక్ష్యంగా పెట్టుకుంది. దీనికోసం వివిధ శాఖలు సమన్వయంతో పనిచేయాలని కలెక్టర్ హిమాన్షు శుక్లా దిశానిర్దేశం చేశారు.",
+          "sections": [
+            {
+              "heading": "పచ్చదనం పెంపొందించాలనే లక్ష్యం",
+              "paragraphs": [
+                "నెల్లూరు జిల్లాలో 2047 నాటికి 50% పచ్చదనాన్ని సాధించాలనే లక్ష్యంతో కలెక్టర్ హిమాన్షు శుక్లా జిల్లా అటవీ కమిటీ సమావేశం నిర్వహించారు."
+              ]
+            },
+            {
+              "heading": "వివిధ పథకాల అమలు",
+              "paragraphs": [
+                "ఈ సమావేశంలో 'గ్రేట్ గ్రీన్ వాల్ ఆఫ్ ఏపీ', స్కూల్ నర్సరీ పథకం, 'నమో వన్ - నగర్ వన్' పథకం, ప్రతి గ్రామంలో పండ్ల తోటల ఏర్పాటు, విబి-గ్రామ్ పథకం కింద కలప చెట్ల పెంపకం, సీడ్ బాల్ వితరణ, పీఎం-ఆర్‌కెవీవై అగ్రోఫోరెస్ట్రీ పథకం వంటి వివిధ పథకాల అమలుపై చర్చించారు."
+              ]
+            }
+          ],
+          "location": "నెల్లూరు",
+          "importance": "normal",
+          "tags": [
+            "పచ్చదనం",
+            "నెల్లూరు జిల్లా",
+            "పర్యావరణం"
+          ]
+        }
+      },
+      {
+        "id": "f332398f37d1f91d25a8a6955339252729d175f65cceecec47500c1758d4febe",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "A.P. High Court Chief Justice launches JOHA health assurance app",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-high-court-chief-justice-launches-joha-health-assurance-app/article71278196.ece",
+        "published": "Fri, 07 Aug 2026 23:55:56 +0530",
+        "score": 110,
+        "content": {
+          "headline": "జ్యుడిషియల్ ఆఫీసర్లకు జోహా హెల్త్ అస్యూరెన్స్ యాప్",
+          "summary": "హైకోర్టు ప్రధాన న్యాయమూర్తి లిసా గిల్ చేతులమీదుగా జ్యుడిషియల్ ఆఫీసర్ల హెల్త్ అస్యూరెన్స్ యాప్ ప్రారంభం",
+          "sections": [
+            {
+              "heading": "ప్రారంభోత్సవం",
+              "paragraphs": [
+                "ఆంధ్రప్రదేశ్ హైకోర్టు ప్రధాన న్యాయమూర్తి లిసా గిల్ చేతులమీదుగా జ్యుడిషియల్ ఆఫీసర్ల హెల్త్ అస్యూరెన్స్ యాప్ ప్రారంభమైంది. ఈ యాప్ ద్వారా న్యాయమూర్తులు, వారి కుటుంబ సభ్యులకు క్యాష్‌లెస్ వైద్య సేవలు అందించబడతాయి."
+              ]
+            },
+            {
+              "heading": "ప్రత్యేకతలు",
+              "paragraphs": [
+                "ఈ యాప్ దేశంలోనే తొలిసారిగా ప్రారంభించబడింది. సుప్రీంకోర్టు తీర్పు మేరకు ఈ యాప్‌ను ప్రారంభించారు."
+              ]
+            }
+          ],
+          "location": "అమరావతి",
+          "importance": "normal",
+          "tags": []
+        }
+      }
+    ]
+  },
+  "meta": {
+    "totalArticles": 15
+  }
+}
