@@ -1,0 +1,609 @@
+{
+  "date": "2026-08-10",
+  "generatedAt": "2026-08-09T22:34:10.851Z",
+  "categories": {
+    "national": [
+      {
+        "id": "1dc41e2e3713477917c86a2eed68b6b45dbe5fa0619ea01bc71e2ac55113f6d8",
+        "sourceName": "The Hindu",
+        "title": "Congress urges NCP (SP) to press PM Modi for immediate roll out of Women’s Reservation Act",
+        "url": "https://www.thehindu.com/news/national/maharashtra/congress-urges-ncp-sp-to-press-pm-modi-for-immediate-roll-out-of-womens-reservation-act/article71325803.ece",
+        "published": "Sun, 09 Aug 2026 23:55:24 +0530",
+        "score": 110,
+        "content": {
+          "headline": "మహిళల రిజర్వేషన్ బిల్లును వెంటనే అమలు చేయాలని కాంగ్రెస్ డిమాండ్",
+          "summary": "ప్రధాని మోదీతో సమావేశంలో మహిళల రిజర్వేషన్ బిల్లును వెంటనే అమలు చేయాలని కాంగ్రెస్ ఎన్సీపీ (ఎస్పీ)ను కోరింది",
+          "sections": [
+            {
+              "heading": "కాంగ్రెస్ డిమాండ్",
+              "paragraphs": [
+                "సోమవారం ప్రధాని మోదీతో సమావేశంలో మహిళల రిజర్వేషన్ బిల్లును వెంటనే అమలు చేయాలని కాంగ్రెస్ ఎన్సీపీ (ఎస్పీ)ను కోరింది. ఎన్సీపీ (ఎస్పీ) ఎంపీలు సోమవారం మహారాష్ట్రలోని సమస్యలపై ప్రధాని మోదీతో సమావేశంలో పాల్గొంటున్నారు."
+              ]
+            },
+            {
+              "heading": "ఎన్సీపీ (ఎస్పీ) స్పందన",
+              "paragraphs": [
+                "ఎన్సీపీ (ఎస్పీ) ఎంపీ సుప్రియ సూలే శనివారం ఎనిమిది మంది ఎంపీలు ప్రధాని మోదీతో సమావేశంలో మహారాష్ట్ర నీటి సంక్షోభం, రైతుల ఆత్మహత్యలు, వేగవంతమైన పట్టణీకరణ సవాళ్లపై చర్చిస్తారని ప్రకటించారు."
+              ]
+            }
+          ],
+          "location": "న్యూఢిల్లీ",
+          "importance": "సాధారణ",
+          "tags": [
+            "మహిళల రిజర్వేషన్ బిల్లు",
+            "కాంగ్రెస్",
+            "ఎన్సీపీ (ఎస్పీ)"
+          ]
+        }
+      },
+      {
+        "id": "5befeeaae4ba96445d41a4da426d728b74ad9883a0ddca2a9edf26021c900ea7",
+        "sourceName": "The Hindu",
+        "title": "Man held after allegedly assaulting two men with baseball bat in Bengaluru’s AECS Layout",
+        "url": "https://www.thehindu.com/news/cities/bangalore/man-held-after-allegedly-assaulting-two-men-with-baseball-bat-in-bengalurus-aecs-layout/article71325864.ece",
+        "published": "Sun, 09 Aug 2026 23:54:31 +0530",
+        "score": 110,
+        "content": {
+          "headline": "బెంగళూరులో బేస్‌బాల్ బాట్‌తో దాడి: యువకుడు అరెస్ట్",
+          "summary": "బెంగళూరులోని ఎయిసిఇసిఎస్ లేఅవుట్‌లో చిన్న తగవుకు బేస్‌బాల్ బాట్‌తో ఇద్దరు యువకులపై దాడి చేసిన యువకుడు పోలీసుల చేతికి చిక్కాడు.",
+          "sections": [
+            {
+              "heading": "సంఘటన",
+              "paragraphs": [
+                "ఎయిసిఇసిఎస్ లేఅవుట్‌లో ఆగస్టు 6న జరిగిన ఈ సంఘటనలో ఇద్దరు యువకులు గాయపడ్డారు. వారిలో ఒకరు సందీప్ కుమార్, మరొకరు రోహిత్."
+              ]
+            },
+            {
+              "heading": "అరెస్టు",
+              "paragraphs": [
+                "ఈ సంఘటనపై పోలీసులు కేసు నమోదు చేసి, దర్యాప్తు చేపట్టారు. ఆగస్టు 7న అరుణ్ అనే యువకుడు అరెస్ట్ చేయబడ్డాడు."
+              ]
+            }
+          ],
+          "location": "బెంగళూరు",
+          "importance": "నార్మల్",
+          "tags": []
+        }
+      },
+      {
+        "id": "9704cf7aa3c756d2d131dbdf14e46fee0b21d0673004844dfc1ea55dc5bc561d",
+        "sourceName": "The Hindu",
+        "title": "Nine injured in steel plant blast in Jharkhand’s Ramgarh",
+        "url": "https://www.thehindu.com/news/national/jharkhand/steel-plant-blast-in-jharkhands-ramgarh/article71325186.ece",
+        "published": "Sun, 09 Aug 2026 23:57:05 +0530",
+        "score": 110,
+        "content": {
+          "headline": "జార్ఖండ్‌లోని స్టీల్ ప్లాంట్‌లో పేలుళ్లు: 9 మంది గాయపడ్డారు",
+          "summary": "జార్ఖండ్‌లోని రామ్‌గఢ్ జిల్లాలోని ఒక స్టీల్ ప్లాంట్‌లో ఫర్నేస్ పేలుడు సంభవించి 9 మంది కార్మికులు గాయపడ్డారు.",
+          "sections": [
+            {
+              "heading": "పేలుడు వివరాలు",
+              "paragraphs": [
+                "రామ్‌గఢ్ జిల్లాలోని ముర్పా గ్రామంలో ఉన్న ఒక ప్రైవేట్ స్టీల్ ప్లాంట్‌లో ఈ పేలుడు సంభవించింది. ఫర్నేస్ చేంబర్‌లో పేలుడు సంభవించినప్పుడు కార్మికులు తీవ్రంగా గాయపడ్డారు."
+              ]
+            },
+            {
+              "heading": "గాయపడిన కార్మికులు",
+              "paragraphs": [
+                "గాయపడిన కార్మికులలో ఇద్దరు క్రిటికల్ స్థితిలో ఉన్నారు. వారిని రాంచీలోని ఒక ప్రైవేట్ ఆస్పత్రికి తరలించారు."
+              ]
+            }
+          ],
+          "location": "రామ్‌గఢ్, జార్ఖండ్",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "f50e4f37ff0052e9979f0bbabf1d1752e4485474e0324d73e560b7a5d8e4854d",
+        "sourceName": "The Hindu",
+        "title": "BJP calls arrest of Kerala Hindutva ideologue T.G. Mohandas discriminatory",
+        "url": "https://www.thehindu.com/news/national/kerala/bjp-calls-arrest-of-kerala-hindutva-ideologue-tg-mohandas-discriminatory/article71325789.ece",
+        "published": "Sun, 09 Aug 2026 23:41:12 +0530",
+        "score": 110,
+        "content": {
+          "headline": "BJP కేరళ హిందుత్వ వాది టి.జి. మోహన్‌దాస్‌ను అరెస్ట్ చేయడం వివక్షత: బిజెపి",
+          "summary": "బిజెపి టి.జి. మోహన్‌దాస్‌ను అరెస్ట్ చేయడం వివక్షతగా ఖండించింది, వరద సహాయ వైఫల్యాలు, కోస్టల్ కమ్యూనిటీ నిరసనల నుండి దృష్టి మరల్చడం కోసం నాటకం అని చెప్పింది.",
+          "sections": [
+            {
+              "heading": "బిజెపి ప్రతిస్పందన",
+              "paragraphs": [
+                "టి.జి. మోహన్‌దాస్ వివాదాస్పద వ్యాఖ్యలు అంగీకరించదగినవి కావు అని బిజెపి రాష్ట్ర ప్రధాన కార్యదర్శి ఎస్. సురేష్ పేర్కొన్నారు. అయితే, కేరళలో అనేక మంది బెదిరింపులు జరిపినట్లు, ప్రధాని నరేంద్ర మోడీని ప్రమాదంలో పడేసే బెదిరింపులు కూడా జరిగాయని, యునైటెడ్ డెమోక్రటిక్ ఫ్రంట్ (యుడిఎఫ్) ప్రభుత్వం రక్షణలో వారు చట్టపరమైన చర్యల నుండి తప్పించుకుంటున్నారని ఆయన అన్నారు."
+              ]
+            }
+          ],
+          "location": "కేరళ",
+          "importance": "normal",
+          "tags": [
+            "బిజెపి",
+            "టి.జి. మోహన్‌దాస్",
+            "కేరళ",
+            "వరద సహాయం",
+            "యుడిఎఫ్ ప్రభుత్వం"
+          ]
+        }
+      },
+      {
+        "id": "f632f89e9c82ab4f2cbf2476169143276b2323509ae046bb7229cd57a1085bd2",
+        "sourceName": "The Hindu",
+        "title": "Police to seek custody of two accused in medico’s death case",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/police-to-seek-custody-of-two-accused-in-medicos-death-case/article71325268.ece",
+        "published": "Sun, 09 Aug 2026 23:46:35 +0530",
+        "score": 110,
+        "content": {
+          "headline": "మెడికో మృతి కేసులో ఇద్దరు నిందితుల కస్టడీ కోసం పోలీసులు కోర్టును ఆశ్రయించనున్నారు",
+          "summary": "మెడికో మృతి కేసులో ఇద్దరు నిందితులను కస్టడీలోకి తీసుకోవాలని పోలీసులు కోర్టును కోరుతున్నారు. తదుపరి దర్యాప్తు తర్వాత ఆరోపణలు మారవచ్చు.",
+          "sections": [
+            {
+              "heading": "పోలీసుల ప్రకటన",
+              "paragraphs": [
+                "తూర్పు గోదావరి జిల్లా పోలీసు సూపరింటెండెంట్ డి. నరసింహ కిషోర్ ఆదివారం పోలీసులు ఇద్దరు నిందితులను కస్టడీలోకి తీసుకోవాలని కోర్టును కోరుతున్నారని తెలిపారు."
+              ]
+            },
+            {
+              "heading": "నిందితుల వివరాలు",
+              "paragraphs": [
+                "ఆగస్టు 7న ఇద్దరు నిందితులు న్యాయస్థానంలో హాజరై జైలు జామీను పొందారు. వారిని ఆగస్టు 21 వరకు న్యాయస్థానం జైలులో ఉంచారు."
+              ]
+            }
+          ],
+          "location": "రాజమండ్రి",
+          "importance": "సాధారణ",
+          "tags": [
+            "మెడికో మృతి",
+            "పోలీసులు",
+            "కస్టడీ"
+          ]
+        }
+      }
+    ],
+    "international": [
+      {
+        "id": "05ab440aa26798cfd4efb578947988659b0da35f0a2b71906ad85cc927a6f323",
+        "sourceName": "BBC World",
+        "title": "Ancient Roman shipwreck discovered off Sicily coast",
+        "url": "https://www.bbc.co.uk/news/articles/cvgx1kpz17go?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 09 Aug 2026 12:27:26 GMT",
+        "score": 90,
+        "content": {
+          "headline": "సిసిలీ తీరంలో 2000 ఏళ్ల నాటి రోమన్ నౌకావిపత్తు",
+          "summary": "ఇటలీ సంస్కృతి మంత్రి చెప్పిన మాటల్లో ఇది కొన్ని సంవత్సరాలలో జరిగిన అత్యంత ముఖ్యమైన అండర్‌వాటర్ పురావస్తు ఆవిష్కరణ",
+          "sections": [
+            {
+              "heading": "నౌకావిపత్తు వివరాలు",
+              "paragraphs": [
+                "ఇటలీకి చెందిన డైవర్లు సిసిలీ తీరంలో 2000 ఏళ్ల నాటి రోమన్ నౌకావిపత్తును కనుగొన్నారు. ఈ నౌక వందలాది కంటైనర్లతో నిండి ఉంది. వీటిలో వైన్, ఆలివ్ నూనెలు ఉండేవి."
+              ]
+            }
+          ],
+          "location": "సిసిలీ",
+          "importance": "normal",
+          "tags": [
+            "రోమన్ నౌకావిపత్తు",
+            "సిసిలీ",
+            "ఇటలీ"
+          ]
+        }
+      },
+      {
+        "id": "13b754fba1d556f41fb23282c606bb11b6cfeb7fb88cb2903a7539c118eb2dc4",
+        "sourceName": "BBC World",
+        "title": "Drones spotted over German base days after Leipzig bomb incident",
+        "url": "https://www.bbc.co.uk/news/articles/cwyeg1ljp2eo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 09 Aug 2026 16:18:10 GMT",
+        "score": 90,
+        "content": {
+          "headline": "జర్మనీలో డ్రోన్లు కనిపించాయి",
+          "summary": "జర్మనీలోని సైనిక స్థావరంపై రెండు డ్రోన్లు కనిపించాయి. ఇది లీప్జిగ్ విమానాశ్రయంలో బాంబు పేలుడు సంఘటన జరిగిన కొద్దిరోజులకు జరిగింది.",
+          "sections": [
+            {
+              "heading": "సైనిక స్థావరంపై డ్రోన్లు",
+              "paragraphs": [
+                "జర్మనీలోని పశ్చిమ ప్రాంతంలోని మెచెర్నిచ్ సైనిక స్థావరంపై గత గురువారం రాత్రి రెండు డ్రోన్లు కనిపించాయి. ఈ స్థావరంలో అమెరికా తయారుచేసిన పేట్రియాట్ ఎయిర్ డిఫెన్స్ సిస్టమ్ భాగాలు నిల్వ ఉన్నాయని పేర్కొనబడింది."
+              ]
+            },
+            {
+              "heading": "దర్యాప్తు",
+              "paragraphs": [
+                "ఈ సంఘటనపై పోలీసులు దర్యాప్తు చేస్తున్నారు. జర్మనీ అంతర్గత మంత్రి అలెగ్జాండర్ డోబ్రిండ్ట్ ఈ సంఘటనపై ఆందోళన వ్యక్తంచేశారు."
+              ]
+            }
+          ],
+          "location": "జర్మనీ",
+          "importance": "సాధారణ",
+          "tags": [
+            "డ్రోన్లు",
+            "సైనిక స్థావరం",
+            "జర్మనీ"
+          ]
+        }
+      },
+      {
+        "id": "2029a44a48d012e28e515690437add5f92628cc1f82fb8026413c43cc82b0a0a",
+        "sourceName": "New York Times World",
+        "title": "Inside the War on Hezbollah’s Finances",
+        "url": "https://www.nytimes.com/2026/08/09/world/europe/lebanon-hezbollah-iran-us-finances.html",
+        "published": "Sun, 09 Aug 2026 09:00:15 +0000",
+        "score": 58,
+        "content": {
+          "headline": "హిజ్బుల్లా ఆర్థిక వ్యవస్థపై యుద్ధం",
+          "summary": "హిజ్బుల్లా ఆర్థిక వ్యవస్థను దెబ్బతీయడానికి ప్రపంచ దేశాలు చేస్తున్న ప్రయత్నాలు",
+          "sections": [
+            {
+              "heading": "హిజ్బుల్లా ఆర్థిక వ్యవస్థ",
+              "paragraphs": [
+                "హిజ్బుల్లా ఆర్థిక వ్యవస్థను దెబ్బతీయడానికి ప్రపంచ దేశాలు చేస్తున్న ప్రయత్నాలు పెరుగుతున్నాయి. హిజ్బుల్లా ఆర్థిక వ్యవస్థను దెబ్బతీయడానికి అమెరికా, ఐరోపా దేశాలు చేస్తున్న ప్రయత్నాలు ప్రపంచ దేశాలను ఆశ్చర్యానికి గురిచేస్తున్నాయి."
+              ]
+            }
+          ],
+          "location": "",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "60c34981e262afa0bd1bacfc00ac335978a966aa970ca46554f42ae10e9db2b5",
+        "sourceName": "New York Times World",
+        "title": "Iran, Holding Firm to Hormuz, Pushes for Return to June MOU",
+        "url": "https://www.nytimes.com/2026/08/09/world/europe/iran-strait-hormuz-trump-deal.html",
+        "published": "Sun, 09 Aug 2026 17:58:22 +0000",
+        "score": 110,
+        "content": {
+          "headline": "ఇరాన్ హార్ముజ్‌పై గట్టిగా నిలబడి జూన్ MOUకి తిరిగి రావాలని ఒత్తిడి తీస్తోంది",
+          "summary": "ఇరాన్ హార్ముజ్ జలసంధిపై తన వైఖరిలో మార్పులేని విధానాన్ని కొనసాగిస్తూ, జూన్ నెలలో రూపొందించిన MOUకి తిరిగి రావాలని ప్రయత్నిస్తోంది.",
+          "sections": [
+            {
+              "heading": "హార్ముజ్ జలసంధి వివాదం",
+              "paragraphs": [
+                "ఇరాన్, ఇతర దేశాల మధ్య హార్ముజ్ జలసంధి గురించి వివాదం కొనసాగుతోంది. ఈ జలసంధి ప్రపంచ నావికా రవాణాకు చాలా కీలకమైనది."
+              ]
+            }
+          ],
+          "location": "ఇరాన్",
+          "importance": "normal",
+          "tags": [
+            "హార్ముజ్",
+            "ఇరాన్",
+            "అంతర్జాతీయ వార్తలు"
+          ]
+        }
+      },
+      {
+        "id": "90835c5a1a5f9bf6a143b7c98481e56180750dceed5e52f09e54f8a9c1a1e7fb",
+        "sourceName": "New York Times World",
+        "title": "Iran Taps Longtime I.R.G.C. Commander Mohsen Rezaei to Top Security Post",
+        "url": "https://www.nytimes.com/2026/08/09/world/middleeast/iran-security-council-guards-commander.html",
+        "published": "Sun, 09 Aug 2026 18:18:22 +0000",
+        "score": 110,
+        "content": {
+          "headline": "ఇరాన్‌లో కొత్త భద్రతా సమన్వయకర్త",
+          "summary": "ఇరాన్ ప్రభుత్వం మోహ్సెన్ రెజాయీని దేశ అత్యున్నత భద్రతా పదవికి నియమించింది",
+          "sections": [
+            {
+              "heading": "నియామకం",
+              "paragraphs": [
+                "ఇరాన్ ప్రభుత్వం మోహ్సెన్ రెజాయీని దేశ అత్యున్నత భద్రతా పదవికి నియమించింది. ఆయన ఇస్లామిక్ విప్లవ రక్షణ దళాల (ఐఆర్‌జీసీ) లో పనిచేశారు."
+              ]
+            }
+          ],
+          "location": "ఇరాన్",
+          "importance": "సాధారణం",
+          "tags": [
+            "ఇరాన్",
+            "భద్రతా సమన్వయకర్త",
+            "మోహ్సెన్ రెజాయీ"
+          ]
+        }
+      },
+      {
+        "id": "ab5c5aecb72bc638937d5a82d1751af740e441694bd530b80e577ab679bc830e",
+        "sourceName": "New York Times World",
+        "title": "As the Climate Warms, Beavers are Coming for Canada’s Arctic",
+        "url": "https://www.nytimes.com/2026/08/09/world/canada/arctic-beavers-canada-climate-umiujaq-quebec.html",
+        "published": "Sun, 09 Aug 2026 09:00:42 +0000",
+        "score": 70,
+        "content": {
+          "headline": "కెనడా ఆర్కిటిక్‌పై బీవర్ల దండయాత్ర",
+          "summary": "వాతావరణం వేడెక్కడంతో బీవర్లు కెనడా ఆర్కిటిక్ వైపు వస్తున్నాయి",
+          "sections": [
+            {
+              "heading": "పరిచయం",
+              "paragraphs": [
+                "వాతావరణ మార్పుల వల్ల కెనడా ఆర్కిటిక్ ప్రాంతంలో బీవర్ల జనాభా పెరుగుతోంది."
+              ]
+            },
+            {
+              "heading": "ప్రభావం",
+              "paragraphs": [
+                "ఈ ప్రాంతంలో బీవర్లు స్థిరపడటం వల్ల పర్యావరణంపై గణనీయమైన ప్రభావం ఉంటుంది."
+              ]
+            }
+          ],
+          "location": "కెనడా",
+          "importance": "సాధారణం",
+          "tags": [
+            "వాతావరణ మార్పు",
+            "బీవర్లు",
+            "కెనడా ఆర్కిటిక్"
+          ]
+        }
+      },
+      {
+        "id": "c0ea0af57614997c1f707ca0769a1d30a72efecc8417b85f408d9cd6c0b5a132",
+        "sourceName": "BBC World",
+        "title": "Puerto Rico rations water supplies due to intense drought",
+        "url": "https://www.bbc.co.uk/news/articles/cqlxgk7r2vwo?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 09 Aug 2026 16:43:23 GMT",
+        "score": 110,
+        "content": {
+          "headline": "పోర్టోరికోలో తీవ్ర కరువు: వందల వేల మందికి నీటి కొరత",
+          "summary": "వేడి వాతావరణం, పాత మౌలిక సదుపాయాలు వల్ల నీటి కొరత ఏర్పడింది",
+          "sections": [
+            {
+              "heading": "పరిస్థితి",
+              "paragraphs": [
+                "పోర్టోరికోలో వందల వేల మంది ప్రజలు రెండు రోజుల పాటు నిరంతరం నీటి సరఫరా లేకుండా ఉన్నారు. అధికారులు తీవ్రమైన కరువును ఎదుర్కోవడానికి దీనికి చర్యలు తీసుకుంటున్నారు."
+              ]
+            },
+            {
+              "heading": "కారణాలు",
+              "paragraphs": [
+                "పోర్టోరికోలో ఎక్కువ భాగం మధ్యస్థం నుండి తీవ్రమైన కరువు పరిస్థితులను ఎదుర్కొంటోంది. దీనికి ద్వీపం యొక్క మౌలిక సదుపాయాలలోని దీర్ఘకాలిక సమస్యలు కూడా ఒక కారణం."
+              ]
+            }
+          ],
+          "location": "పోర్టోరికో",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "cc284c1d68ac982577bddf97eed7a393ed38047af73c626aa62ed52c8fc5891d",
+        "sourceName": "BBC World",
+        "title": "Ecuador charges ex-minister over presidential candidate assassination case",
+        "url": "https://www.bbc.co.uk/news/articles/cgjeznj6979o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 09 Aug 2026 15:34:04 GMT",
+        "score": 90,
+        "content": {
+          "headline": "ఎక్వడార్‌లో అధ్యక్ష అభ్యర్థి హత్య కేసు: మాజీ మంత్రిపై కేసు",
+          "summary": "ఎక్వడార్‌లో అధ్యక్ష అభ్యర్థి హత్య కేసులో మాజీ ఇంటీరియర్ మంత్రి, మరో ఆరుగురు అరెస్ట్ చేయబడ్డారు",
+          "sections": [
+            {
+              "heading": "హత్య కేసు వివరాలు",
+              "paragraphs": [
+                "ఎక్వడార్‌లో అధ్యక్ష అభ్యర్థి ఫెర్నాండో విల్లావిసెన్సియో హత్య కేసులో మాజీ ఇంటీరియర్ మంత్రి జోస్ సెర్రానో, మరో ఆరుగురు అరెస్ట్ చేయబడ్డారు."
+              ]
+            },
+            {
+              "heading": "హత్య కేసులో ఇతర వివరాలు",
+              "paragraphs": [
+                "విల్లావిసెన్సియో హత్య కేసులో ఇప్పటికే ఐదుగురు వ్యక్తులు జైలుపాలయ్యారు. మరో ఆరుగురు వ్యక్తులు ఈ కేసులో అరెస్ట్ చేయబడ్డారు."
+              ]
+            }
+          ],
+          "location": "ఎక్వడార్",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "fa402ea5914ddd91b557dbbf36210a807c99e96d83c2d47e9173f5a017f8f776",
+        "sourceName": "New York Times World",
+        "title": "Syria Agrees to Reorganized Russian Military Presence",
+        "url": "https://www.nytimes.com/2026/08/09/world/middleeast/syria-reorganized-russian-military-presence.html",
+        "published": "Sun, 09 Aug 2026 15:57:53 +0000",
+        "score": 90,
+        "content": {
+          "headline": "సిరియాలో రష్యా సైనిక ఉనికికి పునర్వ్యవస్థీకరణ",
+          "summary": "సిరియా ప్రభుత్వం రష్యా సైనిక ఉనికిని పునర్వ్యవస్థీకరించడానికి అంగీకరించింది",
+          "sections": [
+            {
+              "heading": "పునర్వ్యవస్థీకరణ వివరాలు",
+              "paragraphs": [
+                "సిరియా ప్రభుత్వం, రష్యా మధ్య జరిగిన చర్చల ఫలితంగా ఈ పునర్వ్యవస్థీకరణ జరిగింది. సిరియాలోని రష్యా సైనిక స్థావరాల వినియోగం, భద్రతా ఏర్పాట్లపై రెండు దేశాలు ఒక ఒప్పందంపై సంతకం చేశాయి."
+              ]
+            }
+          ],
+          "location": "సిరియా",
+          "importance": "normal",
+          "tags": [
+            "సిరియా",
+            "రష్యా",
+            "సైనిక ఉనికి"
+          ]
+        }
+      },
+      {
+        "id": "fdd7334bc786755c8e770bdfad47553261483a6790691583d51c14e7d7b389fd",
+        "sourceName": "BBC World",
+        "title": "Perez Hilton faces long recovery after reports he self-harmed during livestream",
+        "url": "https://www.bbc.co.uk/news/articles/cg5lnqjz497o?at_medium=RSS&at_campaign=rss",
+        "published": "Sun, 09 Aug 2026 04:32:06 GMT",
+        "score": 70,
+        "content": {
+          "headline": "పెరెజ్ హిల్టన్ లైవ్‌స్ట్రీమ్ లో స్వీయహాని చేసుకున్నట్లు నివేదికలు",
+          "summary": "అమెరికా బ్లాగర్ పెరెజ్ హిల్టన్ తీవ్రమైన కానీ స్థిరమైన పరిస్థితిలో ఉన్నారు",
+          "sections": [
+            {
+              "heading": "పెరెజ్ హిల్టన్ పరిస్థితి",
+              "paragraphs": [
+                "అమెరికా బ్లాగర్ పెరెజ్ హిల్టన్ తీవ్రమైన కానీ స్థిరమైన పరిస్థితిలో ఉన్నారు. అతని కుటుంబం వెల్లడించిన సమాచారం ప్రకారం, అతను ఆసుపత్రిలో చికిత్స పొందుతున్నారు."
+              ]
+            },
+            {
+              "heading": "లైవ్‌స్ట్రీమ్ సంఘటన",
+              "paragraphs": [
+                "మియామి పోలీసులు టిక్‌టాక్ లైవ్‌స్ట్రీమ్‌లో స్వీయహాని చేసుకుంటున్న వ్యక్తిని చూసినట్లు ప్రజలు నివేదించినందున, అతని ఇంటికి అత్యవసర సేవలు చేరుకున్నాయి."
+              ]
+            }
+          ],
+          "location": "మియామి",
+          "importance": "నార్మల్",
+          "tags": [
+            "పెరెజ్ హిల్టన్",
+            "లైవ్‌స్ట్రీమ్",
+            "స్వీయహాని"
+          ]
+        }
+      }
+    ],
+    "andhraPradesh": [
+      {
+        "id": "25e6f4007447d02179c6da5c6e6365572a34989a3f6737e1f3e2d4b7c4183c65",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Vizag police deny rally permission for Green Visakha’s concerns over data centres",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/vizag-police-deny-rally-permission-for-green-visakhas-concerns-over-data-centres/article71325592.ece",
+        "published": "Sun, 09 Aug 2026 22:19:36 +0530",
+        "score": 110,
+        "content": {
+          "headline": "విశాఖపట్నంలో డేటా సెంటర్లపై నిరసన రేగింపుకు పోలీసులు అనుమతి నిరాకరించు",
+          "summary": "విశాఖపట్నంలో ప్రతిపాదించిన హైపర్‌స్కేల్ ఎయిఐ డేటా సెంటర్లపై ఆందోళనలు వ్యక్తం చేయడానికి గ్రీన్ విశాఖ సంస్థ నిర్వహించాలనుకున్న రేగింపుకు పోలీసులు అనుమతి నిరాకరించారు",
+          "sections": [
+            {
+              "heading": "నిరసన రేగింపు",
+              "paragraphs": [
+                "విశాఖపట్నంలోని భగత్ సింగ్ విగ్రహం వద్ద ఆదివారం నాడు నిరసనకారులు గుమిగూడారు. ఆర్కే బీచ్ వరకు రేగింపు నిర్వహించాలని వారు ప్రయత్నించారు."
+              ]
+            },
+            {
+              "heading": "పోలీసుల చర్య",
+              "paragraphs": [
+                "పోలీసులు నిరసనకారులతో చర్చలు జరిపారు. బ్యానర్లు, నినాదాలు చేయకుండా ఉండాలని వారికి సూచించారు."
+              ]
+            }
+          ],
+          "location": "విశాఖపట్నం",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "73975ab6612028e9bd1d57b45afadfb15571d8d63bd4e330a5f98ad143d0b561",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Nomination deadline for PMRBP-2026 extended to August 15",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/nomination-deadline-for-pmrbp-2026-extended-to-august-15/article71325529.ece",
+        "published": "Sun, 09 Aug 2026 22:25:18 +0530",
+        "score": 110,
+        "content": {
+          "headline": "PMRBP-2026 నామినేషన్ల గడువు ఆగస్టు 15 వరకు పొడిగింపు",
+          "summary": "PMRBP-2026 నామినేషన్ల చివరి తేదీని ఆగస్టు 15 వరకు పొడిగించారు, అర్హులైన పిల్లలు నేషనల్ అవార్డ్స్ పోర్టల్ ద్వారా దరఖాస్తు చేసుకోవచ్చు",
+          "sections": [
+            {
+              "heading": "నామినేషన్ల వివరాలు",
+              "paragraphs": [
+                "ప్రధానమంత్రి రాష్ట్రీయ బాల పురస్కార్ (PMRBP)-2026కు నామినేషన్ల చివరి తేదీని ఆగస్టు 15 వరకు పొడిగించారు. జూలై 31 నాటికి పిల్లల వయసు 5 ఏళ్లు పైబడి, 18 ఏళ్లు దాటకూడదు."
+              ]
+            },
+            {
+              "heading": "నామినేషన్ విధానం",
+              "paragraphs": [
+                "ఈ అవార్డులు ధైర్యసాహసాలు, సామాజిక సేవ, పర్యావరణ పరిరక్షణ, క్రీడలు, కళలు మరియు సంస్కృతి, సైన్స్ మరియు సాంకేతికత రంగాలలో పిల్లల అసాధారణ విజయాలను గుర్తిస్తాయి. అర్హులైన పిల్లలు స్వయంగా నామినేషన్ చేసుకోవచ్చు లేదా ఇతరుల ద్వారా సిఫార్సు చేయించుకోవచ్చు."
+              ]
+            }
+          ],
+          "location": "",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "7df9d0e5c2acd55a95db5f012d455afe6903f7cc85cf1644767d7642a43c6388",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Police to seek custody of two accused in medico’s death case",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/police-to-seek-custody-of-two-accused-in-medicos-death-case/article71325268.ece",
+        "published": "Sun, 09 Aug 2026 22:25:38 +0530",
+        "score": 110,
+        "content": {
+          "headline": "మెడికో మృతి కేసులో ఇద్దరు నిందితుల కస్టడీ కోసం పోలీసులు కోర్టును ఆశ్రయించనున్నారు",
+          "summary": "మెడికో మృతి కేసులో ఇద్దరు నిందితులను కస్టడీలోకి తీసుకోవాలని పోలీసులు కోర్టును కోరనున్నారు, తదుపరి దర్యాప్తు తర్వాత ఆరోపణలు మారవచ్చు",
+          "sections": [
+            {
+              "heading": "మెడికో మృతి కేసు",
+              "paragraphs": [
+                "తూర్పు గోదావరి జిల్లా పోలీసు సూపరింటెండెంట్ డి. నరసింహ కిషోర్ ఆదివారం పోలీసులు మెడికో కె. ప్రియాంక మృతి కేసులో సురవరపు దస్వంత్, ఆండ్రూ జోసెఫ్ ఎడ్వర్డ్స్‌లను కస్టడీలోకి తీసుకోవాలని కోర్టును కోరనున్నట్లు తెలిపారు."
+              ]
+            },
+            {
+              "heading": "నిందితుల వివరాలు",
+              "paragraphs": [
+                "ఆగస్టు 7న ఇద్దరు నిందితులను ఆగస్టు 21 వరకు న్యాయస్థానం జైలు కస్టడీలో ఉంచింది. ఆగస్టు 3న రాజమండ్రిలోని ఒక మాల్‌లో మత్తులో ఉన్న స్థితిలో కారుతో డాక్టర్ ప్రియాంకను ఢీకొట్టారు."
+              ]
+            }
+          ],
+          "location": "రాజమండ్రి",
+          "importance": "normal",
+          "tags": [
+            "మెడికో మృతి కేసు",
+            "పోలీసులు",
+            "కస్టడీ"
+          ]
+        }
+      },
+      {
+        "id": "d2ae2bf8bb9d44d613f1e8e7fa305ef7f9e7784b5aba258eb42da7bb22f5d8ab",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "Vizag DSLA reviews arrangements for National Lok Adalat",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/district-legal-services-authority-reviews-arrangements-for-national-lok-adalat/article71325487.ece",
+        "published": "Sun, 09 Aug 2026 23:11:55 +0530",
+        "score": 110,
+        "content": {
+          "headline": "విశాఖపట్నంలో సెప్టెంబర్ 12న జాతీయ లోక్ అదాలత్ ఏర్పాట్లు సమీక్ష",
+          "summary": "సెప్టెంబర్ 12న జాతీయ లోక్ అదాలత్ మరియు 'మీడియేషన్ ఫర్ నేషన్ 3.0' కార్యక్రమం ఏర్పాట్లను విశాఖపట్నం జిల్లా లీగల్ సర్వీసెస్ అథారిటీ సమీక్షించింది",
+          "sections": [
+            {
+              "heading": "ఏర్పాట్ల సమీక్ష",
+              "paragraphs": [
+                "విశాఖపట్నం జిల్లా లీగల్ సర్వీసెస్ అథారిటీ తాజాగా జాతీయ లోక్ అదాలత్ మరియు 'మీడియేషన్ ఫర్ నేషన్ 3.0' కార్యక్రమం ఏర్పాట్లను సమీక్షించింది. ఈ సమావేశానికి ప్రధాన జిల్లా న్యాయమూర్తి మరియు డిఎల్ఎస్ఏ ఛైర్మన్ చిన్నమసెట్టి రాజు అధ్యక్షత వహించారు."
+              ]
+            },
+            {
+              "heading": "లక్ష్యాలు",
+              "paragraphs": [
+                "ఈ సమావేశంలో న్యాయమూర్తులు వివిధ రకాల వివాదాలను సమాధానం చేసుకోవడానికి చర్యలు తీసుకోవాలని సూచించారు. లాక్ అదాలత్ ద్వారా వివాదాలను పరిష్కరించుకోవడం ద్వారా సమయం మరియు డబ్బు ఆదా చేయవచ్చని పేర్కొన్నారు."
+              ]
+            }
+          ],
+          "location": "విశాఖపట్నం",
+          "importance": "normal",
+          "tags": []
+        }
+      },
+      {
+        "id": "e08646c4c4c596f8f7edd7c369baf598b39453ace2f80764f937463209c8914b",
+        "sourceName": "The Hindu Andhra Pradesh",
+        "title": "State softball body to conduct regional tournaments",
+        "url": "https://www.thehindu.com/news/national/andhra-pradesh/state-softball-body-to-conduct-regional-tournaments/article71324674.ece",
+        "published": "Sun, 09 Aug 2026 21:23:03 +0530",
+        "score": 90,
+        "content": {
+          "headline": "రాష్ట్రవ్యాప్తంగా సాఫ్ట్‌బాల్ పోటీలు",
+          "summary": "ఆంధ్రప్రదేశ్ సాఫ్ట్‌బాల్ అసోసియేషన్ నవంబర్, డిసెంబర్‌ల్లో రాష్ట్రవ్యాప్తంగా ప్రాంతీయ పోటీలను నిర్వహించనుంది",
+          "sections": [
+            {
+              "heading": "పోటీల వివరాలు",
+              "paragraphs": [
+                "ఆంధ్రప్రదేశ్ సాఫ్ట్‌బాల్ అసోసియేషన్ అధ్యక్షుడు కున రవికుమార్, కార్యదర్శి సూర శ్రీనివాసరావు ఆదివారం శ్రీకాకుళంలో మాట్లాడుతూ, ఈ పోటీల ద్వారా సాఫ్ట్‌బాల్ క్రీడను ప్రోత్సహించడమే లక్ష్యమని తెలిపారు."
+              ]
+            },
+            {
+              "heading": "శిక్షణ శిబిరం",
+              "paragraphs": [
+                "శ్రీకాకుళంలో అంపైర్లు, క్రీడాకారుల శిక్షణ శిబిరాన్ని నిర్వహించారు. నియమాలు, నిబంధనలు తెలిపేందుకు ప్రత్యేక సెమినార్‌ను కూడా నిర్వహించారు."
+              ]
+            }
+          ],
+          "location": "ఆంధ్రప్రదేశ్",
+          "importance": "normal",
+          "tags": [
+            "సాఫ్ట్‌బాల్",
+            "క్రీడలు",
+            "ఆంధ్రప్రదేశ్"
+          ]
+        }
+      }
+    ]
+  },
+  "meta": {
+    "totalArticles": 20
+  }
+}
