@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T22:34:17.240Z",
+  "generatedAt": "2026-08-13T22:34:22.714Z",
   "files": [
     {
       "file": "2026-07-31.json",
@@ -70,6 +70,11 @@
       "file": "2026-08-13.json",
       "size": 43337,
       "sha256": "de254d47b2d79e24f4999c83183086f03faeddfd2027753e2167dcf568ea009b"
+    },
+    {
+      "file": "2026-08-14.json",
+      "size": 43440,
+      "sha256": "c9a892b231cd0d41b57d1d79c9d3ae96bd1bc3c6fde390f32a0fbca4242b0ea4"
     }
   ]
 }
