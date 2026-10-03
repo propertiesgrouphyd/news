@@ -1,0 +1,558 @@
+name: VIDHWAAN NEWS GITHUB PAGES DEPLOY
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+
+concurrency:
+  group: vidhwaan-news-github-pages
+  cancel-in-progress: true
+
+
+jobs:
+
+  deploy:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+
+      # ============================================================
+      # CHECKOUT
+      # ============================================================
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+
+      # ============================================================
+      # NODE
+      # ============================================================
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+
+      # ============================================================
+      # INSTALL TOOLS
+      # ============================================================
+
+      - name: Install Tools
+        run: |
+          set -euo pipefail
+
+          npm install -g terser
+          npm install -g javascript-obfuscator
+          npm install -g clean-css-cli
+          npm install -g html-minifier-terser
+
+          echo
+          echo "TOOLS INSTALLED"
+          echo "---------------"
+
+          terser --version
+          javascript-obfuscator --version
+          cleancss --version
+          html-minifier-terser --version
+
+
+      # ============================================================
+      # PREPARE DIST
+      #
+      # Only dist/ is deployed.
+      #
+      # Source/root files are never modified.
+      # ============================================================
+
+      - name: Prepare Dist
+        run: |
+          set -euo pipefail
+
+          echo
+          echo "============================================================"
+          echo " VIDHWAAN NEWS — PREPARING PRODUCTION BUILD"
+          echo "============================================================"
+
+          rm -rf dist
+
+          mkdir -p dist
+          mkdir -p dist/data/output/news
+
+          cp index.html dist/
+          cp main.css dist/
+          cp app.js dist/
+          cp sw.js dist/
+          cp manifest.json dist/
+
+          cp -r icons dist/
+
+          if [ -d data/output/news ]; then
+            cp -r data/output/news/* dist/data/output/news/ || true
+          fi
+
+          if [ -f CNAME ]; then
+            cp CNAME dist/CNAME
+            echo "OK: CNAME copied to dist/"
+          fi
+
+          echo
+          echo "Production source prepared."
+
+
+      # ============================================================
+      # MINIFY CSS
+      #
+      # CSS is minified and then forced to one physical line.
+      # ============================================================
+
+      - name: Minify CSS
+        run: |
+          set -euo pipefail
+
+          cleancss \
+            -O2 \
+            dist/main.css \
+            -o dist/main.css
+
+          node <<'NODE'
+          const fs = require("fs");
+
+          const file = "dist/main.css";
+
+          const source =
+            fs.readFileSync(file, "utf8");
+
+          const singleLine =
+            source
+              .replace(/\r?\n|\r/g, "")
+              .trim();
+
+          fs.writeFileSync(
+            file,
+            singleLine,
+            "utf8"
+          );
+          NODE
+
+          echo "CSS minification: PASSED"
+          echo "CSS single-line conversion: PASSED"
+
+
+      # ============================================================
+      # MINIFY JAVASCRIPT
+      #
+      # JavaScript is NOT manually forced to one line.
+      # ============================================================
+
+      - name: Minify JavaScript
+        run: |
+          set -euo pipefail
+
+          terser dist/app.js \
+            --compress \
+            --mangle \
+            -o dist/app.js
+
+          echo "JavaScript minification: PASSED"
+
+
+      # ============================================================
+      # OBFUSCATE JAVASCRIPT
+      # ============================================================
+
+      - name: Obfuscate JavaScript
+        run: |
+          set -euo pipefail
+
+          javascript-obfuscator dist/app.js \
+            --output dist/app.js \
+            --compact true \
+            --control-flow-flattening true \
+            --control-flow-flattening-threshold 0.75 \
+            --dead-code-injection true \
+            --dead-code-injection-threshold 0.2 \
+            --disable-console-output true \
+            --identifier-names-generator hexadecimal \
+            --rename-globals false \
+            --self-defending true \
+            --split-strings true \
+            --string-array true \
+            --string-array-encoding base64
+
+          echo "JavaScript obfuscation: PASSED"
+
+
+      # ============================================================
+      # GENERATE ASSET VERSION
+      # ============================================================
+
+      - name: Generate Asset Version
+        run: |
+          set -euo pipefail
+
+          VERSION=$(date +%s)
+
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+
+          echo "Asset version: $VERSION"
+
+
+      # ============================================================
+      # CACHE BUSTING
+      #
+      # Filenames remain unchanged.
+      # Query strings change on every deployment.
+      # ============================================================
+
+      - name: Cache Busting
+        run: |
+          set -euo pipefail
+
+          sed -i \
+            "s|main.css|main.css?v=$VERSION|g" \
+            dist/index.html
+
+          sed -i \
+            "s|app.js|app.js?v=$VERSION|g" \
+            dist/index.html
+
+          sed -i \
+            "s|manifest.json|manifest.json?v=$VERSION|g" \
+            dist/index.html
+
+          sed -i \
+            "s|sw.js?v=VERSION|sw.js?v=$VERSION|g" \
+            dist/index.html
+
+          echo "Cache busting applied."
+          echo "Version: $VERSION"
+
+
+      # ============================================================
+      # MINIFY HTML
+      #
+      # HTML is minified and explicitly forced to one line.
+      # ============================================================
+
+      - name: Minify HTML
+        run: |
+          set -euo pipefail
+
+          html-minifier-terser \
+            --collapse-whitespace \
+            --remove-comments \
+            --remove-redundant-attributes \
+            --remove-script-type-attributes \
+            --remove-style-link-type-attributes \
+            --use-short-doctype \
+            --minify-css true \
+            --minify-js true \
+            dist/index.html \
+            -o dist/index.html
+
+          node <<'NODE'
+          const fs = require("fs");
+
+          const file = "dist/index.html";
+
+          const source =
+            fs.readFileSync(file, "utf8");
+
+          const singleLine =
+            source
+              .replace(/\r?\n|\r/g, "")
+              .trim();
+
+          fs.writeFileSync(
+            file,
+            singleLine,
+            "utf8"
+          );
+          NODE
+
+          echo "HTML minification: PASSED"
+          echo "HTML single-line conversion: PASSED"
+
+
+      # ============================================================
+      # VERIFY HTML AND CSS SINGLE LINE
+      #
+      # Uses Node byte-level verification.
+      # ============================================================
+
+      - name: Verify HTML And CSS Single Line
+        run: |
+          set -euo pipefail
+
+          echo
+          echo "============================================================"
+          echo " VERIFYING HTML / CSS FORMAT"
+          echo "============================================================"
+
+          node <<'NODE'
+          const fs = require("fs");
+
+          const files = [
+            "dist/index.html",
+            "dist/main.css"
+          ];
+
+          for (const file of files) {
+            const data =
+              fs.readFileSync(file);
+
+            for (const byte of data) {
+              if (
+                byte === 10 ||
+                byte === 13
+              ) {
+                throw new Error(
+                  `${file} contains newline or carriage-return bytes.`
+                );
+              }
+            }
+
+            console.log(
+              `OK: ${file} is single-line.`
+            );
+          }
+          NODE
+
+          echo
+          echo "HTML / CSS FORMAT VERIFICATION: PASSED"
+
+
+      # ============================================================
+      # FINAL PRODUCTION VERIFICATION
+      # ============================================================
+
+      - name: Verify Production Build
+        run: |
+          set -euo pipefail
+
+          echo
+          echo "============================================================"
+          echo " VIDHWAAN NEWS — FINAL PRODUCTION VERIFICATION"
+          echo "============================================================"
+
+          # --------------------------------------------------------
+          # REQUIRED FILES
+          # --------------------------------------------------------
+
+          test -f dist/index.html
+          test -f dist/main.css
+          test -f dist/app.js
+          test -f dist/sw.js
+          test -f dist/manifest.json
+
+          test -d dist/icons
+          test -d dist/data/output/news
+
+          echo "OK: index.html"
+          echo "OK: main.css"
+          echo "OK: app.js"
+          echo "OK: sw.js"
+          echo "OK: manifest.json"
+          echo "OK: icons/"
+          echo "OK: data/output/news/"
+
+          if [ -f CNAME ]; then
+            test -f dist/CNAME
+            echo "OK: CNAME"
+          fi
+
+
+          # --------------------------------------------------------
+          # VERIFY HTML
+          # --------------------------------------------------------
+
+          node <<'NODE'
+          const fs = require("fs");
+
+          const files = [
+            "dist/index.html",
+            "dist/main.css"
+          ];
+
+          for (const file of files) {
+            const data =
+              fs.readFileSync(file);
+
+            for (const byte of data) {
+              if (
+                byte === 10 ||
+                byte === 13
+              ) {
+                throw new Error(
+                  `${file} contains newline or carriage-return bytes.`
+                );
+              }
+            }
+
+            console.log(
+              `OK: ${file} is single-line.`
+            );
+          }
+          NODE
+
+
+          # --------------------------------------------------------
+          # VERIFY JAVASCRIPT
+          # --------------------------------------------------------
+
+          node --check dist/app.js
+
+          echo "OK: app.js is valid JavaScript."
+
+
+          # --------------------------------------------------------
+          # VERIFY SERVICE WORKER
+          # --------------------------------------------------------
+
+          node --check dist/sw.js
+
+          echo "OK: sw.js is valid JavaScript."
+
+
+          # --------------------------------------------------------
+          # VERIFY NEWS DATA
+          # --------------------------------------------------------
+
+          SOURCE_NEWS_COUNT=$(
+            find data/output/news \
+              -type f \
+              | wc -l
+          )
+
+          DEPLOYED_NEWS_COUNT=$(
+            find dist/data/output/news \
+              -type f \
+              | wc -l
+          )
+
+          echo
+          echo "Source news files    : $SOURCE_NEWS_COUNT"
+          echo "Deployed news files  : $DEPLOYED_NEWS_COUNT"
+
+          if [ "$SOURCE_NEWS_COUNT" -ne "$DEPLOYED_NEWS_COUNT" ]; then
+            echo "ERROR: News data count mismatch."
+            exit 1
+          fi
+
+          echo "OK: All news data files copied."
+
+
+          # --------------------------------------------------------
+          # VERIFY NO SOURCE DIRECTORIES DEPLOYED
+          # --------------------------------------------------------
+
+          test ! -d dist/.github
+          test ! -d dist/scripts
+
+          echo
+          echo "OK: source-only directories are not deployed."
+
+
+          # --------------------------------------------------------
+          # VERIFY CACHE BUSTING
+          # --------------------------------------------------------
+
+          grep -F "main.css?v=${VERSION}" \
+            dist/index.html
+
+          grep -F "app.js?v=${VERSION}" \
+            dist/index.html
+
+          grep -F "manifest.json?v=${VERSION}" \
+            dist/index.html
+
+          echo
+          echo "OK: CSS cache busting reference"
+          echo "OK: JS cache busting reference"
+          echo "OK: manifest cache busting reference"
+
+
+          # --------------------------------------------------------
+          # FINAL FILE LIST
+          # --------------------------------------------------------
+
+          echo
+          echo "FINAL BUILD FILES:"
+          find dist \
+            -type f \
+            | sort
+
+
+          echo
+          echo "============================================================"
+          echo " PRODUCTION BUILD: PASSED"
+          echo "============================================================"
+
+
+      # ============================================================
+      # CONFIGURE GITHUB PAGES
+      # ============================================================
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+
+      # ============================================================
+      # UPLOAD DIST
+      #
+      # ONLY dist/ is deployed.
+      # ============================================================
+
+      - name: Upload GitHub Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+
+      # ============================================================
+      # DEPLOY TO GITHUB PAGES
+      # ============================================================
+
+      - name: Deploy To GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+
+      # ============================================================
+      # SUCCESS
+      # ============================================================
+
+      - name: Success
+        run: |
+          echo
+          echo "============================================================"
+          echo " VIDHWAAN NEWS — GITHUB PAGES DEPLOYMENT SUCCESS"
+          echo "============================================================"
+          echo
+          echo "Deployment directory : dist/"
+          echo "Asset version        : $VERSION"
+          echo
+          echo "HTML                 : Minified + single-line"
+          echo "CSS                  : Minified + single-line"
+          echo "JavaScript           : Minified + obfuscated"
+          echo "Service Worker       : Preserved"
+          echo "Manifest             : Preserved"
+          echo "News Data            : Copied"
+          echo "Source Files         : Not modified"
+          echo "Deployment           : GitHub Pages"
+          echo
+          echo "============================================================"
