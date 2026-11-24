@@ -1,3 +1,4 @@
+
 name: VIDHWAAN NEWS GITHUB PAGES DEPLOY
 
 on:
@@ -7,27 +8,20 @@ on:
 
   workflow_dispatch:
 
-
 permissions:
   contents: read
   pages: write
   id-token: write
 
-
 concurrency:
   group: vidhwaan-news-github-pages
   cancel-in-progress: true
 
-
 jobs:
-
   deploy:
-
     runs-on: ubuntu-latest
 
-
     steps:
-
 
       # ============================================================
       # CHECKOUT
@@ -35,7 +29,6 @@ jobs:
 
       - name: Checkout Repository
         uses: actions/checkout@v4
-
 
       # ============================================================
       # NODE
@@ -45,7 +38,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
 
       # ============================================================
       # INSTALL TOOLS
@@ -60,7 +52,6 @@ jobs:
           npm install -g clean-css-cli
           npm install -g html-minifier-terser
 
-          echo
           echo "TOOLS INSTALLED"
           echo "---------------"
 
@@ -69,20 +60,14 @@ jobs:
           cleancss --version
           html-minifier-terser --version
 
-
       # ============================================================
       # PREPARE DIST
-      #
-      # Only dist/ is deployed.
-      #
-      # Source/root files are never modified.
       # ============================================================
 
       - name: Prepare Dist
         run: |
           set -euo pipefail
 
-          echo
           echo "============================================================"
           echo " VIDHWAAN NEWS — PREPARING PRODUCTION BUILD"
           echo "============================================================"
@@ -101,7 +86,7 @@ jobs:
           cp -r icons dist/
 
           if [ -d data/output/news ]; then
-            cp -r data/output/news/* dist/data/output/news/ || true
+            cp -r data/output/news/. dist/data/output/news/
           fi
 
           if [ -f CNAME ]; then
@@ -109,14 +94,10 @@ jobs:
             echo "OK: CNAME copied to dist/"
           fi
 
-          echo
           echo "Production source prepared."
-
 
       # ============================================================
       # MINIFY CSS
-      #
-      # CSS is minified and then forced to one physical line.
       # ============================================================
 
       - name: Minify CSS
@@ -132,30 +113,20 @@ jobs:
           const fs = require("fs");
 
           const file = "dist/main.css";
+          const source = fs.readFileSync(file, "utf8");
 
-          const source =
-            fs.readFileSync(file, "utf8");
+          const singleLine = source
+            .replace(/\r?\n|\r/g, "")
+            .trim();
 
-          const singleLine =
-            source
-              .replace(/\r?\n|\r/g, "")
-              .trim();
-
-          fs.writeFileSync(
-            file,
-            singleLine,
-            "utf8"
-          );
+          fs.writeFileSync(file, singleLine, "utf8");
           NODE
 
           echo "CSS minification: PASSED"
           echo "CSS single-line conversion: PASSED"
 
-
       # ============================================================
       # MINIFY JAVASCRIPT
-      #
-      # JavaScript is NOT manually forced to one line.
       # ============================================================
 
       - name: Minify JavaScript
@@ -168,7 +139,6 @@ jobs:
             -o dist/app.js
 
           echo "JavaScript minification: PASSED"
-
 
       # ============================================================
       # OBFUSCATE JAVASCRIPT
@@ -195,7 +165,6 @@ jobs:
 
           echo "JavaScript obfuscation: PASSED"
 
-
       # ============================================================
       # GENERATE ASSET VERSION
       # ============================================================
@@ -210,12 +179,8 @@ jobs:
 
           echo "Asset version: $VERSION"
 
-
       # ============================================================
       # CACHE BUSTING
-      #
-      # Filenames remain unchanged.
-      # Query strings change on every deployment.
       # ============================================================
 
       - name: Cache Busting
@@ -241,11 +206,8 @@ jobs:
           echo "Cache busting applied."
           echo "Version: $VERSION"
 
-
       # ============================================================
       # MINIFY HTML
-      #
-      # HTML is minified and explicitly forced to one line.
       # ============================================================
 
       - name: Minify HTML
@@ -268,40 +230,25 @@ jobs:
           const fs = require("fs");
 
           const file = "dist/index.html";
+          const source = fs.readFileSync(file, "utf8");
 
-          const source =
-            fs.readFileSync(file, "utf8");
+          const singleLine = source
+            .replace(/\r?\n|\r/g, "")
+            .trim();
 
-          const singleLine =
-            source
-              .replace(/\r?\n|\r/g, "")
-              .trim();
-
-          fs.writeFileSync(
-            file,
-            singleLine,
-            "utf8"
-          );
+          fs.writeFileSync(file, singleLine, "utf8");
           NODE
 
           echo "HTML minification: PASSED"
           echo "HTML single-line conversion: PASSED"
 
-
       # ============================================================
       # VERIFY HTML AND CSS SINGLE LINE
-      #
-      # Uses Node byte-level verification.
       # ============================================================
 
       - name: Verify HTML And CSS Single Line
         run: |
           set -euo pipefail
-
-          echo
-          echo "============================================================"
-          echo " VERIFYING HTML / CSS FORMAT"
-          echo "============================================================"
 
           node <<'NODE'
           const fs = require("fs");
@@ -312,29 +259,21 @@ jobs:
           ];
 
           for (const file of files) {
-            const data =
-              fs.readFileSync(file);
+            const data = fs.readFileSync(file);
 
             for (const byte of data) {
-              if (
-                byte === 10 ||
-                byte === 13
-              ) {
+              if (byte === 10 || byte === 13) {
                 throw new Error(
                   `${file} contains newline or carriage-return bytes.`
                 );
               }
             }
 
-            console.log(
-              `OK: ${file} is single-line.`
-            );
+            console.log(`OK: ${file} is single-line.`);
           }
           NODE
 
-          echo
           echo "HTML / CSS FORMAT VERIFICATION: PASSED"
-
 
       # ============================================================
       # FINAL PRODUCTION VERIFICATION
@@ -344,14 +283,11 @@ jobs:
         run: |
           set -euo pipefail
 
-          echo
           echo "============================================================"
           echo " VIDHWAAN NEWS — FINAL PRODUCTION VERIFICATION"
           echo "============================================================"
 
-          # --------------------------------------------------------
           # REQUIRED FILES
-          # --------------------------------------------------------
 
           test -f dist/index.html
           test -f dist/main.css
@@ -362,91 +298,61 @@ jobs:
           test -d dist/icons
           test -d dist/data/output/news
 
-          echo "OK: index.html"
-          echo "OK: main.css"
-          echo "OK: app.js"
-          echo "OK: sw.js"
-          echo "OK: manifest.json"
-          echo "OK: icons/"
-          echo "OK: data/output/news/"
+          echo "OK: Required production files"
 
           if [ -f CNAME ]; then
             test -f dist/CNAME
             echo "OK: CNAME"
           fi
 
-
-          # --------------------------------------------------------
-          # VERIFY HTML
-          # --------------------------------------------------------
+          # VERIFY HTML AND CSS
 
           node <<'NODE'
           const fs = require("fs");
 
-          const files = [
+          for (const file of [
             "dist/index.html",
             "dist/main.css"
-          ];
-
-          for (const file of files) {
-            const data =
-              fs.readFileSync(file);
+          ]) {
+            const data = fs.readFileSync(file);
 
             for (const byte of data) {
-              if (
-                byte === 10 ||
-                byte === 13
-              ) {
-                throw new Error(
-                  `${file} contains newline or carriage-return bytes.`
-                );
+              if (byte === 10 || byte === 13) {
+                throw new Error(`${file} is not single-line.`);
               }
             }
 
-            console.log(
-              `OK: ${file} is single-line.`
-            );
+            console.log(`OK: ${file}`);
           }
           NODE
 
-
-          # --------------------------------------------------------
           # VERIFY JAVASCRIPT
-          # --------------------------------------------------------
 
           node --check dist/app.js
-
           echo "OK: app.js is valid JavaScript."
 
-
-          # --------------------------------------------------------
           # VERIFY SERVICE WORKER
-          # --------------------------------------------------------
 
           node --check dist/sw.js
-
           echo "OK: sw.js is valid JavaScript."
 
-
-          # --------------------------------------------------------
           # VERIFY NEWS DATA
-          # --------------------------------------------------------
 
-          SOURCE_NEWS_COUNT=$(
-            find data/output/news \
-              -type f \
-              | wc -l
-          )
+          SOURCE_NEWS_COUNT=0
+          DEPLOYED_NEWS_COUNT=0
+
+          if [ -d data/output/news ]; then
+            SOURCE_NEWS_COUNT=$(
+              find data/output/news -type f | wc -l
+            )
+          fi
 
           DEPLOYED_NEWS_COUNT=$(
-            find dist/data/output/news \
-              -type f \
-              | wc -l
+            find dist/data/output/news -type f | wc -l
           )
 
-          echo
-          echo "Source news files    : $SOURCE_NEWS_COUNT"
-          echo "Deployed news files  : $DEPLOYED_NEWS_COUNT"
+          echo "Source news files   : $SOURCE_NEWS_COUNT"
+          echo "Deployed news files : $DEPLOYED_NEWS_COUNT"
 
           if [ "$SOURCE_NEWS_COUNT" -ne "$DEPLOYED_NEWS_COUNT" ]; then
             echo "ERROR: News data count mismatch."
@@ -455,53 +361,29 @@ jobs:
 
           echo "OK: All news data files copied."
 
-
-          # --------------------------------------------------------
-          # VERIFY NO SOURCE DIRECTORIES DEPLOYED
-          # --------------------------------------------------------
+          # VERIFY SOURCE DIRECTORIES ARE NOT DEPLOYED
 
           test ! -d dist/.github
           test ! -d dist/scripts
 
-          echo
-          echo "OK: source-only directories are not deployed."
+          echo "OK: Source-only directories are not deployed."
 
-
-          # --------------------------------------------------------
           # VERIFY CACHE BUSTING
-          # --------------------------------------------------------
 
-          grep -F "main.css?v=${VERSION}" \
-            dist/index.html
+          grep -Fq "main.css?v=${VERSION}" dist/index.html
+          grep -Fq "app.js?v=${VERSION}" dist/index.html
+          grep -Fq "manifest.json?v=${VERSION}" dist/index.html
 
-          grep -F "app.js?v=${VERSION}" \
-            dist/index.html
+          echo "OK: Cache-busting references"
 
-          grep -F "manifest.json?v=${VERSION}" \
-            dist/index.html
-
-          echo
-          echo "OK: CSS cache busting reference"
-          echo "OK: JS cache busting reference"
-          echo "OK: manifest cache busting reference"
-
-
-          # --------------------------------------------------------
           # FINAL FILE LIST
-          # --------------------------------------------------------
 
-          echo
           echo "FINAL BUILD FILES:"
-          find dist \
-            -type f \
-            | sort
+          find dist -type f | sort
 
-
-          echo
           echo "============================================================"
           echo " PRODUCTION BUILD: PASSED"
           echo "============================================================"
-
 
       # ============================================================
       # CONFIGURE GITHUB PAGES
@@ -510,27 +392,43 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-
       # ============================================================
       # UPLOAD DIST
-      #
-      # ONLY dist/ is deployed.
+      # Explicit artifact name
       # ============================================================
 
       - name: Upload GitHub Pages Artifact
+        id: upload
         uses: actions/upload-pages-artifact@v3
         with:
+          name: github-pages
           path: ./dist
 
+      # ============================================================
+      # VERIFY UPLOAD STEP
+      # ============================================================
+
+      - name: Verify Pages Artifact Upload
+        run: |
+          set -euo pipefail
+
+          test -d dist
+          test -f dist/index.html
+
+          echo "GitHub Pages artifact prepared."
+          echo "Artifact name: github-pages"
+          echo "Artifact path: ./dist"
 
       # ============================================================
       # DEPLOY TO GITHUB PAGES
+      # Explicitly request the same artifact name
       # ============================================================
 
       - name: Deploy To GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
+        with:
+          artifact_name: github-pages
 
       # ============================================================
       # SUCCESS
@@ -538,14 +436,12 @@ jobs:
 
       - name: Success
         run: |
-          echo
           echo "============================================================"
           echo " VIDHWAAN NEWS — GITHUB PAGES DEPLOYMENT SUCCESS"
           echo "============================================================"
-          echo
+
           echo "Deployment directory : dist/"
           echo "Asset version        : $VERSION"
-          echo
           echo "HTML                 : Minified + single-line"
           echo "CSS                  : Minified + single-line"
           echo "JavaScript           : Minified + obfuscated"
@@ -553,6 +449,7 @@ jobs:
           echo "Manifest             : Preserved"
           echo "News Data            : Copied"
           echo "Source Files         : Not modified"
+          echo "Artifact             : github-pages"
           echo "Deployment           : GitHub Pages"
-          echo
+
           echo "============================================================"
