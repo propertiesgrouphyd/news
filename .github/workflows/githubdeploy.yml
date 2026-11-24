@@ -18,30 +18,27 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+
+  # ============================================================
+  # BUILD AND UPLOAD
+  # ============================================================
+
+  build:
     runs-on: ubuntu-latest
 
     steps:
 
-      # ============================================================
-      # CHECKOUT
-      # ============================================================
-
       - name: Checkout Repository
         uses: actions/checkout@v4
-
-      # ============================================================
-      # NODE
-      # ============================================================
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      # ============================================================
+      # ------------------------------------------------------------
       # INSTALL TOOLS
-      # ============================================================
+      # ------------------------------------------------------------
 
       - name: Install Tools
         run: |
@@ -52,25 +49,18 @@ jobs:
           npm install -g clean-css-cli
           npm install -g html-minifier-terser
 
-          echo "TOOLS INSTALLED"
-          echo "---------------"
-
           terser --version
           javascript-obfuscator --version
           cleancss --version
           html-minifier-terser --version
 
-      # ============================================================
+      # ------------------------------------------------------------
       # PREPARE DIST
-      # ============================================================
+      # ------------------------------------------------------------
 
       - name: Prepare Dist
         run: |
           set -euo pipefail
-
-          echo "============================================================"
-          echo " VIDHWAAN NEWS — PREPARING PRODUCTION BUILD"
-          echo "============================================================"
 
           rm -rf dist
 
@@ -91,14 +81,13 @@ jobs:
 
           if [ -f CNAME ]; then
             cp CNAME dist/CNAME
-            echo "OK: CNAME copied to dist/"
           fi
 
           echo "Production source prepared."
 
-      # ============================================================
+      # ------------------------------------------------------------
       # MINIFY CSS
-      # ============================================================
+      # ------------------------------------------------------------
 
       - name: Minify CSS
         run: |
@@ -113,21 +102,19 @@ jobs:
           const fs = require("fs");
 
           const file = "dist/main.css";
+
           const source = fs.readFileSync(file, "utf8");
 
-          const singleLine = source
-            .replace(/\r?\n|\r/g, "")
-            .trim();
-
-          fs.writeFileSync(file, singleLine, "utf8");
+          fs.writeFileSync(
+            file,
+            source.replace(/\r?\n|\r/g, "").trim(),
+            "utf8"
+          );
           NODE
 
-          echo "CSS minification: PASSED"
-          echo "CSS single-line conversion: PASSED"
-
-      # ============================================================
+      # ------------------------------------------------------------
       # MINIFY JAVASCRIPT
-      # ============================================================
+      # ------------------------------------------------------------
 
       - name: Minify JavaScript
         run: |
@@ -138,11 +125,9 @@ jobs:
             --mangle \
             -o dist/app.js
 
-          echo "JavaScript minification: PASSED"
-
-      # ============================================================
+      # ------------------------------------------------------------
       # OBFUSCATE JAVASCRIPT
-      # ============================================================
+      # ------------------------------------------------------------
 
       - name: Obfuscate JavaScript
         run: |
@@ -163,11 +148,9 @@ jobs:
             --string-array true \
             --string-array-encoding base64
 
-          echo "JavaScript obfuscation: PASSED"
-
-      # ============================================================
+      # ------------------------------------------------------------
       # GENERATE ASSET VERSION
-      # ============================================================
+      # ------------------------------------------------------------
 
       - name: Generate Asset Version
         run: |
@@ -179,9 +162,9 @@ jobs:
 
           echo "Asset version: $VERSION"
 
-      # ============================================================
+      # ------------------------------------------------------------
       # CACHE BUSTING
-      # ============================================================
+      # ------------------------------------------------------------
 
       - name: Cache Busting
         run: |
@@ -203,12 +186,9 @@ jobs:
             "s|sw.js?v=VERSION|sw.js?v=$VERSION|g" \
             dist/index.html
 
-          echo "Cache busting applied."
-          echo "Version: $VERSION"
-
-      # ============================================================
+      # ------------------------------------------------------------
       # MINIFY HTML
-      # ============================================================
+      # ------------------------------------------------------------
 
       - name: Minify HTML
         run: |
@@ -230,82 +210,23 @@ jobs:
           const fs = require("fs");
 
           const file = "dist/index.html";
+
           const source = fs.readFileSync(file, "utf8");
 
-          const singleLine = source
-            .replace(/\r?\n|\r/g, "")
-            .trim();
-
-          fs.writeFileSync(file, singleLine, "utf8");
+          fs.writeFileSync(
+            file,
+            source.replace(/\r?\n|\r/g, "").trim(),
+            "utf8"
+          );
           NODE
 
-          echo "HTML minification: PASSED"
-          echo "HTML single-line conversion: PASSED"
+      # ------------------------------------------------------------
+      # VERIFY HTML AND CSS
+      # ------------------------------------------------------------
 
-      # ============================================================
-      # VERIFY HTML AND CSS SINGLE LINE
-      # ============================================================
-
-      - name: Verify HTML And CSS Single Line
+      - name: Verify HTML And CSS
         run: |
           set -euo pipefail
-
-          node <<'NODE'
-          const fs = require("fs");
-
-          const files = [
-            "dist/index.html",
-            "dist/main.css"
-          ];
-
-          for (const file of files) {
-            const data = fs.readFileSync(file);
-
-            for (const byte of data) {
-              if (byte === 10 || byte === 13) {
-                throw new Error(
-                  `${file} contains newline or carriage-return bytes.`
-                );
-              }
-            }
-
-            console.log(`OK: ${file} is single-line.`);
-          }
-          NODE
-
-          echo "HTML / CSS FORMAT VERIFICATION: PASSED"
-
-      # ============================================================
-      # FINAL PRODUCTION VERIFICATION
-      # ============================================================
-
-      - name: Verify Production Build
-        run: |
-          set -euo pipefail
-
-          echo "============================================================"
-          echo " VIDHWAAN NEWS — FINAL PRODUCTION VERIFICATION"
-          echo "============================================================"
-
-          # REQUIRED FILES
-
-          test -f dist/index.html
-          test -f dist/main.css
-          test -f dist/app.js
-          test -f dist/sw.js
-          test -f dist/manifest.json
-
-          test -d dist/icons
-          test -d dist/data/output/news
-
-          echo "OK: Required production files"
-
-          if [ -f CNAME ]; then
-            test -f dist/CNAME
-            echo "OK: CNAME"
-          fi
-
-          # VERIFY HTML AND CSS
 
           node <<'NODE'
           const fs = require("fs");
@@ -326,17 +247,29 @@ jobs:
           }
           NODE
 
-          # VERIFY JAVASCRIPT
+      # ------------------------------------------------------------
+      # FINAL BUILD VERIFICATION
+      # ------------------------------------------------------------
+
+      - name: Verify Production Build
+        run: |
+          set -euo pipefail
+
+          test -f dist/index.html
+          test -f dist/main.css
+          test -f dist/app.js
+          test -f dist/sw.js
+          test -f dist/manifest.json
+
+          test -d dist/icons
+          test -d dist/data/output/news
+
+          if [ -f CNAME ]; then
+            test -f dist/CNAME
+          fi
 
           node --check dist/app.js
-          echo "OK: app.js is valid JavaScript."
-
-          # VERIFY SERVICE WORKER
-
           node --check dist/sw.js
-          echo "OK: sw.js is valid JavaScript."
-
-          # VERIFY NEWS DATA
 
           SOURCE_NEWS_COUNT=0
           DEPLOYED_NEWS_COUNT=0
@@ -351,78 +284,82 @@ jobs:
             find dist/data/output/news -type f | wc -l
           )
 
-          echo "Source news files   : $SOURCE_NEWS_COUNT"
-          echo "Deployed news files : $DEPLOYED_NEWS_COUNT"
+          echo "Source news files: $SOURCE_NEWS_COUNT"
+          echo "Deployed news files: $DEPLOYED_NEWS_COUNT"
 
           if [ "$SOURCE_NEWS_COUNT" -ne "$DEPLOYED_NEWS_COUNT" ]; then
             echo "ERROR: News data count mismatch."
             exit 1
           fi
 
-          echo "OK: All news data files copied."
-
-          # VERIFY SOURCE DIRECTORIES ARE NOT DEPLOYED
-
           test ! -d dist/.github
           test ! -d dist/scripts
-
-          echo "OK: Source-only directories are not deployed."
-
-          # VERIFY CACHE BUSTING
 
           grep -Fq "main.css?v=${VERSION}" dist/index.html
           grep -Fq "app.js?v=${VERSION}" dist/index.html
           grep -Fq "manifest.json?v=${VERSION}" dist/index.html
 
-          echo "OK: Cache-busting references"
+          echo "PRODUCTION BUILD PASSED"
 
-          # FINAL FILE LIST
-
-          echo "FINAL BUILD FILES:"
           find dist -type f | sort
 
-          echo "============================================================"
-          echo " PRODUCTION BUILD: PASSED"
-          echo "============================================================"
-
-      # ============================================================
-      # CONFIGURE GITHUB PAGES
-      # ============================================================
+      # ------------------------------------------------------------
+      # CONFIGURE PAGES
+      # ------------------------------------------------------------
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      # ============================================================
-      # UPLOAD DIST
-      # Explicit artifact name
-      # ============================================================
+      # ------------------------------------------------------------
+      # UPLOAD PAGES ARTIFACT
+      # ------------------------------------------------------------
 
       - name: Upload GitHub Pages Artifact
         id: upload
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           name: github-pages
           path: ./dist
+          retention-days: 1
 
-      # ============================================================
-      # VERIFY UPLOAD STEP
-      # ============================================================
+      # ------------------------------------------------------------
+      # VERIFY ARTIFACT ID
+      # ------------------------------------------------------------
 
-      - name: Verify Pages Artifact Upload
+      - name: Verify Uploaded Artifact
+        env:
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
         run: |
           set -euo pipefail
 
-          test -d dist
-          test -f dist/index.html
+          if [ -z "$ARTIFACT_ID" ]; then
+            echo "ERROR: GitHub Pages artifact ID is empty."
+            exit 1
+          fi
 
-          echo "GitHub Pages artifact prepared."
+          echo "Artifact upload successful."
+          echo "Artifact ID: $ARTIFACT_ID"
           echo "Artifact name: github-pages"
-          echo "Artifact path: ./dist"
 
-      # ============================================================
-      # DEPLOY TO GITHUB PAGES
-      # Explicitly request the same artifact name
-      # ============================================================
+  # ============================================================
+  # DEPLOY
+  # ============================================================
+
+  deploy:
+    needs: build
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
 
       - name: Deploy To GitHub Pages
         id: deployment
@@ -430,26 +367,14 @@ jobs:
         with:
           artifact_name: github-pages
 
-      # ============================================================
-      # SUCCESS
-      # ============================================================
-
-      - name: Success
+      - name: Deployment Success
         run: |
           echo "============================================================"
-          echo " VIDHWAAN NEWS — GITHUB PAGES DEPLOYMENT SUCCESS"
+          echo " VIDHWAAN NEWS — DEPLOYMENT SUCCESS"
           echo "============================================================"
 
-          echo "Deployment directory : dist/"
-          echo "Asset version        : $VERSION"
-          echo "HTML                 : Minified + single-line"
-          echo "CSS                  : Minified + single-line"
-          echo "JavaScript           : Minified + obfuscated"
-          echo "Service Worker       : Preserved"
-          echo "Manifest             : Preserved"
-          echo "News Data            : Copied"
-          echo "Source Files         : Not modified"
-          echo "Artifact             : github-pages"
-          echo "Deployment           : GitHub Pages"
+          echo "Deployment URL: ${{ steps.deployment.outputs.page_url }}"
+          echo "Artifact: github-pages"
+          echo "Deployment: GitHub Pages"
 
           echo "============================================================"
